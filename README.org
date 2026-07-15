@@ -1,0 +1,108 @@
+* Agentic Skills
+
+Declarative management of AI coding agent skills for [[https://github.com/nix-community/home-manager][Home Manager]].
+
+This Nix flake provides a Home Manager module that fetches "skills" (curated rules and instructions) from public GitHub repositories, pins them reproducibly in a catalog, and symlinks them into the configuration directories of your AI coding agents.
+
+** Supported Agents
+
+| Agent           | Default Path                    |
+|-----------------+---------------------------------|
+| Antigravity     | =~/.gemini/antigravity/skills=  |
+| Claude Code     | =~/.claude/skills=              |
+| Codex           | =~/.agents/skills=              |
+| Cursor          | =~/.cursor/skills=              |
+| Gemini CLI      | =~/.gemini/skills=              |
+| GitHub Copilot  | =~/.copilot/skills=             |
+| Kiro            | =~/.kiro/skills=                |
+| OpenCode        | =~/.config/opencode/skills=     |
+| Windsurf        | =~/.codeium/windsurf/skills=    |
+
+-----
+
+* Quick Start
+
+** 1. Add the flake input
+
+In your Home Manager =flake.nix=:
+#+begin_src nix
+{
+  inputs = {
+    # ...your other inputs...
+    agentic-skills.url = "github:justinbarclay/agentic-skills";
+  };
+
+  outputs = inputs @ { nixpkgs, home-manager, ... }:
+    let
+      mkHomeConfig = system: home-manager.lib.homeManagerConfiguration {
+        # ...
+        extraSpecialArgs = { inherit inputs system; };
+        modules = [
+          ./home.nix
+          inputs.agentic-skills.homeManagerModules.default
+        ];
+      };
+    in
+    {
+      # ...
+    };
+}
+#+end_src
+
+** 2. Enable the module and select skills
+
+In any of your Home Manager modules (e.g. =llm.nix= or =home.nix=):
+#+begin_src nix
+modules.agentic-skills = {
+  enable = true;
+  skills = {
+    frontend-design.enable = true;
+    typescript-best-practices.enable = true;
+
+    # Target specific agents only
+    grilling = {
+      enable = true;
+      agents = [ "gemini" "claude" ];
+    };
+
+    # Rename a skill on disk
+    some-skill = {
+      enable = true;
+      name = "my-custom-name";
+    };
+  };
+};
+#+end_src
+
+** 3. Rebuild
+
+#+begin_src bash
+home-manager switch
+#+end_src
+
+-----
+
+* Options Reference
+
+| Option                                             | Type       | Default    | Description                                                      |
+|----------------------------------------------------+------------+------------+------------------------------------------------------------------|
+| =modules.agentic-skills.enable=                    | =bool=     | =false=    | Master toggle for skills symlinking.                             |
+| =modules.agentic-skills.skills.<name>.enable=      | =bool=     | =false=    | Enable a specific skill. Autocompletes via Nix LSP.              |
+| =modules.agentic-skills.skills.<name>.name=        | =str?=     | =null=     | Rename the skill directory when installing.                      |
+| =modules.agentic-skills.skills.<name>.agents=      | =list str= | =[]=       | Restrict to specific agents. Empty means all active agents.      |
+| =modules.agentic-skills.agents.<agent>.enable=     | =bool=     | =true=     | Toggle symlinking to a specific agent.                           |
+| =modules.agentic-skills.agents.<agent>.path=       | =str=      | /(varies)/ | Override the target path relative to =$HOME=.                    |
+
+-----
+
+* Skills Inventory
+
+See [[file:INVENTORY.org][INVENTORY.org]] for the full catalog of available skills.
+
+* Development
+
+For system architecture, development setup, catalog update instructions, and testing guides, please refer to [[file:development.org][development.org]].
+
+* License
+
+This repository curates and indexes publicly available skills from third-party repositories. Each skill is subject to its upstream repository's license. The Nix module and tooling in this repository are provided as-is.
