@@ -377,8 +377,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "5a1b82d6445d1e2f0abeea1072851419a50c0e5c",
-      "hash": "sha256-WjqvYmyF3EKZViKnmPTmxsYdJnvEnh5/EzeakwQjU1Y=",
+      "rev": "06300e258ef62cdbfbc9b1615ac5b4f58bee05ac",
+      "hash": "sha256-4vwsEMsyU9axWUmaX4ttJyHghafUlOsotKdkFsUWNhI=",
       "skills": {
         "planning-and-task-breakdown": {
           "name": "planning-and-task-breakdown",
@@ -693,8 +693,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "61df6113574127536db39738c4aa6fc15d3e2298",
-      "hash": "sha256-CxwtaJTSE1iRl0SxBsZ6D0C4IXAKKvvpBAIvHevQadQ=",
+      "rev": "c29cd23cfd27830bf10961d58646a9fd127fa6df",
+      "hash": "sha256-2N57eRotc5lR5vwrOOHE/7X6y7Maed3HMkm17D9Bt+0=",
       "skills": {
         "stripe-best-practices": {
           "name": "stripe-best-practices",
