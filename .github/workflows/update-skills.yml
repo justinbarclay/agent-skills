@@ -32,7 +32,7 @@ jobs:
           
           # Only commit and push if there are changes
           if ! git diff-index --quiet HEAD; then
-            git commit -m "chore(catalog): daily skills catalog update"
+            git commit -m "chore(catalog): daily skills catalog update ($(date -u +'%Y-%m-%d %H:%M UTC'))"
             git push
           else
             echo "No changes to catalog."
