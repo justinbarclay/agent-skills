@@ -39,6 +39,7 @@ def main [
   # Define repositories using declarative metadata
   let repo_configs = [
     { key: "anthropics", owner: "anthropics", repo: "skills", skills_path: "skills" },
+    { key: "actionbook", owner: "actionbook", repo: "rust-skills", skills_path: "skills" },
     { key: "vercel", owner: "vercel-labs", repo: "agent-skills", skills_path: "skills" },
     { key: "openai", owner: "openai", repo: "skills", skills_path: "skills" },
     { key: "addyosmani", owner: "addyosmani", repo: "agent-skills", skills_path: "skills" },
