@@ -377,8 +377,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "06300e258ef62cdbfbc9b1615ac5b4f58bee05ac",
-      "hash": "sha256-4vwsEMsyU9axWUmaX4ttJyHghafUlOsotKdkFsUWNhI=",
+      "rev": "2fbfa004a0192529bc997d103fc12f19a3804aab",
+      "hash": "sha256-i4UspLv9Cg8zSIA9kdMlgQDyAwwseOQEnjzxHiigLIQ=",
       "skills": {
         "planning-and-task-breakdown": {
           "name": "planning-and-task-breakdown",
