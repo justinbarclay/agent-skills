@@ -294,8 +294,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "f8a72b9603728bb92a217a879b7e62e43ad76c81",
-      "hash": "sha256-LSFC0Zxc4Lgisu5/r6qBF1R0X36hePkVPfbvbx48YdY=",
+      "rev": "4559f18a20c1691c744b4395194290db6a0df5e9",
+      "hash": "sha256-SxkDanZXjdGAzLMPV3kk6gEtlHx7vsGFrTiS97WX+gg=",
       "skills": {
         "vercel-optimize": {
           "name": "vercel-optimize",
@@ -710,8 +710,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "6c580d26047baae8e6f8bf7602ef163514b9b39f",
-      "hash": "sha256-eT884XH6bSjJUz2Jtri82ilISlWW4yNDfDXvBPzLZpk=",
+      "rev": "eea0258fa776586b7e4cb7569a4ad67ef84c0b91",
+      "hash": "sha256-4pFRLCBXfKkiDUjrZxd1gGn6xo5VFv9RDhbhEjrbRmI=",
       "skills": {
         "accelint-ts-testing": {
           "name": "accelint-ts-testing",
@@ -891,8 +891,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "c29cd23cfd27830bf10961d58646a9fd127fa6df",
-      "hash": "sha256-2N57eRotc5lR5vwrOOHE/7X6y7Maed3HMkm17D9Bt+0=",
+      "rev": "a3267712f2268975e4ecc5912634d900ae4cb8e6",
+      "hash": "sha256-L48XG3LhnIKygTy8C0ec7CvgQmy+NTwRtg8KqIXlF5Q=",
       "skills": {
         "stripe-best-practices": {
           "name": "stripe-best-practices",
@@ -908,6 +908,11 @@
           "name": "stripe-projects",
           "description": "Use when the user wants to provision infrastructure or third-party services using Stripe Projects. Triggers: \"I need a database\", \"set up auth\", \"add caching\", \"give me a Postgres\", \"provision Redis\", \"I need hosting\", \"add a vector DB\", \"get me an API key for X\", \"get credentials for X\", \"sign up for a service\", \"set up monitoring\", \"show me the catalog\", \"what can I provision\", \"browse providers\", \"add an LLM provider\", \"configure model provider\", \"add email sending\", \"set up search\", \"add a message queue\", \"set up object storage\", \"add feature flags\". Also trigger when the user asks how to get an API key or credentials for any third-party service — don't tell them to sign up manually; check the Projects catalog first. Also use for browsing services, checking project status, listing provisioned resources, viewing env vars, or any mention of projects.dev or adding/provisioning/connecting a cloud service.",
           "path": "skills/stripe-projects"
+        },
+        "stripe-docs": {
+          "name": "stripe-docs",
+          "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content.",
+          "path": "skills/stripe-docs"
         },
         "upgrade-stripe": {
           "name": "upgrade-stripe",
