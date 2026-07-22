@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "2fbfa004a0192529bc997d103fc12f19a3804aab",
-      "hash": "sha256-i4UspLv9Cg8zSIA9kdMlgQDyAwwseOQEnjzxHiigLIQ=",
+      "rev": "fefc4075ddfd8363d3b2aa8b26e6440f1ce204c0",
+      "hash": "sha256-ut74vdIxvfb8G6KKXt7/htuL+pJrMJBFACcVUR64hz0=",
       "skills": {
         "planning-and-task-breakdown": {
           "name": "planning-and-task-breakdown",
@@ -710,8 +710,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "eea0258fa776586b7e4cb7569a4ad67ef84c0b91",
-      "hash": "sha256-4pFRLCBXfKkiDUjrZxd1gGn6xo5VFv9RDhbhEjrbRmI=",
+      "rev": "215de3eb058ffddb6b53ea5c050df3ff8a8de396",
+      "hash": "sha256-nvaCchmR5kP3U9DZ8mtGCFeGLasfIOeymyQ/jnmVngI=",
       "skills": {
         "accelint-ts-testing": {
           "name": "accelint-ts-testing",
@@ -891,8 +891,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "a3267712f2268975e4ecc5912634d900ae4cb8e6",
-      "hash": "sha256-L48XG3LhnIKygTy8C0ec7CvgQmy+NTwRtg8KqIXlF5Q=",
+      "rev": "cc67124fa6ed230cda567e598dc9b06e17e23f40",
+      "hash": "sha256-ltYPE6HnQQaUiaIJuFLmj8f5IL1F0hxPfiuW8f+lFIk=",
       "skills": {
         "stripe-best-practices": {
           "name": "stripe-best-practices",
@@ -924,8 +924,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "9603c1cc8118d08bc1b3bf34cf714f62178dea3b",
-      "hash": "sha256-S6pARK99oGGSi6XdFm6zYKHT4gjOCN0wIPZFcl1hREE=",
+      "rev": "ed37663cc5fbef691ddfecd080dff42f7e7e350d",
+      "hash": "sha256-o/H9s3t6ahBqFwpkOMBOTwpsvb33pgvpI9n0PA+uLYM=",
       "skills": {
         "migrate-to-shoehorn": {
           "name": "migrate-to-shoehorn",
