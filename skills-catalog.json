@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "fa0fa64bdc967915dc8399e803be67759e1e62b8",
-      "hash": "sha256-QZ+zJkyLd/42rxgtJEZSUOz9R75Tse6UXW7G0nOkFS8=",
+      "rev": "1f630fdf9259cec4a14913127dfd7c3b69ef72eb",
+      "hash": "sha256-XPXKd05IEiyTPlAPkowfJUal1UfRlxEHo+GgszgHQCI=",
       "skills": {
         "frontend-design": {
           "name": "frontend-design",
@@ -710,8 +710,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "215de3eb058ffddb6b53ea5c050df3ff8a8de396",
-      "hash": "sha256-nvaCchmR5kP3U9DZ8mtGCFeGLasfIOeymyQ/jnmVngI=",
+      "rev": "7db115746a1c25ce4cfa0a5c2b9a1fdc77f0f5b2",
+      "hash": "sha256-bgJELAe4j0zjSwgdWIasmxFcp+7oWvwrry+FLkwxfnA=",
       "skills": {
         "accelint-ts-testing": {
           "name": "accelint-ts-testing",
@@ -891,8 +891,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "cc67124fa6ed230cda567e598dc9b06e17e23f40",
-      "hash": "sha256-ltYPE6HnQQaUiaIJuFLmj8f5IL1F0hxPfiuW8f+lFIk=",
+      "rev": "1b71f4bcc916dcabda8816964091ab23664c84df",
+      "hash": "sha256-r0bIftE82eeHfKP+yhLHBnYH7qjveh0Sn6I81vwYCL0=",
       "skills": {
         "stripe-best-practices": {
           "name": "stripe-best-practices",
@@ -903,6 +903,11 @@
           "name": "stripe-directory",
           "description": "Use when the user wants to find businesses, software, service providers, or partners for a specific industry, workflow, pain point, capability, or job to be done. Also use when the agent needs to programmatically purchase or consume a service. Use Stripe Directory to build a short relevant shortlist, even if the user does not mention Stripe Directory explicitly.",
           "path": "skills/stripe-directory"
+        },
+        "connect-recommend": {
+          "name": "connect-recommend",
+          "description": "Use this skill when the user asks about Stripe Connect configuration, charge patterns, Dashboard access, or how to get started with Connect, is building a marketplace, platform, multi-vendor store, gig platform, or subscription platform, needs to pay out sellers, vendors, or providers, mentions split payments, revenue sharing, multi-party payments, or similar payment distribution concepts, provides a company URL or business description for a recommendation, builds SaaS that routes money between parties (for example, POS, booking, invoicing — not operational SaaS without payment routing), asks about onboarding or KYC for merchants, sellers, and vendors, mentions connected account Dashboard or responsibility configurations, or asks about payment flows, white-label payments, or embedded payments.",
+          "path": "skills/connect-recommend"
         },
         "stripe-projects": {
           "name": "stripe-projects",
@@ -1137,8 +1142,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "3fe2823ce17c1656c222d4b7c59d3f82fbf20143",
-      "hash": "sha256-G+WYJvFPLLAmgnPM9tVL/7a/3xctw1shSFpcW4+fQqs=",
+      "rev": "02c03a9deddad3aef581da053cecf9603b8caba1",
+      "hash": "sha256-0OTvDRsFwkQSwqBJjkgV1j/8QspGi4nhSd3l8W/ViX4=",
       "skills": {
         "cursor-teach": {
           "name": "cursor-teach",
