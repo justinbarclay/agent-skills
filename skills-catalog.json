@@ -294,8 +294,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "4559f18a20c1691c744b4395194290db6a0df5e9",
-      "hash": "sha256-SxkDanZXjdGAzLMPV3kk6gEtlHx7vsGFrTiS97WX+gg=",
+      "rev": "fb0282c76b8bbd709e1a5dadb32bb4aa463cdd9b",
+      "hash": "sha256-qVsylZjIdAt9AN2oPpBjYzUWpkgXoszb+rZB7vc0w+E=",
       "skills": {
         "vercel-optimize": {
           "name": "vercel-optimize",
@@ -891,8 +891,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "1b71f4bcc916dcabda8816964091ab23664c84df",
-      "hash": "sha256-r0bIftE82eeHfKP+yhLHBnYH7qjveh0Sn6I81vwYCL0=",
+      "rev": "84c364c683c58ba8dfbc003d812e6a35f4c97b47",
+      "hash": "sha256-s5gP/wWXA/+104BNPHwluL5c/rnfSlpjANlGPqqu7aY=",
       "skills": {
         "stripe-best-practices": {
           "name": "stripe-best-practices",
@@ -1142,8 +1142,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "02c03a9deddad3aef581da053cecf9603b8caba1",
-      "hash": "sha256-0OTvDRsFwkQSwqBJjkgV1j/8QspGi4nhSd3l8W/ViX4=",
+      "rev": "04166ac89136d36de2a87f24429e6cc307594953",
+      "hash": "sha256-NpkGSGamq+WhjGo1mGw47pSbdCdCmIvmEbJyW8Psruc=",
       "skills": {
         "cursor-teach": {
           "name": "cursor-teach",
