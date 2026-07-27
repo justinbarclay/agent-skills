@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "2471e3f904192d6d51d7a79157704274922972fb",
-      "hash": "sha256-luvGpKFtBEaco8TLplJC4v6kahL1R7q/+M/K6eAvYRE=",
+      "rev": "7829ffd90d973b6325f5f12f1b1226dcace74443",
+      "hash": "sha256-OLjqreMKgYcP4hS8Vm97xpDV29qOPoKVlh1CwVteWqc=",
       "skills": {
         "api-and-interface-design": {
           "name": "api-and-interface-design",
@@ -1152,8 +1152,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "d45ad028b7d50fca8550a33e7b40842e67fea284",
-      "hash": "sha256-7hN7XOQFkiLZzWCXBr1MFCc+n97W+KxmnQynnf3zAZI=",
+      "rev": "ba7b5907843e1e21ec692418c180e1f912cbf7d3",
+      "hash": "sha256-Qu5AhJApxQzZjn88H3Wh0TDx9OqziqyVOdsd+wWB71c=",
       "skills": {
         "cursor-teach": {
           "name": "cursor-teach",
