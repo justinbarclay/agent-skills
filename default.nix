@@ -137,11 +137,12 @@ let
     in
     if collisions != { }
     then
-      throw "agentic-skills: skill name collision(s) for agent '${agentName}': ${
-      lib.concatStringsSep "; " (lib.mapAttrsToList
-        (finalName: skills: "'${finalName}' (${lib.concatStringsSep ", " (map (s: s.origin) skills)})")
-        collisions)
-    }. Rename one of the conflicting skills via its 'name' option."
+      let
+        collisionDetails = lib.concatStringsSep "; " (lib.mapAttrsToList
+          (finalName: skills: "'${finalName}' (${lib.concatStringsSep ", " (map (s: s.origin) skills)})")
+          collisions);
+      in
+      throw "agentic-skills: skill name collision(s) for agent '${agentName}': ${collisionDetails}. Rename one of the conflicting skills via its 'name' option."
     else
       lib.mapAttrs'
         (finalName: skills:
