@@ -98,6 +98,13 @@ def main [
       }
 
       if $result != null {
+        # A fetch that yields nothing means skills_path is wrong, not that the
+        # repo is empty. Fail loudly rather than writing an empty entry.
+        if ($result.skills | is-empty) {
+          error make {
+            msg: $"No SKILL.md files found for ($config.owner)/($config.repo) under skills_path '($config.skills_path)'. Check skills_path in repo_configs."
+          }
+        }
         { key: $key, val: $result }
       } else if ("repos" in ($initial_catalog | columns)) and ($key in ($initial_catalog.repos | columns)) {
         print $"  Using cached data for ($key)."
