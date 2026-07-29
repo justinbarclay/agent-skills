@@ -2,34 +2,34 @@ name: Daily Skills Catalog Update
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Run daily at 08:00 UTC
+    - cron: "0 8 * * *" # Run daily at 08:00 UTC
   workflow_dispatch: # Allow manual triggers
 
 permissions:
   contents: write
 
 jobs:
-  update-catalog:
+  update-catalogue:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
-      
+
       - name: Setup Nix
         uses: DeterminateSystems/determinate-nix-action@v3
 
-      - name: Install Nushell
-        run: nix profile install nixpkgs#nushell
-
       - name: Run update-skills
-        run: nu update-skills.nu
+        run: nix develop -c update-skills
+
+      - name: Regenerate INVENTORY.org
+        run: nix develop -c update-inventory
 
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add skills-catalog.json
-          
+          git add skills-catalog.json INVENTORY.org
+
           # Only commit and push if there are changes
           if ! git diff-index --quiet HEAD; then
             git commit -m "chore(catalog): daily skills catalog update ($(date -u +'%Y-%m-%d %H:%M UTC'))"
