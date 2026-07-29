@@ -49,7 +49,7 @@ def main [
     { key: "stripe", owner: "stripe", repo: "ai", skills_path: "skills" },
     { key: "pocock", owner: "mattpocock", repo: "skills", skills_path: "skills" },
     { key: "cursor", owner: "cursor", repo: "plugins", skills_path: "" },
-    { key: "superpowers", owner: "obra", repo: "superpower", skills_path: "skills" },
+    { key: "superpowers", owner: "obra", repo: "superpowers", skills_path: "skills" },
     { key: "palkan", owner: "palkan", repo: "skills", skills_path: "skills", branch: "master" },
     { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: "skills" }
   ]
