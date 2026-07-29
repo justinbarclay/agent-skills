@@ -51,7 +51,8 @@ def main [
     { key: "cursor", owner: "cursor", repo: "plugins", skills_path: "" },
     { key: "superpowers", owner: "obra", repo: "superpowers", skills_path: "skills" },
     { key: "palkan", owner: "palkan", repo: "skills", skills_path: "", branch: "master" },
-    { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: ".agents/skills" }
+    { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: ".agents/skills" },
+    { key: "statelyai", owner: "statelyai", repo: "skills", skills_path: "skills" }
   ]
 
   let all_repo_keys = ($repo_configs | get key)
