@@ -350,11 +350,6 @@
       "rev": "49f948faa9258a0c61caceaf225e179651397431",
       "hash": "sha256-t4oGnFg0YpxJaQiFpgTiwYhaFoZK6wPDiqvHoG0bXiU=",
       "skills": {
-        "aspnet-core": {
-          "name": "aspnet-core",
-          "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
-          "path": "skills/.curated/aspnet-core"
-        },
         "chatgpt-apps": {
           "name": "chatgpt-apps",
           "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
@@ -475,6 +470,11 @@
           "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
           "path": "skills/.curated/notion-spec-to-implementation"
         },
+        "openai-aspnet-core": {
+          "name": "openai-aspnet-core",
+          "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
+          "path": "skills/.curated/aspnet-core"
+        },
         "openai-docs": {
           "name": "openai-docs",
           "description": "Use when the user asks how to build with OpenAI products or APIs, asks about Codex itself or choosing Codex surfaces, needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; use OpenAI docs MCP tools for non-Codex docs questions, use the Codex manual helper first for broad Codex self-knowledge, and restrict fallback browsing to official OpenAI domains.",
@@ -485,15 +485,20 @@
           "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
           "path": "skills/.curated/pdf"
         },
+        "openai-playwright": {
+          "name": "openai-playwright",
+          "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+          "path": "skills/.curated/playwright"
+        },
+        "openai-security-best-practices": {
+          "name": "openai-security-best-practices",
+          "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+          "path": "skills/.curated/security-best-practices"
+        },
         "openai-skill-creator": {
           "name": "openai-skill-creator",
           "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
           "path": "skills/.system/skill-creator"
-        },
-        "playwright": {
-          "name": "playwright",
-          "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
-          "path": "skills/.curated/playwright"
         },
         "playwright-interactive": {
           "name": "playwright-interactive",
@@ -514,11 +519,6 @@
           "name": "screenshot",
           "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
           "path": "skills/.curated/screenshot"
-        },
-        "security-best-practices": {
-          "name": "security-best-practices",
-          "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
-          "path": "skills/.curated/security-best-practices"
         },
         "security-ownership-map": {
           "name": "security-ownership-map",
@@ -578,6 +578,11 @@
       "rev": "7829ffd90d973b6325f5f12f1b1226dcace74443",
       "hash": "sha256-OLjqreMKgYcP4hS8Vm97xpDV29qOPoKVlh1CwVteWqc=",
       "skills": {
+        "addyosmani-performance-optimization": {
+          "name": "addyosmani-performance-optimization",
+          "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
+          "path": "skills/performance-optimization"
+        },
         "addyosmani-test-driven-development": {
           "name": "addyosmani-test-driven-development",
           "description": "Drives development with tests. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.",
@@ -663,11 +668,6 @@
           "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
           "path": "skills/observability-and-instrumentation"
         },
-        "performance-optimization": {
-          "name": "performance-optimization",
-          "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
-          "path": "skills/performance-optimization"
-        },
         "planning-and-task-breakdown": {
           "name": "planning-and-task-breakdown",
           "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
@@ -705,7 +705,1208 @@
       "repo": "skills",
       "rev": "05a71308897983093248d719a2ffa1bca61d0768",
       "hash": "sha256-yzt6d4fXx5vX8DMFhVWNvooBNEaKwejLzz+6cB8RnMc=",
-      "skills": {}
+      "skills": {
+        "accessibility-a11y": {
+          "name": "accessibility-a11y",
+          "description": "Implement web accessibility (a11y) best practices following WCAG guidelines to create inclusive, accessible user interfaces.",
+          "path": "accessibility-a11y"
+        },
+        "alpine-js": {
+          "name": "alpine-js",
+          "description": "Alpine.js development guidelines for lightweight reactive interactions with Tailwind CSS and various backend frameworks.",
+          "path": "alpine-js"
+        },
+        "analytics-data-analysis": {
+          "name": "analytics-data-analysis",
+          "description": "Best practices for analytics, data analysis, and visualization using Python, pandas, matplotlib, seaborn, and Jupyter notebooks. Use when performing exploratory data analysis, building data pipelines, creating statistical visualizations, writing Jupyter notebooks, cleaning and transforming datasets, or implementing analytics dashboards.",
+          "path": "analytics-data-analysis"
+        },
+        "android-development": {
+          "name": "android-development",
+          "description": "Android development guidelines for Kotlin with clean architecture, MVI pattern, Material Design, and best practices for building robust mobile applications",
+          "path": "android-development"
+        },
+        "angular": {
+          "name": "angular",
+          "description": "Expert in Angular TypeScript development with scalable, high-performance patterns",
+          "path": "angular"
+        },
+        "angular-development": {
+          "name": "angular-development",
+          "description": "Expert guidance for Angular and TypeScript development focused on scalable, high-performance web applications",
+          "path": "angular-development"
+        },
+        "anime-js": {
+          "name": "anime-js",
+          "description": "Expert guidelines for building performant animations with Anime.js animation library",
+          "path": "anime-js"
+        },
+        "anthropic-claude-development": {
+          "name": "anthropic-claude-development",
+          "description": "Expert guidance for Anthropic Claude API development including Messages API, tool use, prompt engineering, and building production applications with Claude models.",
+          "path": "anthropic-claude-development"
+        },
+        "api-development": {
+          "name": "api-development",
+          "description": "Guidelines for building clean, scalable APIs with Go standard library and NestJS TypeScript, covering security, validation, and modular architecture.",
+          "path": "api-development"
+        },
+        "apollo-graphql": {
+          "name": "apollo-graphql",
+          "description": "Guidelines for developing GraphQL APIs and React applications using Apollo Client for state management, data fetching, and caching",
+          "path": "apollo-graphql"
+        },
+        "astro": {
+          "name": "astro",
+          "description": "Expert in Astro framework with static generation and partial hydration patterns",
+          "path": "astro"
+        },
+        "auth0-authentication": {
+          "name": "auth0-authentication",
+          "description": "Guidelines for implementing Auth0 authentication with best practices for security, rules, actions, and SDK integration",
+          "path": "auth0-authentication"
+        },
+        "autogen-development": {
+          "name": "autogen-development",
+          "description": "Expert guidance for Microsoft AutoGen multi-agent framework development including agent creation, conversations, tool integration, and orchestration patterns.",
+          "path": "autogen-development"
+        },
+        "aws-development": {
+          "name": "aws-development",
+          "description": "AWS development best practices for Lambda, SAM, CDK, DynamoDB, IAM, and serverless architecture using Infrastructure as Code.",
+          "path": "aws-development"
+        },
+        "azure": {
+          "name": "azure",
+          "description": "Azure cloud development guidelines for ARM templates, Azure Pipelines, Kubernetes, and cloud-native services.",
+          "path": "azure"
+        },
+        "backend-development": {
+          "name": "backend-development",
+          "description": "Guidelines for backend development in C++ and Elixir/Phoenix, covering modern language features, best practices, and production-ready patterns.",
+          "path": "backend-development"
+        },
+        "bash-scripting": {
+          "name": "bash-scripting",
+          "description": "Bash scripting guidelines covering security, portability, error handling, and automation best practices for DevOps.",
+          "path": "bash-scripting"
+        },
+        "beautifulsoup-parsing": {
+          "name": "beautifulsoup-parsing",
+          "description": "Expert guidance for HTML/XML parsing using BeautifulSoup in Python with best practices for DOM navigation, data extraction, and efficient scraping workflows.",
+          "path": "beautifulsoup-parsing"
+        },
+        "bitbucket-workflow": {
+          "name": "bitbucket-workflow",
+          "description": "Bitbucket best practices for pull requests, Pipelines CI/CD, Jira integration, and Atlassian ecosystem workflows",
+          "path": "bitbucket-workflow"
+        },
+        "blazor": {
+          "name": "blazor",
+          "description": "Guidelines for Blazor development including component lifecycle, state management, and performance optimization",
+          "path": "blazor"
+        },
+        "blockchain": {
+          "name": "blockchain",
+          "description": "Expert guidelines for blockchain development including CosmWasm, Cosmos, and cross-chain patterns",
+          "path": "blockchain"
+        },
+        "bootstrap": {
+          "name": "bootstrap",
+          "description": "Bootstrap development guidelines for responsive layouts, components, and utility-first styling.",
+          "path": "bootstrap"
+        },
+        "business-central-development": {
+          "name": "business-central-development",
+          "description": "Expert guidance for Microsoft Dynamics 365 Business Central development using AL language and extensions",
+          "path": "business-central-development"
+        },
+        "c-sharp": {
+          "name": "c-sharp",
+          "description": "Guidelines for C# development including Blazor, Unity game development, and .NET backend best practices",
+          "path": "c-sharp"
+        },
+        "cheerio-parsing": {
+          "name": "cheerio-parsing",
+          "description": "Expert guidance for HTML/XML parsing using Cheerio in Node.js with best practices for DOM traversal, data extraction, and efficient scraping pipelines.",
+          "path": "cheerio-parsing"
+        },
+        "chrome-extension-development": {
+          "name": "chrome-extension-development",
+          "description": "Expert guidelines for Chrome extension development with Manifest V3, covering security, performance, and best practices. Use when building browser extensions, creating popup UIs, implementing content scripts, working with Chrome APIs, managing extension permissions, or publishing to Chrome Web Store.",
+          "path": "chrome-extension-development"
+        },
+        "ci-cd-best-practices": {
+          "name": "ci-cd-best-practices",
+          "description": "CI/CD best practices for building automated pipelines, deployment strategies, testing, and DevOps workflows across platforms",
+          "path": "ci-cd-best-practices"
+        },
+        "clean-architecture": {
+          "name": "clean-architecture",
+          "description": "Guidelines for implementing Clean Architecture patterns in Flutter and Go applications, with emphasis on separation of concerns, dependency rules, and testability.",
+          "path": "clean-architecture"
+        },
+        "clerk-authentication": {
+          "name": "clerk-authentication",
+          "description": "Guidelines for implementing Clerk authentication in Next.js applications with middleware, hooks, and security best practices",
+          "path": "clerk-authentication"
+        },
+        "cloudflare-development": {
+          "name": "cloudflare-development",
+          "description": "Cloudflare Workers, Pages, KV, D1, R2, and Durable Objects development best practices for edge computing applications.",
+          "path": "cloudflare-development"
+        },
+        "computer-vision-opencv": {
+          "name": "computer-vision-opencv",
+          "description": "Expert guidance for computer vision development using OpenCV, PyTorch, and modern deep learning techniques for image and video processing.",
+          "path": "computer-vision-opencv"
+        },
+        "convex": {
+          "name": "convex",
+          "description": "Guidelines for developing with Convex backend-as-a-service platform, covering queries, mutations, actions, and real-time data patterns",
+          "path": "convex"
+        },
+        "cpp": {
+          "name": "cpp",
+          "description": "Guidelines for modern C++ development with C++17/20 standards, memory safety, and performance optimization",
+          "path": "cpp"
+        },
+        "css": {
+          "name": "css",
+          "description": "Best practices for CSS development including modern layout techniques, naming conventions, theming, and maintainable stylesheet architecture",
+          "path": "css"
+        },
+        "cypress": {
+          "name": "cypress",
+          "description": "Cypress end-to-end testing best practices for web applications, covering test structure, commands, and reliability patterns.",
+          "path": "cypress"
+        },
+        "data-analysis-jupyter": {
+          "name": "data-analysis-jupyter",
+          "description": "Expert guidance for data analysis, visualization, and Jupyter Notebook development with pandas, matplotlib, seaborn, and numpy.",
+          "path": "data-analysis-jupyter"
+        },
+        "data-analyst": {
+          "name": "data-analyst",
+          "description": "Data analysis best practices with pandas, numpy, matplotlib, seaborn, and Jupyter notebooks.",
+          "path": "data-analyst"
+        },
+        "data-jupyter-python": {
+          "name": "data-jupyter-python",
+          "description": "Guidelines for data analysis and Jupyter Notebook development with pandas, matplotlib, seaborn, and numpy.",
+          "path": "data-jupyter-python"
+        },
+        "deep-learning": {
+          "name": "deep-learning",
+          "description": "Comprehensive deep learning guidelines for neural network development, training, and optimization.",
+          "path": "deep-learning"
+        },
+        "deep-learning-python": {
+          "name": "deep-learning-python",
+          "description": "Guidelines for deep learning development with PyTorch, Transformers, Diffusers, and Gradio for LLM and diffusion model work.",
+          "path": "deep-learning-python"
+        },
+        "deep-learning-pytorch": {
+          "name": "deep-learning-pytorch",
+          "description": "Expert guidance for deep learning, transformers, diffusion models, and LLM development with PyTorch, Transformers, Diffusers, and Gradio.",
+          "path": "deep-learning-pytorch"
+        },
+        "deno-typescript": {
+          "name": "deno-typescript",
+          "description": "Guidelines for developing with Deno and TypeScript using modern runtime features, security model, and native tooling",
+          "path": "deno-typescript"
+        },
+        "design-systems": {
+          "name": "design-systems",
+          "description": "Comprehensive design system guidelines for building consistent, accessible, and scalable component libraries. Use when creating design tokens, building component libraries, implementing design systems, setting up theming architecture, or establishing UI governance processes.",
+          "path": "design-systems"
+        },
+        "devops": {
+          "name": "devops",
+          "description": "Comprehensive DevOps engineering practices for Kubernetes, CI/CD, Bash scripting, Ansible, and cloud infrastructure.",
+          "path": "devops"
+        },
+        "django-python": {
+          "name": "django-python",
+          "description": "Expert in Django Python web development with best practices",
+          "path": "django-python"
+        },
+        "django-rest-api-development": {
+          "name": "django-rest-api-development",
+          "description": "Comprehensive guidelines for building scalable Django REST APIs with proper architecture, authentication, and performance optimization.",
+          "path": "django-rest-api-development"
+        },
+        "docker": {
+          "name": "docker",
+          "description": "Docker containerization best practices for building, securing, and deploying containers.",
+          "path": "docker"
+        },
+        "dotnet": {
+          "name": "dotnet",
+          "description": "Guidelines for .NET backend development with C#, ASP.NET Core, and Entity Framework Core",
+          "path": "dotnet"
+        },
+        "drizzle-orm": {
+          "name": "drizzle-orm",
+          "description": "Guidelines for developing with Drizzle ORM, a lightweight type-safe TypeScript ORM with SQL-like syntax",
+          "path": "drizzle-orm"
+        },
+        "drupal-development": {
+          "name": "drupal-development",
+          "description": "Expert guidance for Drupal 10 module development with PHP 8+, SOLID principles, and Drupal coding standards",
+          "path": "drupal-development"
+        },
+        "elasticsearch-best-practices": {
+          "name": "elasticsearch-best-practices",
+          "description": "Elasticsearch development best practices for indexing, querying, and search optimization",
+          "path": "elasticsearch-best-practices"
+        },
+        "electron-development": {
+          "name": "electron-development",
+          "description": "Electron development guidelines for building cross-platform desktop applications with JavaScript/TypeScript",
+          "path": "electron-development"
+        },
+        "elixir": {
+          "name": "elixir",
+          "description": "Expert in Elixir and Phoenix development with functional programming patterns",
+          "path": "elixir"
+        },
+        "esbuild-bundler": {
+          "name": "esbuild-bundler",
+          "description": "Best practices and guidelines for esbuild, the ultra-fast JavaScript and TypeScript bundler and minifier",
+          "path": "esbuild-bundler"
+        },
+        "ethereum": {
+          "name": "ethereum",
+          "description": "Expert guidelines for Ethereum smart contract development with Solidity, OpenZeppelin, and Hardhat",
+          "path": "ethereum"
+        },
+        "expo-react-native-javascript-best-practices": {
+          "name": "expo-react-native-javascript-best-practices",
+          "description": "Expo React Native JavaScript best practices for clean code, functional components, performance optimization, and Expo Router navigation.",
+          "path": "expo-react-native-javascript-best-practices"
+        },
+        "expo-react-native-typescript": {
+          "name": "expo-react-native-typescript",
+          "description": "Expert in Expo React Native TypeScript mobile development with best practices",
+          "path": "expo-react-native-typescript"
+        },
+        "express-typescript": {
+          "name": "express-typescript",
+          "description": "Guidelines for building robust APIs with Express.js and TypeScript, covering middleware patterns, routing, and security best practices",
+          "path": "express-typescript"
+        },
+        "fastapi-microservices-serverless": {
+          "name": "fastapi-microservices-serverless",
+          "description": "Expert in FastAPI microservices for serverless and cloud-native environments",
+          "path": "fastapi-microservices-serverless"
+        },
+        "fastapi-python": {
+          "name": "fastapi-python",
+          "description": "Expert in FastAPI Python development with best practices for APIs and async operations",
+          "path": "fastapi-python"
+        },
+        "fastify-typescript": {
+          "name": "fastify-typescript",
+          "description": "Guidelines for building high-performance APIs with Fastify and TypeScript, covering validation, Prisma integration, and testing best practices",
+          "path": "fastify-typescript"
+        },
+        "figma-integration": {
+          "name": "figma-integration",
+          "description": "Guidelines for integrating Figma designs with development workflows using MCP servers and best practices",
+          "path": "figma-integration"
+        },
+        "firebase-development": {
+          "name": "firebase-development",
+          "description": "Firebase development guidelines for Firestore, Authentication, Functions, and Storage with TypeScript and Angular.",
+          "path": "firebase-development"
+        },
+        "flask-python": {
+          "name": "flask-python",
+          "description": "Guidelines for Flask Python development with best practices for blueprints, RESTful APIs, and application factories.",
+          "path": "flask-python"
+        },
+        "flutter": {
+          "name": "flutter",
+          "description": "Expert in Flutter and Dart development with clean architecture and state management",
+          "path": "flutter"
+        },
+        "fpga": {
+          "name": "fpga",
+          "description": "FPGA development guidelines covering Vivado, SystemVerilog, timing closure, AXI interfaces, and hardware optimization.",
+          "path": "fpga"
+        },
+        "framer-motion": {
+          "name": "framer-motion",
+          "description": "Expert guidelines for building performant animations with Framer Motion/Motion library in React applications",
+          "path": "framer-motion"
+        },
+        "front-end-developer": {
+          "name": "front-end-developer",
+          "description": "Senior Front-End Developer expertise in ReactJS, NextJS, JavaScript, TypeScript, HTML, CSS, and modern UI/UX frameworks",
+          "path": "front-end-developer"
+        },
+        "game-development": {
+          "name": "game-development",
+          "description": "Expert guidance for game development with C#/Unity, Lua scripting, and best practices for scalable game architecture",
+          "path": "game-development"
+        },
+        "gcp-development": {
+          "name": "gcp-development",
+          "description": "Google Cloud Platform (GCP) development best practices for Cloud Functions, Cloud Run, Firestore, BigQuery, and Infrastructure as Code.",
+          "path": "gcp-development"
+        },
+        "general-best-practices": {
+          "name": "general-best-practices",
+          "description": "General software development best practices covering code quality, testing, security, performance, and maintainability across technology stacks",
+          "path": "general-best-practices"
+        },
+        "ghost": {
+          "name": "ghost",
+          "description": "Ghost CMS theme development with Handlebars templating, Alpine.js, Tailwind CSS, and performance optimization",
+          "path": "ghost"
+        },
+        "git-workflow": {
+          "name": "git-workflow",
+          "description": "Git conventions and workflow guidelines using Conventional Commits, branching strategies, and best practices for version control",
+          "path": "git-workflow"
+        },
+        "github-workflow": {
+          "name": "github-workflow",
+          "description": "GitHub best practices for pull requests, code reviews, issues, Actions workflows, and repository management",
+          "path": "github-workflow"
+        },
+        "gitlab-workflow": {
+          "name": "gitlab-workflow",
+          "description": "GitLab best practices for merge requests, CI/CD pipelines, issue tracking, and DevOps workflows",
+          "path": "gitlab-workflow"
+        },
+        "go": {
+          "name": "go",
+          "description": "Expert in Go/Golang development with focus on APIs, microservices, and clean architecture",
+          "path": "go"
+        },
+        "go-api-development": {
+          "name": "go-api-development",
+          "description": "Go API development guidelines using the standard library (1.22+) with best practices for RESTful API design, error handling, and security",
+          "path": "go-api-development"
+        },
+        "go-backend-microservices": {
+          "name": "go-backend-microservices",
+          "description": "Go backend development best practices for microservices with clean architecture, observability, and production-ready patterns",
+          "path": "go-backend-microservices"
+        },
+        "graalvm": {
+          "name": "graalvm",
+          "description": "Expert guidance for GraalVM native image development with Java frameworks, build optimization, and high-performance application deployment",
+          "path": "graalvm"
+        },
+        "graphql": {
+          "name": "graphql",
+          "description": "Expert in GraphQL API development with type-safe patterns and optimization",
+          "path": "graphql"
+        },
+        "graphql-development": {
+          "name": "graphql-development",
+          "description": "GraphQL development guidelines with type-safe clients, schema design, and integration with React and Next.js.",
+          "path": "graphql-development"
+        },
+        "grpc-development": {
+          "name": "grpc-development",
+          "description": "Best practices for building high-performance services with gRPC and Protocol Buffers. Use when designing RPC services, defining protobuf schemas, implementing streaming APIs, setting up gRPC interceptors, or building cross-language service communication.",
+          "path": "grpc-development"
+        },
+        "gsap": {
+          "name": "gsap",
+          "description": "Expert guidelines for building high-performance animations with GSAP (GreenSock Animation Platform)",
+          "path": "gsap"
+        },
+        "hono-typescript": {
+          "name": "hono-typescript",
+          "description": "Guidelines for building edge-first, high-performance APIs with Hono and TypeScript for Cloudflare Workers, Deno, Bun, and Node.js",
+          "path": "hono-typescript"
+        },
+        "html": {
+          "name": "html",
+          "description": "Guidelines for semantic HTML markup, document structure, forms, accessibility attributes, and modern HTML best practices",
+          "path": "html"
+        },
+        "htmx": {
+          "name": "htmx",
+          "description": "HTMX development guidelines for building dynamic web applications with minimal JavaScript using HTML attributes.",
+          "path": "htmx"
+        },
+        "internationalization-i18n": {
+          "name": "internationalization-i18n",
+          "description": "Implement internationalization (i18n) best practices for web and mobile applications to support multiple languages and locales.",
+          "path": "internationalization-i18n"
+        },
+        "ionic": {
+          "name": "ionic",
+          "description": "Ionic development guidelines for building cross-platform mobile applications with Angular, Cordova, and Firebase integration.",
+          "path": "ionic"
+        },
+        "java": {
+          "name": "java",
+          "description": "Expert in Java development with Spring Boot and enterprise patterns",
+          "path": "java"
+        },
+        "java-quarkus-development": {
+          "name": "java-quarkus-development",
+          "description": "Java Quarkus development guidelines for building cloud-native applications with fast startup, minimal memory footprint, and GraalVM native builds",
+          "path": "java-quarkus-development"
+        },
+        "java-spring-development": {
+          "name": "java-spring-development",
+          "description": "Java Spring Boot development guidelines with best practices for building robust, secure, and maintainable enterprise applications",
+          "path": "java-spring-development"
+        },
+        "jax-best-practices": {
+          "name": "jax-best-practices",
+          "description": "Expert in JAX for high-performance numerical computing and machine learning",
+          "path": "jax-best-practices"
+        },
+        "jest": {
+          "name": "jest",
+          "description": "Jest testing best practices for JavaScript and TypeScript applications, covering test structure, mocking, and assertion patterns.",
+          "path": "jest"
+        },
+        "julia": {
+          "name": "julia",
+          "description": "Julia development guidelines covering multiple dispatch, type system, performance optimization, and scientific computing best practices.",
+          "path": "julia"
+        },
+        "jwt-security": {
+          "name": "jwt-security",
+          "description": "Guidelines for implementing JWT authentication with security best practices for token creation, validation, and storage",
+          "path": "jwt-security"
+        },
+        "kafka-development": {
+          "name": "kafka-development",
+          "description": "Best practices for Apache Kafka event streaming and distributed messaging. Use when building event-driven architectures, implementing producer/consumer patterns, designing topic partitioning strategies, setting up Kafka Streams, configuring schema registries, or integrating change data capture pipelines.",
+          "path": "kafka-development"
+        },
+        "koa-typescript": {
+          "name": "koa-typescript",
+          "description": "Guidelines for building modern APIs with Koa.js and TypeScript, featuring the onion middleware model and async/await patterns",
+          "path": "koa-typescript"
+        },
+        "kotlin-development": {
+          "name": "kotlin-development",
+          "description": "Kotlin development guidelines with best practices for clean code, naming conventions, function design, and data handling",
+          "path": "kotlin-development"
+        },
+        "kubernetes": {
+          "name": "kubernetes",
+          "description": "Expert in Kubernetes and DevOps with infrastructure-as-code and cloud-native patterns",
+          "path": "kubernetes"
+        },
+        "kysely": {
+          "name": "kysely",
+          "description": "Guidelines for developing with Kysely, a type-safe TypeScript SQL query builder with autocompletion support",
+          "path": "kysely"
+        },
+        "langchain-development": {
+          "name": "langchain-development",
+          "description": "Expert guidance for LangChain and LangGraph development with Python, covering chain composition, agents, memory, and RAG implementations.",
+          "path": "langchain-development"
+        },
+        "laravel": {
+          "name": "laravel",
+          "description": "Expert in Laravel PHP development with best practices and modern patterns",
+          "path": "laravel"
+        },
+        "laravel-development": {
+          "name": "laravel-development",
+          "description": "Expert guidance for Laravel PHP development following best practices, SOLID principles, and Laravel conventions",
+          "path": "laravel-development"
+        },
+        "lerna": {
+          "name": "lerna",
+          "description": "Best practices for Lerna monorepo management, versioning, and publishing",
+          "path": "lerna"
+        },
+        "less-best-practices": {
+          "name": "less-best-practices",
+          "description": "Less CSS best practices and coding guidelines for maintainable, modular stylesheets",
+          "path": "less-best-practices"
+        },
+        "llamaindex-development": {
+          "name": "llamaindex-development",
+          "description": "Expert guidance for LlamaIndex development including RAG applications, vector stores, document processing, query engines, and building production AI applications.",
+          "path": "llamaindex-development"
+        },
+        "llm": {
+          "name": "llm",
+          "description": "Large Language Model development, training, fine-tuning, and deployment best practices.",
+          "path": "llm"
+        },
+        "localization-l10n": {
+          "name": "localization-l10n",
+          "description": "Implement localization (l10n) best practices to adapt applications for specific regions, languages, and cultural preferences.",
+          "path": "localization-l10n"
+        },
+        "logging-best-practices": {
+          "name": "logging-best-practices",
+          "description": "Logging best practices for applications and services including structured logging, log levels, and log management strategies",
+          "path": "logging-best-practices"
+        },
+        "lottie": {
+          "name": "lottie",
+          "description": "Expert guidelines for implementing performant Lottie animations on the web",
+          "path": "lottie"
+        },
+        "lua": {
+          "name": "lua",
+          "description": "Lua development guidelines covering tables, metatables, error handling, game development, and performance optimization.",
+          "path": "lua"
+        },
+        "machine-learning": {
+          "name": "machine-learning",
+          "description": "Machine learning development with JAX, functional programming patterns, and high-performance computing.",
+          "path": "machine-learning"
+        },
+        "matplotlib-best-practices": {
+          "name": "matplotlib-best-practices",
+          "description": "Best practices for Matplotlib data visualization, plotting, and creating publication-quality figures in Python",
+          "path": "matplotlib-best-practices"
+        },
+        "meta-prompt": {
+          "name": "meta-prompt",
+          "description": "Meta-prompting framework for critiquing responses, analyzing solution trajectories, and evaluating AI-generated content quality",
+          "path": "meta-prompt"
+        },
+        "micronaut": {
+          "name": "micronaut",
+          "description": "Expert guidance for Micronaut framework development with compile-time dependency injection, GraalVM native builds, and cloud-native microservices",
+          "path": "micronaut"
+        },
+        "microservices": {
+          "name": "microservices",
+          "description": "Guidelines for building production-grade microservices with FastAPI/Python and Go, covering serverless patterns, clean architecture, observability, and resilience.",
+          "path": "microservices"
+        },
+        "mindrally-aspnet-core": {
+          "name": "mindrally-aspnet-core",
+          "description": "Guidelines for ASP.NET Core web development covering API design, authentication, caching, and best practices",
+          "path": "aspnet-core"
+        },
+        "mindrally-performance-optimization": {
+          "name": "mindrally-performance-optimization",
+          "description": "Performance optimization guidelines for web development including server-side rendering, CSS best practices, and JavaScript optimization",
+          "path": "performance-optimization"
+        },
+        "mindrally-playwright": {
+          "name": "mindrally-playwright",
+          "description": "Playwright end-to-end testing best practices for web applications, covering test design, locator strategies, and assertion patterns.",
+          "path": "playwright"
+        },
+        "mindrally-security-best-practices": {
+          "name": "mindrally-security-best-practices",
+          "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
+          "path": "security-best-practices"
+        },
+        "modern-web-development": {
+          "name": "modern-web-development",
+          "description": "Modern web development best practices for TypeScript, Next.js 14, React Server Components, Supabase, GraphQL, and Tailwind CSS.",
+          "path": "modern-web-development"
+        },
+        "mongodb-development": {
+          "name": "mongodb-development",
+          "description": "MongoDB development guidelines with Payload CMS, Mongoose, aggregation pipelines, and TypeScript best practices.",
+          "path": "mongodb-development"
+        },
+        "monitoring-guidelines": {
+          "name": "monitoring-guidelines",
+          "description": "Monitoring guidelines for applications and infrastructure including metrics collection, alerting strategies, and SLO-based monitoring",
+          "path": "monitoring-guidelines"
+        },
+        "monorepo": {
+          "name": "monorepo",
+          "description": "Best practices for monorepo development with TypeScript, React, Next.js, Expo, Turbo, and related technologies",
+          "path": "monorepo"
+        },
+        "monorepo-tamagui": {
+          "name": "monorepo-tamagui",
+          "description": "Monorepo development guidelines using Tamagui, Turbo, Next.js, Expo, Supabase, and cross-platform best practices.",
+          "path": "monorepo-tamagui"
+        },
+        "motion": {
+          "name": "motion",
+          "description": "Expert guidelines for building performant animations with Motion (formerly Motion One) vanilla JavaScript animation library",
+          "path": "motion"
+        },
+        "mqtt-development": {
+          "name": "mqtt-development",
+          "description": "Best practices and guidelines for MQTT messaging in IoT and real-time communication systems",
+          "path": "mqtt-development"
+        },
+        "mysql-best-practices": {
+          "name": "mysql-best-practices",
+          "description": "MySQL development best practices for schema design, query optimization, and database administration",
+          "path": "mysql-best-practices"
+        },
+        "nestjs-clean-typescript": {
+          "name": "nestjs-clean-typescript",
+          "description": "Clean NestJS API development with TypeScript following SOLID principles, modular architecture, and comprehensive testing practices.",
+          "path": "nestjs-clean-typescript"
+        },
+        "netlify-development": {
+          "name": "netlify-development",
+          "description": "Netlify development best practices for serverless functions, edge functions, Blobs storage, build configuration, and deployment workflows.",
+          "path": "netlify-development"
+        },
+        "nextauth-authentication": {
+          "name": "nextauth-authentication",
+          "description": "Guidelines for implementing NextAuth.js (Auth.js v5) authentication in Next.js applications with session management and security best practices",
+          "path": "nextauth-authentication"
+        },
+        "nextjs-react-redux-typescript-cursor-rules": {
+          "name": "nextjs-react-redux-typescript-cursor-rules",
+          "description": "Comprehensive Next.js, React, Redux, and TypeScript development guidelines covering SOLID principles, component architecture, and best practices.",
+          "path": "nextjs-react-redux-typescript-cursor-rules"
+        },
+        "nextjs-react-typescript": {
+          "name": "nextjs-react-typescript",
+          "description": "Expert in TypeScript, Node.js, Next.js App Router, React, Shadcn UI, Radix UI and Tailwind",
+          "path": "nextjs-react-typescript"
+        },
+        "nextjs-typescript-tailwindcss-supabase": {
+          "name": "nextjs-typescript-tailwindcss-supabase",
+          "description": "Full-stack Next.js 14 development with TypeScript, TailwindCSS, and Supabase for building production-ready web applications.",
+          "path": "nextjs-typescript-tailwindcss-supabase"
+        },
+        "nlp-natural-language-processing": {
+          "name": "nlp-natural-language-processing",
+          "description": "Expert guidance for natural language processing development using transformers, spaCy, NLTK, and modern NLP techniques.",
+          "path": "nlp-natural-language-processing"
+        },
+        "nodejs-development": {
+          "name": "nodejs-development",
+          "description": "Node.js development guidelines covering Payload CMS, Vue.js with TypeScript, and general TypeScript best practices",
+          "path": "nodejs-development"
+        },
+        "numpy-best-practices": {
+          "name": "numpy-best-practices",
+          "description": "Best practices for NumPy array programming, numerical computing, and performance optimization in Python",
+          "path": "numpy-best-practices"
+        },
+        "nuxtjs-vue-typescript": {
+          "name": "nuxtjs-vue-typescript",
+          "description": "NuxtJS and Vue 3 development with TypeScript, Composition API, Shadcn Vue, and Tailwind CSS for modern web applications.",
+          "path": "nuxtjs-vue-typescript"
+        },
+        "nx": {
+          "name": "nx",
+          "description": "Best practices for Nx monorepo development, project configuration, and code generation",
+          "path": "nx"
+        },
+        "oauth-implementation": {
+          "name": "oauth-implementation",
+          "description": "Guidelines for implementing OAuth 2.0 and OAuth 2.1 authentication flows with security best practices and PKCE",
+          "path": "oauth-implementation"
+        },
+        "observability-guidelines": {
+          "name": "observability-guidelines",
+          "description": "Observability guidelines for distributed systems using OpenTelemetry, tracing, metrics, and structured logging",
+          "path": "observability-guidelines"
+        },
+        "odoo-development": {
+          "name": "odoo-development",
+          "description": "Expert guidance for Odoo ERP development including Python ORM, XML views, and module architecture",
+          "path": "odoo-development"
+        },
+        "onchainkit": {
+          "name": "onchainkit",
+          "description": "Expert guidance for building onchain applications with OnchainKit SDK components and utilities",
+          "path": "onchainkit"
+        },
+        "openai-api-development": {
+          "name": "openai-api-development",
+          "description": "Expert guidance for OpenAI API development including GPT models, Assistants API, function calling, embeddings, and best practices for production applications.",
+          "path": "openai-api-development"
+        },
+        "optimized-nextjs-typescript": {
+          "name": "optimized-nextjs-typescript",
+          "description": "Optimized Next.js TypeScript best practices with modern UI/UX, focusing on performance, security, and clean architecture",
+          "path": "optimized-nextjs-typescript"
+        },
+        "pandas-best-practices": {
+          "name": "pandas-best-practices",
+          "description": "Best practices for Pandas data manipulation, analysis, and DataFrame operations in Python",
+          "path": "pandas-best-practices"
+        },
+        "parcel-bundler": {
+          "name": "parcel-bundler",
+          "description": "Best practices and guidelines for Parcel, the zero-configuration web application bundler",
+          "path": "parcel-bundler"
+        },
+        "phoenix": {
+          "name": "phoenix",
+          "description": "Phoenix framework development guidelines covering LiveView, Ecto, real-time features, and best practices for building scalable web applications with Elixir.",
+          "path": "phoenix"
+        },
+        "php-development": {
+          "name": "php-development",
+          "description": "Expert guidance for PHP 8+ development with SOLID principles, PSR standards, and modern best practices",
+          "path": "php-development"
+        },
+        "pixi-js": {
+          "name": "pixi-js",
+          "description": "Expert guidance for Pixi.js game development with TypeScript, focusing on high-performance web and mobile games",
+          "path": "pixi-js"
+        },
+        "playwright-cursor-rules": {
+          "name": "playwright-cursor-rules",
+          "description": "Expert guidance for Playwright end-to-end testing with TypeScript and JavaScript best practices",
+          "path": "playwright-cursor-rules"
+        },
+        "pnpm": {
+          "name": "pnpm",
+          "description": "Best practices for pnpm package manager, workspace management, and monorepo configuration",
+          "path": "pnpm"
+        },
+        "postcss-best-practices": {
+          "name": "postcss-best-practices",
+          "description": "PostCSS best practices and configuration guidelines for modern CSS processing and optimization",
+          "path": "postcss-best-practices"
+        },
+        "postgresql-best-practices": {
+          "name": "postgresql-best-practices",
+          "description": "PostgreSQL development best practices for schema design, query optimization, and database administration",
+          "path": "postgresql-best-practices"
+        },
+        "prisma": {
+          "name": "prisma",
+          "description": "Expert in Prisma ORM with type-safe database operations and schema design",
+          "path": "prisma"
+        },
+        "prisma-development": {
+          "name": "prisma-development",
+          "description": "Comprehensive Prisma ORM development guidelines with TypeScript, schema design, migrations, and best practices.",
+          "path": "prisma-development"
+        },
+        "puppeteer-automation": {
+          "name": "puppeteer-automation",
+          "description": "Expert guidance for browser automation using Puppeteer with best practices for web scraping, testing, screenshot capture, and JavaScript execution in headless Chrome.",
+          "path": "puppeteer-automation"
+        },
+        "pwa-development": {
+          "name": "pwa-development",
+          "description": "Progressive Web App development guidelines covering service workers, caching strategies, offline functionality, and installability",
+          "path": "pwa-development"
+        },
+        "python": {
+          "name": "python",
+          "description": "Expert in Python development with best practices across web, data science, and automation",
+          "path": "python"
+        },
+        "python-cybersecurity-tool-development": {
+          "name": "python-cybersecurity-tool-development",
+          "description": "Guidelines for building Python cybersecurity tools with secure coding practices, async scanning, and structured security testing.",
+          "path": "python-cybersecurity-tool-development"
+        },
+        "python-odoo-cursor-rules": {
+          "name": "python-odoo-cursor-rules",
+          "description": "Guidelines for Python and Odoo enterprise application development with ORM, XML views, and module architecture best practices.",
+          "path": "python-odoo-cursor-rules"
+        },
+        "python-testing": {
+          "name": "python-testing",
+          "description": "Expert in Python testing with pytest and test-driven development",
+          "path": "python-testing"
+        },
+        "python-uv": {
+          "name": "python-uv",
+          "description": "Guidelines for Python dependency management using uv, the fast Python package installer and resolver.",
+          "path": "python-uv"
+        },
+        "pytorch": {
+          "name": "pytorch",
+          "description": "PyTorch deep learning development with transformers, diffusion models, and GPU optimization.",
+          "path": "pytorch"
+        },
+        "quarkus": {
+          "name": "quarkus",
+          "description": "Expert guidance for Quarkus framework development with Jakarta EE, MicroProfile, GraalVM native builds, and reactive programming patterns",
+          "path": "quarkus"
+        },
+        "rabbitmq-development": {
+          "name": "rabbitmq-development",
+          "description": "Best practices and guidelines for RabbitMQ message queue development with AMQP protocol",
+          "path": "rabbitmq-development"
+        },
+        "react": {
+          "name": "react",
+          "description": "Expert in React development with modern patterns, hooks, and performance optimization",
+          "path": "react"
+        },
+        "react-native-cursor-rules": {
+          "name": "react-native-cursor-rules",
+          "description": "React Native development best practices for TypeScript, functional components, performance optimization, and styling guidelines.",
+          "path": "react-native-cursor-rules"
+        },
+        "react-native-r3f": {
+          "name": "react-native-r3f",
+          "description": "Expert guidance for React Three Fiber development with React, Vite, Tailwind CSS, and three.js",
+          "path": "react-native-r3f"
+        },
+        "react-query": {
+          "name": "react-query",
+          "description": "Guidelines for using React Query for data fetching, caching, and server state synchronization in React applications",
+          "path": "react-query"
+        },
+        "redis-best-practices": {
+          "name": "redis-best-practices",
+          "description": "Redis development best practices for caching, data structures, and high-performance key-value operations",
+          "path": "redis-best-practices"
+        },
+        "redux-toolkit": {
+          "name": "redux-toolkit",
+          "description": "Comprehensive Redux Toolkit best practices for React and Next.js applications with TypeScript.",
+          "path": "redux-toolkit"
+        },
+        "remix": {
+          "name": "remix",
+          "description": "Expert guidance for Remix development with TypeScript, loaders/actions, nested routes, and full-stack web application best practices",
+          "path": "remix"
+        },
+        "responsive-design": {
+          "name": "responsive-design",
+          "description": "Comprehensive guidelines for responsive web design including mobile-first approach, flexible layouts, media queries, and cross-device optimization",
+          "path": "responsive-design"
+        },
+        "rest-api-django": {
+          "name": "rest-api-django",
+          "description": "Comprehensive guidelines for Django REST API development covering project structure, views, models, serializers, authentication, performance, and error handling.",
+          "path": "rest-api-django"
+        },
+        "robocorp-cursor-rules": {
+          "name": "robocorp-cursor-rules",
+          "description": "Guidelines for building RoboCorp RPA automation with Python, emphasizing functional programming, Pydantic validation, and async operations.",
+          "path": "robocorp-cursor-rules"
+        },
+        "rollup-bundler": {
+          "name": "rollup-bundler",
+          "description": "Best practices and guidelines for Rollup.js module bundler configuration, ES modules, and library bundling",
+          "path": "rollup-bundler"
+        },
+        "rspec": {
+          "name": "rspec",
+          "description": "RSpec testing best practices for Ruby and Rails applications, covering test organization, data management, and isolation patterns.",
+          "path": "rspec"
+        },
+        "ruby": {
+          "name": "ruby",
+          "description": "Ruby development guidelines covering idiomatic code style, Ruby 3.x features, testing with RSpec, and best practices for building maintainable Ruby applications.",
+          "path": "ruby"
+        },
+        "ruby-rails": {
+          "name": "ruby-rails",
+          "description": "Expert in Ruby and Rails development with conventions and best practices",
+          "path": "ruby-rails"
+        },
+        "rust": {
+          "name": "rust",
+          "description": "Expert in Rust development with focus on safety, performance, and async programming",
+          "path": "rust"
+        },
+        "salesforce-development": {
+          "name": "salesforce-development",
+          "description": "Expert guidance for Salesforce development including Apex, Lightning Web Components, and metadata best practices",
+          "path": "salesforce-development"
+        },
+        "salesforce-dx": {
+          "name": "salesforce-dx",
+          "description": "Expert guidance for Salesforce DX development with modern tooling, source-driven development, and CI/CD best practices",
+          "path": "salesforce-dx"
+        },
+        "sanity": {
+          "name": "sanity",
+          "description": "Sanity CMS development guidelines for schema creation, GROQ queries, TypeScript integration, and project organization",
+          "path": "sanity"
+        },
+        "sass-best-practices": {
+          "name": "sass-best-practices",
+          "description": "Sass (indented syntax) best practices and coding guidelines for clean, maintainable stylesheets",
+          "path": "sass-best-practices"
+        },
+        "scikit-learn-best-practices": {
+          "name": "scikit-learn-best-practices",
+          "description": "Best practices for scikit-learn machine learning, model development, evaluation, and deployment in Python",
+          "path": "scikit-learn-best-practices"
+        },
+        "scipy-best-practices": {
+          "name": "scipy-best-practices",
+          "description": "Best practices for SciPy scientific computing, optimization, signal processing, and statistical analysis in Python",
+          "path": "scipy-best-practices"
+        },
+        "scrapy-web-scraping": {
+          "name": "scrapy-web-scraping",
+          "description": "Expert guidance for building web scrapers and crawlers using the Scrapy Python framework with best practices for spider development, data extraction, and pipeline management.",
+          "path": "scrapy-web-scraping"
+        },
+        "scss-best-practices": {
+          "name": "scss-best-practices",
+          "description": "SCSS/Sassy CSS best practices and coding guidelines for maintainable, scalable stylesheets",
+          "path": "scss-best-practices"
+        },
+        "selenium-automation": {
+          "name": "selenium-automation",
+          "description": "Expert guidance for browser automation and web testing using Selenium WebDriver with best practices for element location, waits, and test organization.",
+          "path": "selenium-automation"
+        },
+        "seo-best-practices": {
+          "name": "seo-best-practices",
+          "description": "Apply SEO best practices for web applications including metadata, performance optimization, and search engine optimization techniques.",
+          "path": "seo-best-practices"
+        },
+        "sequelize": {
+          "name": "sequelize",
+          "description": "Guidelines for developing with Sequelize, a promise-based Node.js ORM supporting PostgreSQL, MySQL, MariaDB, SQLite, and SQL Server",
+          "path": "sequelize"
+        },
+        "serverless": {
+          "name": "serverless",
+          "description": "Serverless and microservices development guidelines covering FastAPI, cloud-native patterns, API gateways, and best practices for scalable serverless architectures.",
+          "path": "serverless"
+        },
+        "shopify": {
+          "name": "shopify",
+          "description": "Expert Shopify theme development guidelines for Liquid, Online Store 2.0, CSS, JavaScript, and UX best practices",
+          "path": "shopify"
+        },
+        "shopify-theme-development-guidelines": {
+          "name": "shopify-theme-development-guidelines",
+          "description": "Expert Shopify theme development with Liquid, Online Store 2.0, and performance best practices",
+          "path": "shopify-theme-development-guidelines"
+        },
+        "solana": {
+          "name": "solana",
+          "description": "Expert guidelines for Solana program development with Rust, Anchor framework, and Web3.js integration",
+          "path": "solana"
+        },
+        "solidity": {
+          "name": "solidity",
+          "description": "Expert in Solidity smart contract development with security and gas optimization",
+          "path": "solidity"
+        },
+        "spring-boot": {
+          "name": "spring-boot",
+          "description": "Expert guidance for Spring Boot application development with best practices for RESTful APIs, testing, security, and deployment",
+          "path": "spring-boot"
+        },
+        "spring-framework": {
+          "name": "spring-framework",
+          "description": "Expert guidance for Spring Framework and Spring Boot development with Java best practices, dependency injection, and RESTful API design",
+          "path": "spring-framework"
+        },
+        "sql-best-practices": {
+          "name": "sql-best-practices",
+          "description": "SQL development best practices for writing efficient, secure, and maintainable database queries",
+          "path": "sql-best-practices"
+        },
+        "storybook": {
+          "name": "storybook",
+          "description": "Best practices for building and documenting component libraries with Storybook",
+          "path": "storybook"
+        },
+        "stripe": {
+          "name": "stripe",
+          "description": "Stripe payment integration guidelines for TypeScript, React, Next.js with secure payment processing and subscription management",
+          "path": "stripe"
+        },
+        "styled-components-best-practices": {
+          "name": "styled-components-best-practices",
+          "description": "styled-components best practices for CSS-in-JS development in React applications",
+          "path": "styled-components-best-practices"
+        },
+        "supabase": {
+          "name": "supabase",
+          "description": "Expert in Supabase backend development with authentication and database patterns",
+          "path": "supabase"
+        },
+        "supabase-development": {
+          "name": "supabase-development",
+          "description": "Supabase development guidelines for database, authentication, real-time subscriptions, and Edge Functions.",
+          "path": "supabase-development"
+        },
+        "svelte": {
+          "name": "svelte",
+          "description": "Expert in Svelte and SvelteKit development with modern patterns and SSR",
+          "path": "svelte"
+        },
+        "sveltekit": {
+          "name": "sveltekit",
+          "description": "Expert guidance for SvelteKit development with TypeScript, Tailwind CSS, SSR/SSG, and performance optimization best practices",
+          "path": "sveltekit"
+        },
+        "swift": {
+          "name": "swift",
+          "description": "Expert in Swift and SwiftUI development for iOS, macOS, and Apple platforms",
+          "path": "swift"
+        },
+        "swiftui-development": {
+          "name": "swiftui-development",
+          "description": "Expert SwiftUI development guidelines with MVVM architecture and modern Swift best practices",
+          "path": "swiftui-development"
+        },
+        "swr": {
+          "name": "swr",
+          "description": "Guidelines for using SWR (stale-while-revalidate) React Hooks for efficient data fetching, caching, and revalidation",
+          "path": "swr"
+        },
+        "systemverilog": {
+          "name": "systemverilog",
+          "description": "SystemVerilog development guidelines for FPGA and ASIC design covering modular design, verification, and timing optimization.",
+          "path": "systemverilog"
+        },
+        "tailwindcss": {
+          "name": "tailwindcss",
+          "description": "Expert in TailwindCSS utility-first styling with responsive design patterns",
+          "path": "tailwindcss"
+        },
+        "tanstack-query": {
+          "name": "tanstack-query",
+          "description": "Guidelines for using TanStack Query (React Query) for server state management, data fetching, caching, and synchronization",
+          "path": "tanstack-query"
+        },
+        "tauri-development": {
+          "name": "tauri-development",
+          "description": "Tauri development guidelines for building cross-platform desktop applications with TypeScript, Rust, and modern web technologies",
+          "path": "tauri-development"
+        },
+        "technical-writing": {
+          "name": "technical-writing",
+          "description": "Expert technical writing guidelines for creating clear, in-depth developer tutorials and documentation with practical, implementable knowledge",
+          "path": "technical-writing"
+        },
+        "terraform": {
+          "name": "terraform",
+          "description": "Expert in Terraform infrastructure-as-code with cloud deployment patterns",
+          "path": "terraform"
+        },
+        "testing": {
+          "name": "testing",
+          "description": "General testing best practices and guidelines for writing comprehensive, maintainable tests across different testing frameworks and languages.",
+          "path": "testing"
+        },
+        "three-js": {
+          "name": "three-js",
+          "description": "Expert guidance for Three.js and React Three Fiber development with modern React, TypeScript, and performance best practices",
+          "path": "three-js"
+        },
+        "transformers-huggingface": {
+          "name": "transformers-huggingface",
+          "description": "Expert guidance for working with Hugging Face Transformers library for NLP, computer vision, and multimodal AI tasks.",
+          "path": "transformers-huggingface"
+        },
+        "trpc": {
+          "name": "trpc",
+          "description": "Guidelines for writing Next.js apps with tRPC v11 for end-to-end typesafe APIs",
+          "path": "trpc"
+        },
+        "turbopack-bundler": {
+          "name": "turbopack-bundler",
+          "description": "Best practices and guidelines for Turbopack, the Rust-powered incremental bundler for Next.js and modern web development",
+          "path": "turbopack-bundler"
+        },
+        "turborepo": {
+          "name": "turborepo",
+          "description": "Best practices for Turborepo monorepo build system configuration and optimization",
+          "path": "turborepo"
+        },
+        "typeorm": {
+          "name": "typeorm",
+          "description": "Guidelines for developing with TypeORM, a full-featured ORM for TypeScript and JavaScript supporting multiple databases",
+          "path": "typeorm"
+        },
+        "typescript": {
+          "name": "typescript",
+          "description": "Expert in TypeScript development with best practices for type safety and clean code",
+          "path": "typescript"
+        },
+        "ui-design": {
+          "name": "ui-design",
+          "description": "UI design best practices for building accessible, performant, and user-friendly interfaces with modern web standards",
+          "path": "ui-design"
+        },
+        "unity": {
+          "name": "unity",
+          "description": "Expert in Unity and C# game development with performance optimization patterns",
+          "path": "unity"
+        },
+        "ux-design": {
+          "name": "ux-design",
+          "description": "UX design principles for creating intuitive, accessible, and user-centered digital experiences",
+          "path": "ux-design"
+        },
+        "vercel-development": {
+          "name": "vercel-development",
+          "description": "Vercel and Next.js deployment best practices including server components, edge functions, AI SDK integration, and performance optimization.",
+          "path": "vercel-development"
+        },
+        "viewcomfy-api-rules": {
+          "name": "viewcomfy-api-rules",
+          "description": "Expert guidance for integrating ViewComfy API into web applications using Python and FastAPI",
+          "path": "viewcomfy-api-rules"
+        },
+        "vite": {
+          "name": "vite",
+          "description": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
+          "path": "vite"
+        },
+        "vue-typescript": {
+          "name": "vue-typescript",
+          "description": "Expert in Vue.js TypeScript development with Vite, Pinia, and modern UI frameworks",
+          "path": "vue-typescript"
+        },
+        "vuejs-typescript-best-practices": {
+          "name": "vuejs-typescript-best-practices",
+          "description": "Vue.js and TypeScript best practices for building performant applications with Vite, Pinia, VueUse, and Tailwind CSS.",
+          "path": "vuejs-typescript-best-practices"
+        },
+        "web-development": {
+          "name": "web-development",
+          "description": "Web development guidelines covering Bootstrap, Django, HTMX, and general web best practices",
+          "path": "web-development"
+        },
+        "web-scraping": {
+          "name": "web-scraping",
+          "description": "Expert in web scraping and data extraction with Python tools",
+          "path": "web-scraping"
+        },
+        "webpack-bundler": {
+          "name": "webpack-bundler",
+          "description": "Best practices and guidelines for Webpack module bundler configuration, optimization, and development workflows",
+          "path": "webpack-bundler"
+        },
+        "websocket-development": {
+          "name": "websocket-development",
+          "description": "Best practices and guidelines for building real-time applications with WebSocket communication",
+          "path": "websocket-development"
+        },
+        "woocommerce": {
+          "name": "woocommerce",
+          "description": "WordPress and WooCommerce development guidelines with PHP best practices, security standards, and extensibility patterns",
+          "path": "woocommerce"
+        },
+        "wordpress": {
+          "name": "wordpress",
+          "description": "Expert in WordPress and WooCommerce development with PHP best practices",
+          "path": "wordpress"
+        },
+        "zod-schema-validation": {
+          "name": "zod-schema-validation",
+          "description": "Best practices for Zod schema validation and type inference in TypeScript applications.",
+          "path": "zod-schema-validation"
+        },
+        "zustand-state-management": {
+          "name": "zustand-state-management",
+          "description": "Best practices for Zustand state management in React and Next.js applications with TypeScript.",
+          "path": "zustand-state-management"
+        }
+      }
     },
     "hypergiant": {
       "owner": "gohypergiant",
@@ -957,11 +2158,6 @@
           "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
           "path": "skills/in-progress/claude-handoff"
         },
-        "code-review": {
-          "name": "code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
-          "path": "skills/engineering/code-review"
-        },
         "codebase-design": {
           "name": "codebase-design",
           "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
@@ -1036,6 +2232,11 @@
           "name": "obsidian-vault",
           "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
           "path": "skills/personal/obsidian-vault"
+        },
+        "pocock-code-review": {
+          "name": "pocock-code-review",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "path": "skills/engineering/code-review"
         },
         "pocock-tdd": {
           "name": "pocock-tdd",
@@ -1568,15 +2769,15 @@
           "description": "Use when executing implementation plans with independent tasks in the current session",
           "path": "skills/subagent-driven-development"
         },
+        "superpowers-test-driven-development": {
+          "name": "superpowers-test-driven-development",
+          "description": "Use when implementing any feature or bugfix, before writing implementation code",
+          "path": "skills/test-driven-development"
+        },
         "systematic-debugging": {
           "name": "systematic-debugging",
           "description": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
           "path": "skills/systematic-debugging"
-        },
-        "test-driven-development": {
-          "name": "test-driven-development",
-          "description": "Use when implementing any feature or bugfix, before writing implementation code",
-          "path": "skills/test-driven-development"
         },
         "using-git-worktrees": {
           "name": "using-git-worktrees",
@@ -1610,14 +2811,121 @@
       "repo": "skills",
       "rev": "f4e8cd90ae388339d53bc05a3826034d0df56255",
       "hash": "sha256-jkDP8XLxu87DMgyB4zApyLwn5erDs7pX0XkqCxYXNeg=",
-      "skills": {}
+      "skills": {
+        "layered-rails": {
+          "name": "layered-rails",
+          "description": "Write, refactor, and review Rails code using layered architecture principles from \"Layered Design for Ruby on Rails Applications\". Use when writing or refactoring Rails code — models, controllers, services, jobs, mailers, policies, forms, query objects, presenters, view components, state machines, serializers, or AI/LLM features — to apply correct patterns and avoid layer violations; and when reviewing Rails code, PRs, or diffs for layer violations, fat controllers/models, anemic models, callback misuse, god objects, or specification-test failures. Triggers on \"layered design\", \"architecture layers\", \"abstraction layer\", \"specification test\", \"layer violation\", \"fat controller/model\", \"god object\", \"anemic model\", \"extract service/callback/policy/concern\", \"service object\", \"form object\", \"policy object\", \"query object\", \"value object\", \"presenter\", \"view component\", \"state machine\", \"Active Delivery\", \"callback scoring\", \"Rails refactor/review\", \"Rails patterns/best practices\".",
+          "path": "layered-rails/skills/layered-rails"
+        }
+      }
     },
     "rails_ai_agents": {
       "owner": "ThibautBaissac",
       "repo": "rails_ai_agents",
       "rev": "03622f23b4c6c6934b7c4862a5b5895a9cfd4b2d",
       "hash": "sha256-FO7DGq6rXG7q2AXxne9fOcnWYsdVk4Wzy8QD8XoKzJs=",
-      "skills": {}
+      "skills": {
+        "accessibility-review": {
+          "name": "accessibility-review",
+          "description": "Audits Rails application accessibility against WCAG 2.2 Level AA, detects violations with axe-core / Lighthouse / Pa11y, and reports remediation guidance for ERB views, ViewComponents, Stimulus controllers, and Turbo-powered interactions. Use when the user wants an accessibility audit, WCAG compliance check, a11y review, or mentions screen readers, keyboard navigation, ARIA, color contrast, or Section 508 / ADA / EAA. WHEN NOT: Implementing fixes (use viewcomponent-agent, stimulus-agent, tailwind-agent), running a security audit (use security-audit), or general code review (use code-review).",
+          "path": ".agents/skills/accessibility-review"
+        },
+        "action-cable-patterns": {
+          "name": "action-cable-patterns",
+          "description": "Implements real-time features with Action Cable and WebSockets. Use when adding live updates, chat features, notifications, real-time dashboards, or when user mentions Action Cable, WebSockets, channels, or real-time. WHEN NOT: Simple HTTP request/response flows, REST APIs, static content, or features that don't need real-time updates.",
+          "path": ".agents/skills/action-cable-patterns"
+        },
+        "active-storage-setup": {
+          "name": "active-storage-setup",
+          "description": "Configures Active Storage for file uploads with variants and direct uploads. Use when adding file uploads, image attachments, document storage, generating thumbnails, or when user mentions Active Storage, file upload, attachments, or image processing. WHEN NOT: Storing data in database columns, external URL references, static assets in the asset pipeline, or simple text/JSON storage.",
+          "path": ".agents/skills/active-storage-setup"
+        },
+        "api-versioning": {
+          "name": "api-versioning",
+          "description": "Implements RESTful API design with versioning and request specs. Use when building APIs, adding API endpoints, versioning APIs, or when user mentions REST, JSON API, or API design. WHEN NOT: Internal-only endpoints, HTML views, Turbo Stream responses, or APIs without external consumers.",
+          "path": ".agents/skills/api-versioning"
+        },
+        "authentication-flow": {
+          "name": "authentication-flow",
+          "description": "Implements authentication using Rails 8 built-in generator. Use when setting up user authentication, login/logout, session management, password reset flows, or securing controllers. WHEN NOT: Authorization and permissions (use Pundit policies), API token authentication, OAuth/SSO integration, or role-based access control.",
+          "path": ".agents/skills/authentication-flow"
+        },
+        "behavioral-guidelines": {
+          "name": "behavioral-guidelines",
+          "description": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+          "path": ".agents/skills/behavioral-guidelines"
+        },
+        "caching-strategies": {
+          "name": "caching-strategies",
+          "description": "Implements Rails caching patterns for performance optimization. Use when adding fragment caching, Russian doll caching, low-level caching, cache invalidation, or when user mentions caching, performance, cache keys, or memoization. WHEN NOT: General query optimization (use performance-optimization), background job processing, or problems caused by N+1 queries rather than missing caches.",
+          "path": ".agents/skills/caching-strategies"
+        },
+        "codex-review": {
+          "name": "codex-review",
+          "description": "Get an independent second opinion from OpenAI Codex CLI on a plan, diff, spec, or Claude's last response. Use when the user asks to \"get a second opinion\", \"have codex review\", \"cross-check with codex\", or wants adversarial review of Claude's output. Argument is one of plan|diff|spec|last-response (default last-response).",
+          "path": ".agents/skills/codex-review"
+        },
+        "dependabot-review": {
+          "name": "dependabot-review",
+          "description": "Reviews Dependabot gem upgrade PRs for breaking changes, codebase impact, and merge readiness. Use when user pastes a Dependabot PR URL, asks about a gem version bump, or wants to audit open dependency PRs (\"which dep PRs are safe to merge\", \"audit our deps\", \"check dependabot\"). WHEN NOT: Non-Dependabot PRs, npm/yarn upgrades, or general code review.",
+          "path": ".agents/skills/dependabot-review"
+        },
+        "extraction-timing": {
+          "name": "extraction-timing",
+          "description": "Guides decisions about when and how to extract code into services, queries, concerns, form objects, or other patterns. Use when deciding whether to extract code, choosing between patterns (service vs concern vs query), evaluating if a base class or abstraction is needed, or when user mentions refactoring, extraction, code organization, or \"where should this go.\" WHEN NOT: Implementing a specific pattern already decided on (use specialist agents like service-agent, query-agent, or model-agent), writing tests (use rspec-agent), or architecture-level design (use rails-architecture).",
+          "path": ".agents/skills/extraction-timing"
+        },
+        "friction-review": {
+          "name": "friction-review",
+          "description": "Multi-axis adversarial review using friction engineering. Routes a spec, plan, ADR, service design, schema, or any design artifact through 5 specialized reviewers with explicit prohibitions. Each reviewer tags positions as [sound], [contestable], [blind_spot], or [refuted]. Returns a consolidated friction report for human arbitration before implementation begins. Use when reviewing feature specs, architecture decisions, service designs, database schemas, or any artifact where hidden assumptions must be surfaced. WHEN NOT: code already written (use code-review), routine CRUD with no design decisions, quick one-off questions, or post-implementation reviews.",
+          "path": ".agents/skills/friction-review"
+        },
+        "i18n-patterns": {
+          "name": "i18n-patterns",
+          "description": "Implements internationalization with Rails I18n for multi-language support. Use when adding translations, managing locales, localizing dates/currencies, pluralization, or when user mentions i18n, translations, locales, or multi-language. WHEN NOT: English-only applications without localization needs, formatting handled by presenters, or date/number formatting in non-user-facing code.",
+          "path": ".agents/skills/i18n-patterns"
+        },
+        "mutation-testing": {
+          "name": "mutation-testing",
+          "description": "Run mutant, read mutation reports, fix alive mutations, and verify coverage. Use when running mutation testing, responding to alive mutations, or improving test quality. Triggers: \"mutation testing\", \"mutant\", \"alive mutation\", \"mutation coverage\". WHEN NOT: Writing tests from scratch (use rspec-agent), fixing failing tests, or general code review.",
+          "path": ".agents/skills/mutation-testing"
+        },
+        "postgres-patterns": {
+          "name": "postgres-patterns",
+          "description": "PostgreSQL database patterns for query optimization, schema design, indexing, and security.",
+          "path": ".agents/skills/postgres-patterns"
+        },
+        "rails-architecture": {
+          "name": "rails-architecture",
+          "description": "Guides modern Rails 8 code architecture decisions and patterns. Use when deciding where to put code, choosing between patterns (service objects vs concerns vs query objects), designing feature architecture, refactoring for better organization, or when user mentions architecture, code organization, design patterns, or layered design. WHEN NOT: Implementing specific patterns (use specialist agents like service-agent or query-agent), writing tests, or debugging runtime errors.",
+          "path": ".agents/skills/rails-architecture"
+        },
+        "rails-concern": {
+          "name": "rails-concern",
+          "description": "Creates Rails concerns for shared behavior across models or controllers with TDD. Use when extracting shared code, creating reusable modules, DRYing up models/controllers, or when user mentions concerns, modules, mixins, or shared behavior. WHEN NOT: Logic used by only one model or controller (keep it in place), complex business logic (use service objects), or query encapsulation (use query objects).",
+          "path": ".agents/skills/rails-concern"
+        },
+        "rails_ai_agents-code-review": {
+          "name": "rails_ai_agents-code-review",
+          "description": "Analyzes Rails code quality, architecture, and patterns without modifying code. Use when the user wants a code review, quality analysis, architecture audit, or when user mentions review, audit, code quality, anti-patterns, or SOLID principles. WHEN NOT: Actually implementing fixes (use specialist agents), writing new tests (use rspec-agent), or generating new features.",
+          "path": ".agents/skills/code-review"
+        },
+        "rails_ai_agents-performance-optimization": {
+          "name": "rails_ai_agents-performance-optimization",
+          "description": "Identifies and fixes Rails performance issues including N+1 queries, slow queries, and memory problems. Use when optimizing queries, fixing N+1 issues, improving response times, or when user mentions performance, slow, optimization, or Bullet gem. WHEN NOT: Caching-specific patterns (use caching-strategies), adding new features, or general code quality improvements unrelated to speed.",
+          "path": ".agents/skills/performance-optimization"
+        },
+        "security-audit": {
+          "name": "security-audit",
+          "description": "Audits Rails application security against OWASP Top 10, detects vulnerabilities with Brakeman, and verifies Pundit authorization policies. Use when the user wants a security audit, vulnerability scan, or when user mentions security, OWASP, Brakeman, XSS, SQL injection, or authorization. WHEN NOT: Implementing security fixes (use specialist agents), setting up authentication (use authentication-flow), or writing Pundit policies (use policy-agent).",
+          "path": ".agents/skills/security-audit"
+        },
+        "solid-queue-setup": {
+          "name": "solid-queue-setup",
+          "description": "Configures Solid Queue for background jobs in Rails 8. Use when setting up background processing, creating background jobs, configuring job queues, or migrating from Sidekiq to Solid Queue. WHEN NOT: Synchronous in-request processing, real-time WebSocket features (use Action Cable), or simple operations that don't need background execution.",
+          "path": ".agents/skills/solid-queue-setup"
+        }
+      }
     }
   }
 }

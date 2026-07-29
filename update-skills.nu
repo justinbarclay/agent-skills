@@ -43,15 +43,15 @@ def main [
     { key: "vercel", owner: "vercel-labs", repo: "agent-skills", skills_path: "skills" },
     { key: "openai", owner: "openai", repo: "skills", skills_path: "skills" },
     { key: "addyosmani", owner: "addyosmani", repo: "agent-skills", skills_path: "skills" },
-    { key: "mindrally", owner: "Mindrally", repo: "skills", skills_path: "skills" },
+    { key: "mindrally", owner: "Mindrally", repo: "skills", skills_path: "" },
     { key: "hypergiant", owner: "gohypergiant", repo: "agent-skills", skills_path: "skills" },
     { key: "cloudflare", owner: "cloudflare", repo: "skills", skills_path: "skills" },
     { key: "stripe", owner: "stripe", repo: "ai", skills_path: "skills" },
     { key: "pocock", owner: "mattpocock", repo: "skills", skills_path: "skills" },
     { key: "cursor", owner: "cursor", repo: "plugins", skills_path: "" },
     { key: "superpowers", owner: "obra", repo: "superpowers", skills_path: "skills" },
-    { key: "palkan", owner: "palkan", repo: "skills", skills_path: "skills", branch: "master" },
-    { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: "skills" }
+    { key: "palkan", owner: "palkan", repo: "skills", skills_path: "", branch: "master" },
+    { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: ".agents/skills" }
   ]
 
   let all_repo_keys = ($repo_configs | get key)
