@@ -128,10 +128,10 @@ def main [
 
   let grouped_skills = ($all_skills_flat | group-by orig_name)
 
-  let resolved_skills = ($grouped_skills | transpose name list | each { |group|
+  let resolved_skills = ($grouped_skills | transpose name list | sort-by name | each { |group|
     if ($group.list | length) > 1 {
       # Collision! Prefix with repo key
-      $group.list | each { |item|
+      $group.list | sort-by repo_key | each { |item|
         $item | upsert resolved_name $"($item.repo_key)-($item.orig_name)"
       }
     } else {
@@ -143,7 +143,7 @@ def main [
 
   # PURELY FUNCTIONAL: Rebuild final repositories structure
   let final_repos = ($fetched_repos | transpose repo_key repo_data | each { |row|
-    let repo_skills = ($resolved_skills | where repo_key == $row.repo_key | each { |s|
+    let repo_skills = ($resolved_skills | where repo_key == $row.repo_key | sort-by resolved_name | each { |s|
       {
         key: $s.resolved_name,
         val: {
@@ -186,10 +186,10 @@ def fetch-repo-skills [config: record] {
   # 3. Scan for SKILL.md files
   let common_excludes = ["**/node_modules/**" "**/.git/**" "**/vendor/**"]
   let skill_files = if ($skills_path | is-empty) {
-    glob $"($store_path)/**/SKILL.md" --depth 4 --exclude $common_excludes
+    glob $"($store_path)/**/SKILL.md" --depth 4 --exclude $common_excludes | sort
   } else {
     let scan_root = ($store_path | path join $skills_path)
-    glob $"($scan_root)/**/SKILL.md" --depth 3 --exclude $common_excludes
+    glob $"($scan_root)/**/SKILL.md" --depth 3 --exclude $common_excludes | sort
   }
 
   # PURELY FUNCTIONAL: Map files to records. Intermediate strings dropped every iteration.
@@ -210,7 +210,7 @@ def fetch-repo-skills [config: record] {
       description: $desc,
       path: $relative_path
     }
-  } | where { $in != null })
+  } | where { $in != null } | sort-by original_name path)
 
   # Internal collision resolution (within a single repo)
   let skills = ($parsed_skills_list | reduce -f {} { |item, acc|
