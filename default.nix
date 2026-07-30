@@ -30,6 +30,22 @@ let
     kiro = ".kiro/skills";
   };
 
+  # Options shared by both catalog skills and custom skills for controlling
+  # naming and agent targeting. `enable` and (for custom skills) `source` are
+  # added separately by each submodule since their defaults/presence differ.
+  skillTargetingOptions = {
+    name = mkOption {
+      type = types.nullOr types.str;
+      default = null;
+      description = "Rename the skill directory when installing (defaults to the attribute name).";
+    };
+    agents = mkOption {
+      type = types.listOf (types.enum (builtins.attrNames agentTargets));
+      default = [ ];
+      description = "Override target agents for this skill. If empty ([]), installs to all active agents.";
+    };
+  };
+
   # 1. Fetch repositories defined in the catalog using fetchFromGitHub.
   fetchedRepos = lib.mapAttrs
     (repoKey: repoData:
@@ -70,32 +86,72 @@ let
 
   # Filter enabled skills from user config
   enabledSkills = lib.filterAttrs (name: skillConf: skillConf.enable) cfg.skills;
+  enabledCustomSkills = lib.filterAttrs (name: skillConf: skillConf.enable) cfg.customSkills;
+
+  # Normalize catalog skills and custom skills into a single common shape so
+  # they can be targeted, installed, and collision-checked by one pipeline
+  # instead of two parallel ones.
+  normalizedCatalogSkills = lib.mapAttrsToList
+    (skillName: skillConf:
+      let
+        skillData = allSkills.${skillName} or (throw "Skill '${skillName}' not found in skills-catalog.json");
+        repoPath = fetchedRepos.${skillData.repoKey};
+      in
+      {
+        finalName = if skillConf.name != null then skillConf.name else skillName;
+        source = "${repoPath}/${skillData.path}";
+        agents = skillConf.agents;
+        origin = "catalog skill '${skillName}'";
+      }
+    )
+    enabledSkills;
+
+  normalizedCustomSkills = lib.mapAttrsToList
+    (skillName: skillConf: {
+      finalName = if skillConf.name != null then skillConf.name else skillName;
+      source = skillConf.source;
+      agents = skillConf.agents;
+      origin = "custom skill '${skillName}'";
+    })
+    enabledCustomSkills;
+
+  allNormalizedSkills = normalizedCatalogSkills ++ normalizedCustomSkills;
+
+  # Whether a skill's agent targeting includes the given agent
+  targetsAgent = agentName: skill:
+    skill.agents == [ ] || lib.elem agentName skill.agents;
 
   # Build the file configurations for a single agent
   skillFilesForAgent = agentName: agentConf:
     let
-      # Skills that target this agent (agents is empty [] OR agentName is in agents)
-      targetedSkills = lib.filterAttrs
-        (skillName: skillConf:
-          skillConf.agents == [ ] || lib.elem agentName skillConf.agents
-        )
-        enabledSkills;
+      targeted = lib.filter (targetsAgent agentName) allNormalizedSkills;
+
+      # Group by final install name so collisions (from catalog skills,
+      # custom skills, or a mix of both) are all caught the same way.
+      grouped = lib.foldl'
+        (acc: skill: acc // { ${skill.finalName} = (acc.${skill.finalName} or [ ]) ++ [ skill ]; })
+        { }
+        targeted;
+
+      collisions = lib.filterAttrs (finalName: skills: lib.length skills > 1) grouped;
     in
-    lib.mapAttrs'
-      (skillName: skillConf:
-        let
-          skillData = allSkills.${skillName} or (throw "Skill '${skillName}' not found in skills-catalog.json");
-          repoKey = skillData.repoKey;
-          repoPath = fetchedRepos.${repoKey};
-          skillSubpath = skillData.path;
-          finalSkillName = if skillConf.name != null then skillConf.name else skillName;
-        in
-        lib.nameValuePair "${agentConf.path}/${finalSkillName}" {
-          source = "${repoPath}/${skillSubpath}";
-          recursive = true;
-        }
-      )
-      targetedSkills;
+    if collisions != { }
+    then
+      let
+        collisionDetails = lib.concatStringsSep "; " (lib.mapAttrsToList
+          (finalName: skills: "'${finalName}' (${lib.concatStringsSep ", " (map (s: s.origin) skills)})")
+          collisions);
+      in
+      throw "agentic-skills: skill name collision(s) for agent '${agentName}': ${collisionDetails}. Rename one of the conflicting skills via its 'name' option."
+    else
+      lib.mapAttrs'
+        (finalName: skills:
+          lib.nameValuePair "${agentConf.path}/${finalName}" {
+            source = (lib.head skills).source;
+            recursive = true;
+          }
+        )
+        grouped;
 
   # Merge file definitions for all active agents
   homeFiles = lib.foldl'
@@ -126,27 +182,36 @@ in
             description = "${skillData.description or "No description available"}${if skillData.repoUrl != "" then " (from ${skillData.repoUrl})" else ""}";
             type = types.submodule {
               _file = toString ./default.nix;
-              options = {
+              options = skillTargetingOptions // {
                 enable = mkOption {
                   type = types.bool;
                   default = false;
                   description = "Enable this skill.";
-                };
-                name = mkOption {
-                  type = types.nullOr types.str;
-                  default = null;
-                  description = "Rename the skill when installing it (defaults to the skill's original name).";
-                };
-                agents = mkOption {
-                  type = types.listOf (types.enum (builtins.attrNames agentTargets));
-                  default = [ ];
-                  description = "Override target agents for this skill. If empty ([]), installs to all active agents.";
                 };
               };
             };
           })
           allSkills;
       };
+    };
+
+    customSkills = mkOption {
+      description = "Custom user-defined skills from local directory paths or external sources.";
+      default = { };
+      type = types.attrsOf (types.submodule {
+        _file = toString ./default.nix;
+        options = skillTargetingOptions // {
+          enable = mkOption {
+            type = types.bool;
+            default = true;
+            description = "Enable this custom skill.";
+          };
+          source = mkOption {
+            type = types.path;
+            description = "Path to directory containing the skill (e.g. ./skills/my-skill).";
+          };
+        };
+      });
     };
 
     agents = mkOption {
@@ -179,7 +244,7 @@ in
     };
   };
 
-  config = mkIf (cfg.enable && (enabledSkills != { })) {
+  config = mkIf (cfg.enable && (enabledSkills != { } || enabledCustomSkills != { })) {
     home.file = homeFiles;
   };
 }

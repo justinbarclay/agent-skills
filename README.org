@@ -71,6 +71,14 @@ modules.agentic-skills = {
       name = "my-custom-name";
     };
   };
+
+  # Add your own local or repository custom skills
+  customSkills = {
+    my-team-skill = {
+      enable = true;
+      source = ./skills/my-team-skill; # Path to local skill folder containing SKILL.md
+    };
+  };
 };
 #+end_src
 
@@ -84,14 +92,18 @@ home-manager switch
 
 * Options Reference
 
-| Option                                             | Type       | Default    | Description                                                      |
-|----------------------------------------------------+------------+------------+------------------------------------------------------------------|
-| =modules.agentic-skills.enable=                    | =bool=     | =false=    | Master toggle for skills symlinking.                             |
-| =modules.agentic-skills.skills.<name>.enable=      | =bool=     | =false=    | Enable a specific skill. Autocompletes via Nix LSP.              |
-| =modules.agentic-skills.skills.<name>.name=        | =str?=     | =null=     | Rename the skill directory when installing.                      |
-| =modules.agentic-skills.skills.<name>.agents=      | =list str= | =[]=       | Restrict to specific agents. Empty means all active agents.      |
-| =modules.agentic-skills.agents.<agent>.enable=     | =bool=     | =true=     | Toggle symlinking to a specific agent.                           |
-| =modules.agentic-skills.agents.<agent>.path=       | =str=      | /(varies)/ | Override the target path relative to =$HOME=.                    |
+| Option                                              | Type       | Default    | Description                                                         |
+|------------------------------------------------------+------------+------------+---------------------------------------------------------------------|
+| =modules.agentic-skills.enable=                     | =bool=     | =false=    | Master toggle for skills symlinking.                                |
+| =modules.agentic-skills.skills.<name>.enable=       | =bool=     | =false=    | Enable a specific skill from the catalog.                           |
+| =modules.agentic-skills.skills.<name>.name=         | =str?=     | =null=     | Rename the skill directory when installing.                         |
+| =modules.agentic-skills.skills.<name>.agents=       | =list str= | =[]=       | Restrict to specific agents. Empty means all active agents.         |
+| =modules.agentic-skills.customSkills.<name>.enable= | =bool=     | =true=     | Enable a user-defined custom skill.                                 |
+| =modules.agentic-skills.customSkills.<name>.source= | =path=     | /(req)/    | Directory path containing skill files (e.g. =./skills/my-skill=).  |
+| =modules.agentic-skills.customSkills.<name>.name=   | =str?=     | =null=     | Rename the custom skill directory when installing.                  |
+| =modules.agentic-skills.customSkills.<name>.agents= | =list str= | =[]=       | Restrict to specific agents. Empty means all active agents.         |
+| =modules.agentic-skills.agents.<agent>.enable=      | =bool=     | =true=     | Toggle symlinking to a specific agent.                              |
+| =modules.agentic-skills.agents.<agent>.path=        | =str=      | /(varies)/ | Override the target path relative to =$HOME=.                       |
 
 -----
 
