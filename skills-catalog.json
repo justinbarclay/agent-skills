@@ -1911,8 +1911,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "7eb6e79578c0c4824a4c7e5e148dd764a6d88193",
-      "hash": "sha256-XDSCAx6ajne4/ktouh4uzZOGFQC62XpRt8emY2LHYVY=",
+      "rev": "c5c31e2e96791ba7afd0957e344592719e201d65",
+      "hash": "sha256-qOfP7s5r7Bjxr+9NuRVRmxyV6GWgfukodfbmV2Ly18A=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -1933,6 +1933,11 @@
           "name": "accelint-design-foundation",
           "description": "Use when styling components or elements with @accelint/design-foundation or @accelint/design-toolkit packages, or when users say \"style this\", \"add styling\", \"theme this component\", \"add colors\", \"add spacing\", \"CSS modules\", \"setup design foundation\", \"@variant\", or when working with .module.css files. Provides opinionated Tailwind conventions including semantic tokens, custom spacing scale, outline-based borders, variant system, and CSS module setup guidance.",
           "path": "skills/accelint-design-foundation"
+        },
+        "accelint-english-manager": {
+          "name": "accelint-english-manager",
+          "description": "Use when drafting, rewriting, simplifying, reviewing, editing, polishing, humanizing, de-slopping, cleaning up, or checking written English that must become plainer, clearer, more direct, easier to scan, or easier to act on without changing the user's intended meaning, audience, tone, or explicit constraints. Also use when the user says \"plain English\", \"simple English\", \"make this readable\", \"make this clearer\", \"make this direct\", \"make this sound better\", \"too wordy\", \"too formal\", \"edit this\", \"clean this up\", \"review this writing\", \"grammar check\", \"Orwell\", \"STE\", \"ASD-STE100\", \"ADHD-friendly\", \"shorter\", \"less fluffy\", or asks for clearer docs, prompts, emails, UI copy, reports, support replies, release notes, or instructions. Make sure to use this skill for LLM-written documentation or LLM-generated responses that need stronger clarity, scanability, plain-language discipline, or tone-preserving cleanup.",
+          "path": "skills/accelint-english-manager"
         },
         "accelint-nextjs-best-practices": {
           "name": "accelint-nextjs-best-practices",
@@ -1956,7 +1961,7 @@
         },
         "accelint-prompt-manager": {
           "name": "accelint-prompt-manager",
-          "description": "Use when users provide vague, underspecified, or unclear requests where they need help defining WHAT they actually want - across ANY domain (writing, analysis, code, documentation, proposals, reports, presentations, creative work). Trigger aggressively when users express VAGUE GOALS (\"make this better\", \"improve our X\", \"figure out what to include\", \"I don't know where to start\", \"kinda lost on what to do\", \"not sure what this means\"), UNDEFINED SUCCESS (\"should look professional\", \"explain this clearly\", \"make it convincing\", \"whatever works best\", missing constraints/audience/format), COMMUNICATION UNCLEAR (\"how do I explain/communicate this\", \"my team gets confused when I describe it\", \"help me figure out what to ask about X\"), AMBIGUOUS REQUIREMENTS (\"analyze the data\" without saying what to look for, \"improve documentation\" without saying how, \"make it more robust\" without defining robustness, any request with multiple valid interpretations), or META-PROMPTING (\"optimize this prompt\", \"improve my prompt\", \"make this clearer\", \"review my instructions\", learning about prompt frameworks like CO-STAR/RISEN/RODES, understanding what makes prompts effective). Trigger for non-technical users and ANY situation where the request needs refinement, structure, or clarification before execution can begin. When in doubt about whether a request is clear enough - trigger.",
+          "description": "Turn vague, underspecified, or confusing requests into clear, executable prompts across any domain. Use this skill aggressively when users ask to improve or optimize a prompt, seem unsure what to ask for, give ambiguous requirements, omit audience/constraints/success criteria, need help explaining something clearly, or want structure before execution. Also use it for meta-prompting, prompt-framework questions, non-technical users, and any request that would benefit from clarifying intent before doing the work. When in doubt, trigger this skill before execution.",
           "path": "skills/accelint-prompt-manager"
         },
         "accelint-qrspi-apply": {
@@ -1971,7 +1976,7 @@
         },
         "accelint-qrspi-propose": {
           "name": "accelint-qrspi-propose",
-          "description": "Automate the QRSPI + OpenSpec planning workflow (Questions → Research → Design → Structure) for spec-driven development. Use this skill when the user wants to plan a ticket, start a QRSPI workflow, create a change with QRSPI, or says \"plan this with QRSPI\", \"use QRSPI to plan\", \"start QRSPI workflow\", \"create spec-driven change\", or asks about planning a feature/change before implementation. This skill handles ONLY the planning phase — it does NOT implement code. After completion, the user continues with /opsx:apply for implementation.",
+          "description": "Use this skill when the user wants to start the formal QRSPI/OpenSpec planning workflow for a ticket, bug, feature request, or proposed product/CLI/app change before implementation. Invoke it when the user wants a spec-driven change package with questions first, factual research, proposal/design artifacts, affected specs, and a vertically sliced task plan, with explicit review/approval stops before any coding begins. This is the right skill when the user wants to plan, scope, or break down the change itself, especially if they ask to use QRSPI, create an OpenSpec change, run a planning workflow, or stop before writing code. Do not use it to implement an existing spec, review or polish artifacts that already exist, generate generic architecture docs, archive completed changes, or support loose brainstorming without a request for formal QRSPI/OpenSpec outputs.",
           "path": "skills/accelint-qrspi-propose"
         },
         "accelint-react-best-practices": {
@@ -1986,7 +1991,7 @@
         },
         "accelint-readme-writer": {
           "name": "accelint-readme-writer",
-          "description": "Use when creating or editing a README.md file in any project or package. Recursively parses codebase from README location, suggests changes based on missing or changed functionality, and generates thorough, human-sounding documentation with copy-pasteable code blocks and practical examples.",
+          "description": "Use when creating or editing a README.md file in any project or package. Analyzes the codebase from the README location, identifies missing or stale documentation, and generates thorough, human-sounding README content with copy-pasteable code blocks and practical examples.",
           "path": "skills/accelint-readme-writer"
         },
         "accelint-security-best-practices": {
@@ -1998,6 +2003,11 @@
           "name": "accelint-skill-manager",
           "description": "Use when users say \"create a skill\", \"make a new skill\", \"build a skill\", \"skill for X\", \"audit this skill\", \"review this skill\", \"check skill quality\", \"fix this skill\", \"improve this skill\", \"refactor this skill\", \"update this skill\", \"optimize this skill\", or when creating, refactoring, or auditing domain expertise into agent skills with specialized knowledge, workflows, or tool integrations.",
           "path": "skills/accelint-skill-manager"
+        },
+        "accelint-skill-prose": {
+          "name": "accelint-skill-prose",
+          "description": "Use when creating, auditing, tightening, simplifying, de-slopping, polishing, or reviewing `SKILL.md` files, agent-skill instructions, `CLAUDE.md`/`AGENTS.md`-style guidance, or other behavior-defining prompt artifacts where wording changes can alter trigger coverage, workflow order, guardrails, or exact technical meaning. Use this skill whenever the user wants clearer skill prose without changing behavior, asks for a safe skill-description rewrite, reviews prompt instructions for ambiguity, or needs to preserve exact paths, commands, fields, identifiers, or approval semantics while editing.",
+          "path": "skills/accelint-skill-prose"
         },
         "accelint-tanstack-query-best-practices": {
           "name": "accelint-tanstack-query-best-practices",
@@ -2102,8 +2112,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "3adce6293895305828948781d91cb86a9b324e50",
-      "hash": "sha256-nkQ0INO4V7+goSjNXX8NPjKMy7llg/x1qRNF7yuYsKk=",
+      "rev": "2ecd560bd426075690686536200174785c94f2b5",
+      "hash": "sha256-J3S+oTwmpmlymTmI+Zf3B3xEOBpa+HLqEa767zI/Eh8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2353,8 +2363,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "45c66fde1f1681a902a30d1ae8bca1cc64465d6e",
-      "hash": "sha256-sW1lJoPW8dL542nihbJjiWTGlJr2KM2JHG6EJBEmW4Q=",
+      "rev": "15ef02d9719259476fbd13de1b2db35d79f04797",
+      "hash": "sha256-zx9/pBpLI2WJAGgUfaA8SXeQX9HBDlujJnAVId3ii5s=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2670,6 +2680,11 @@
           "name": "show-me-your-work",
           "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
           "path": "pstack/skills/show-me-your-work"
+        },
+        "swarm": {
+          "name": "swarm",
+          "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
+          "path": "pstack/skills/swarm"
         },
         "thermo-nuclear-code-quality-review": {
           "name": "thermo-nuclear-code-quality-review",
