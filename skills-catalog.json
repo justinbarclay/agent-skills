@@ -2363,8 +2363,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "15ef02d9719259476fbd13de1b2db35d79f04797",
-      "hash": "sha256-zx9/pBpLI2WJAGgUfaA8SXeQX9HBDlujJnAVId3ii5s=",
+      "rev": "14d9dfa06283faa94bf9931d3e98c189bc375680",
+      "hash": "sha256-FN1oD9NAI7tgCxQgtsXusNyZG/JT6XYELG+bp6ncEAE=",
       "skills": {
         "architect": {
           "name": "architect",
