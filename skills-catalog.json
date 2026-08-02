@@ -1306,6 +1306,11 @@
           "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
           "path": "security-best-practices"
         },
+        "mindrally-technical-writing": {
+          "name": "mindrally-technical-writing",
+          "description": "Expert technical writing guidelines for creating clear, in-depth developer tutorials and documentation with practical, implementable knowledge",
+          "path": "technical-writing"
+        },
         "modern-web-development": {
           "name": "modern-web-development",
           "description": "Modern web development best practices for TypeScript, Next.js 14, React Server Components, Supabase, GraphQL, and Tailwind CSS.",
@@ -1775,11 +1780,6 @@
           "name": "tauri-development",
           "description": "Tauri development guidelines for building cross-platform desktop applications with TypeScript, Rust, and modern web technologies",
           "path": "tauri-development"
-        },
-        "technical-writing": {
-          "name": "technical-writing",
-          "description": "Expert technical writing guidelines for creating clear, in-depth developer tutorials and documentation with practical, implementable knowledge",
-          "path": "technical-writing"
         },
         "terraform": {
           "name": "terraform",
@@ -2363,8 +2363,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "14d9dfa06283faa94bf9931d3e98c189bc375680",
-      "hash": "sha256-FN1oD9NAI7tgCxQgtsXusNyZG/JT6XYELG+bp6ncEAE=",
+      "rev": "b047069f4f3a73e87dd1f11f7913386d25876b91",
+      "hash": "sha256-A3rw1q5ecAN/xQogKvGpwo5f7i9s5HdZ7jwLUYoYt9E=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2446,6 +2446,11 @@
           "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
           "path": "pstack/skills/teach"
         },
+        "cursor-technical-writing": {
+          "name": "cursor-technical-writing",
+          "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
+          "path": "pstack/skills/technical-writing"
+        },
         "deslop": {
           "name": "deslop",
           "description": "Remove AI-generated code slop and clean up code style",
@@ -2505,6 +2510,11 @@
           "name": "new-branch-and-pr",
           "description": "Create a fresh branch, complete work, and open a pull request",
           "path": "cursor-team-kit/skills/new-branch-and-pr"
+        },
+        "no-comments": {
+          "name": "no-comments",
+          "description": "Spawn Comment Sicko, fix accepted findings, and offer encodings for claimed constraints.",
+          "path": "pstack/skills/no-comments"
         },
         "orchestrate": {
           "name": "orchestrate",
