@@ -2363,8 +2363,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "b047069f4f3a73e87dd1f11f7913386d25876b91",
-      "hash": "sha256-A3rw1q5ecAN/xQogKvGpwo5f7i9s5HdZ7jwLUYoYt9E=",
+      "rev": "424829e3e0f7e5a8b9181412ca04e84e026a0c02",
+      "hash": "sha256-DCqssFhoFKvF6AhtdLRdKavDVY8gDJ8O+1jHJ25FJ70=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2385,6 +2385,11 @@
           "name": "blast-radius",
           "description": "Find what a change could break somewhere else before it ships, beyond the diff, and prove the one fact it's safe because of by running real code instead of writing it up. Use for 'blast radius of X', 'what could this break', or reviewing a small diff you don't trust.",
           "path": "pstack/skills/blast-radius"
+        },
+        "bro": {
+          "name": "bro",
+          "description": "Restate the last message in plain human language, with no jargon.",
+          "path": "pstack/skills/bro"
         },
         "cancel-ralph": {
           "name": "cancel-ralph",
