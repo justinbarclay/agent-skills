@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "7829ffd90d973b6325f5f12f1b1226dcace74443",
-      "hash": "sha256-OLjqreMKgYcP4hS8Vm97xpDV29qOPoKVlh1CwVteWqc=",
+      "rev": "bdf76c7c6b7b3b3e01bb15c9fdc42ac5351855c1",
+      "hash": "sha256-t63rWIMHeNXLwPi83RwW5/7IG9ZEnuE0lNvrNepy4SE=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2112,8 +2112,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "2ecd560bd426075690686536200174785c94f2b5",
-      "hash": "sha256-J3S+oTwmpmlymTmI+Zf3B3xEOBpa+HLqEa767zI/Eh8=",
+      "rev": "70de14e5d211c85a7c557f543554fbfe05109b4e",
+      "hash": "sha256-SrY4sO4u9UPiDCYPeuZS4Q3cgHOvNzVZMfGssdfaZ7o=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2363,8 +2363,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "424829e3e0f7e5a8b9181412ca04e84e026a0c02",
-      "hash": "sha256-DCqssFhoFKvF6AhtdLRdKavDVY8gDJ8O+1jHJ25FJ70=",
+      "rev": "fa16d695b35ccf4ea179d976e5aaee0834a25b0b",
+      "hash": "sha256-5Lgd0J0N2JQ6W9tSlJAj5lSprTM9WmEOo6OpxQwXBpQ=",
       "skills": {
         "architect": {
           "name": "architect",
