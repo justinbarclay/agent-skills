@@ -2112,8 +2112,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "70de14e5d211c85a7c557f543554fbfe05109b4e",
-      "hash": "sha256-SrY4sO4u9UPiDCYPeuZS4Q3cgHOvNzVZMfGssdfaZ7o=",
+      "rev": "a929698fa483f392a21d46e7385ff3f6025407e6",
+      "hash": "sha256-NnYQOa6PyDjH8zJrRoex3tYntbN9lpOj2c/1GO5zEhM=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2150,18 +2150,13 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
-      "hash": "sha256-dQtG6usJWlg/FqTajrjcs8GSdymH92WsgLiUaCfvKPA=",
+      "rev": "a621cc4f755d1da9c35dc3bb3abbd1d2a3208670",
+      "hash": "sha256-BnGzLCtp4F+ggiz/MnBqkRUnnKnu6M97KJOUYCNKryU=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
           "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
           "path": "skills/engineering/ask-matt"
-        },
-        "batch-grill-me": {
-          "name": "batch-grill-me",
-          "description": "A relentless interview that asks every frontier question at once, round by round.",
-          "path": "skills/in-progress/batch-grill-me"
         },
         "claude-handoff": {
           "name": "claude-handoff",
@@ -2245,7 +2240,7 @@
         },
         "pocock-code-review": {
           "name": "pocock-code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
           "path": "skills/engineering/code-review"
         },
         "pocock-tdd": {
@@ -2306,7 +2301,7 @@
         "to-questionnaire": {
           "name": "to-questionnaire",
           "description": "Turn a decision you can't fully answer into a questionnaire for someone else to fill in.",
-          "path": "skills/in-progress/to-questionnaire"
+          "path": "skills/productivity/to-questionnaire"
         },
         "to-spec": {
           "name": "to-spec",
@@ -2336,22 +2331,22 @@
         "wizard": {
           "name": "wizard",
           "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
-          "path": "skills/in-progress/wizard"
+          "path": "skills/engineering/wizard"
         },
         "writing-beats": {
           "name": "writing-beats",
           "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
           "path": "skills/in-progress/writing-beats"
         },
+        "writing-for-agents": {
+          "name": "writing-for-agents",
+          "description": "Writing documents for agents. Use when creating or editing skills, or modifying AGENTS.md or CLAUDE.md.",
+          "path": "skills/productivity/writing-for-agents"
+        },
         "writing-fragments": {
           "name": "writing-fragments",
           "description": "Writing, explore — mine raw fragments, no structure yet.",
           "path": "skills/in-progress/writing-fragments"
-        },
-        "writing-great-skills": {
-          "name": "writing-great-skills",
-          "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
-          "path": "skills/productivity/writing-great-skills"
         },
         "writing-shape": {
           "name": "writing-shape",
@@ -2363,8 +2358,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "fa16d695b35ccf4ea179d976e5aaee0834a25b0b",
-      "hash": "sha256-5Lgd0J0N2JQ6W9tSlJAj5lSprTM9WmEOo6OpxQwXBpQ=",
+      "rev": "8185ad9fbb903efc7d1cf152a9be9777e516cfbc",
+      "hash": "sha256-NVNhGWoIn05gWRCbv/LFmvCHxPvYGf/xDDw1ee+RfUE=",
       "skills": {
         "architect": {
           "name": "architect",
