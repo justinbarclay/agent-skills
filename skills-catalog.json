@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "bdf76c7c6b7b3b3e01bb15c9fdc42ac5351855c1",
-      "hash": "sha256-t63rWIMHeNXLwPi83RwW5/7IG9ZEnuE0lNvrNepy4SE=",
+      "rev": "f03b4a84b08b76608bbab3133e56e49e361f230b",
+      "hash": "sha256-iJo8Vbjcjk+6Wh+TacWI5LA5Qr9GZRIvAo38ULq2ns4=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2150,8 +2150,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "a621cc4f755d1da9c35dc3bb3abbd1d2a3208670",
-      "hash": "sha256-BnGzLCtp4F+ggiz/MnBqkRUnnKnu6M97KJOUYCNKryU=",
+      "rev": "8b36d4fb2635b3c21998dcd8144439c9e5ba7302",
+      "hash": "sha256-RwFJdrPnyieN65QrwSfABRuBzMdyUIf/qoJ1M8zLLps=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2168,11 +2168,6 @@
           "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
           "path": "skills/engineering/codebase-design"
         },
-        "design-an-interface": {
-          "name": "design-an-interface",
-          "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
-          "path": "skills/deprecated/design-an-interface"
-        },
         "diagnosing-bugs": {
           "name": "diagnosing-bugs",
           "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
@@ -2182,11 +2177,6 @@
           "name": "domain-modeling",
           "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
           "path": "skills/engineering/domain-modeling"
-        },
-        "edit-article": {
-          "name": "edit-article",
-          "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
-          "path": "skills/personal/edit-article"
         },
         "git-guardrails-claude-code": {
           "name": "git-guardrails-claude-code",
@@ -2233,11 +2223,6 @@
           "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
           "path": "skills/misc/migrate-to-shoehorn"
         },
-        "obsidian-vault": {
-          "name": "obsidian-vault",
-          "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
-          "path": "skills/personal/obsidian-vault"
-        },
         "pocock-code-review": {
           "name": "pocock-code-review",
           "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
@@ -2257,16 +2242,6 @@
           "name": "prototype",
           "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
           "path": "skills/engineering/prototype"
-        },
-        "qa": {
-          "name": "qa",
-          "description": "Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions \"QA session\".",
-          "path": "skills/deprecated/qa"
-        },
-        "request-refactor-plan": {
-          "name": "request-refactor-plan",
-          "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
-          "path": "skills/deprecated/request-refactor-plan"
         },
         "research": {
           "name": "research",
@@ -2318,10 +2293,10 @@
           "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
           "path": "skills/engineering/triage"
         },
-        "ubiquitous-language": {
-          "name": "ubiquitous-language",
-          "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
-          "path": "skills/deprecated/ubiquitous-language"
+        "wait-what": {
+          "name": "wait-what",
+          "description": "Stop. That last message did not land — re-pitch it.",
+          "path": "skills/productivity/wait-what"
         },
         "wayfinder": {
           "name": "wayfinder",
@@ -2330,7 +2305,7 @@
         },
         "wizard": {
           "name": "wizard",
-          "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
+          "description": "Generate an interactive bash wizard that walks a human through steps only they can perform. Use when provisioning infrastructure, setting up credentials or CI secrets, walking an unfamiliar third-party dashboard, or running a one-off migration or cutover. Don't invoke this for steps the agent can perform itself.",
           "path": "skills/engineering/wizard"
         },
         "writing-beats": {
