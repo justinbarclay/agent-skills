@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "f03b4a84b08b76608bbab3133e56e49e361f230b",
-      "hash": "sha256-iJo8Vbjcjk+6Wh+TacWI5LA5Qr9GZRIvAo38ULq2ns4=",
+      "rev": "d2478bf0c73a6357df39a3ed6aff16acaa218843",
+      "hash": "sha256-meA6A9/E2QWtJEcmrrTEXjKRf8Mp+4mspDHHxLrbu+c=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2112,8 +2112,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "a929698fa483f392a21d46e7385ff3f6025407e6",
-      "hash": "sha256-NnYQOa6PyDjH8zJrRoex3tYntbN9lpOj2c/1GO5zEhM=",
+      "rev": "4b7495aa701334e453555ce4afb0029b06df590b",
+      "hash": "sha256-rQN3DzaDBhJVARrY2b+AkxzAICHgYod2ZFyqFbbBLh8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2150,8 +2150,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "8b36d4fb2635b3c21998dcd8144439c9e5ba7302",
-      "hash": "sha256-RwFJdrPnyieN65QrwSfABRuBzMdyUIf/qoJ1M8zLLps=",
+      "rev": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
+      "hash": "sha256-pseSJJb5nBBGPzpxA1GzjGLB9OrT+u0At1saJ4NqZ1E=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2333,8 +2333,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "8185ad9fbb903efc7d1cf152a9be9777e516cfbc",
-      "hash": "sha256-NVNhGWoIn05gWRCbv/LFmvCHxPvYGf/xDDw1ee+RfUE=",
+      "rev": "1f4e9b59762f5b36764aa45cbc75bc5dbe208ec3",
+      "hash": "sha256-cv9eQvEk0eWd7R04zjVjsaRRe+F26YdXT354yCgSo7E=",
       "skills": {
         "architect": {
           "name": "architect",
