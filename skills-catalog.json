@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "b29e7cf65e5cb78a5ac33d582270551bc74a14eb",
-      "hash": "sha256-RH2B03gj4kzw1j5LORezgUZPPu8mW+mWb+Kl2U7WUbY=",
+      "rev": "f17010c9bb483898c1d9c9f42dde2b3a98889434",
+      "hash": "sha256-vTqAu8eRY+8ymbf065SWHHjNX/li3SOR+sWq1npteTM=",
       "skills": {
         "algorithmic-art": {
           "name": "algorithmic-art",
@@ -2049,8 +2049,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "30553f89ae1ef1e3c2917cd09d72dac992bb4e9a",
-      "hash": "sha256-iccg8z3hPKWAhQ6Q5kmw8s5fRopoN/U3opJqYjlpiXs=",
+      "rev": "f96bff754e428838818017f75817f0f9428acd48",
+      "hash": "sha256-r8HeH9XWV9qhbMq3fPASNfT5Y1mrfsgBI5STiUi/LVA=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2082,10 +2082,20 @@
           "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
           "path": "skills/durable-objects"
         },
-        "sandbox-sdk": {
-          "name": "sandbox-sdk",
-          "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
-          "path": "skills/sandbox-sdk"
+        "sandbox-migrate-to-next": {
+          "name": "sandbox-migrate-to-next",
+          "description": "Use when porting a Cloudflare Sandbox app from stable @cloudflare/sandbox to @cloudflare/sandbox@next (Sandbox SDK 1.0 preview), or when the user asks to migrate or upgrade to Sandbox 1.0 / @next. Not for day-to-day stable work (sandbox-stable) or new @next apps (sandbox-next).",
+          "path": "skills/sandbox-migrate-to-next"
+        },
+        "sandbox-next": {
+          "name": "sandbox-next",
+          "description": "Use when building or changing Cloudflare Sandbox apps on @cloudflare/sandbox@next (Sandbox SDK 1.0 preview)—code execution, AI runners, interpreters, CI-like jobs, terminals, files, mounts, tunnels, preview URLs, lifecycle, or errors. Not for the default stable package (use sandbox-stable) or for porting stable to @next (use sandbox-migrate-to-next).",
+          "path": "skills/sandbox-next"
+        },
+        "sandbox-stable": {
+          "name": "sandbox-stable",
+          "description": "Use when building or changing Cloudflare Sandbox apps on the current stable @cloudflare/sandbox package (default npm tag)—commands, sessions, files, ports, tunnels, terminals, bridge, production, or deprecated-API cleanup while staying on stable. Not for @cloudflare/sandbox@next (use sandbox-next) or for porting to 1.0 (use sandbox-migrate-to-next).",
+          "path": "skills/sandbox-stable"
         },
         "turnstile-spin": {
           "name": "turnstile-spin",
@@ -2112,13 +2122,18 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "4b7495aa701334e453555ce4afb0029b06df590b",
-      "hash": "sha256-rQN3DzaDBhJVARrY2b+AkxzAICHgYod2ZFyqFbbBLh8=",
+      "rev": "89ffbee06b3782ed15d77ffd6cbc5620ad26d3bd",
+      "hash": "sha256-xkem8kehjzry7NnhzTCyUKHLmfILuAYBSuD5+tX0MjM=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
           "description": "Use this skill when the user asks about Stripe Connect configuration, charge patterns, Dashboard access, or how to get started with Connect, is building a marketplace, platform, multi-vendor store, gig platform, or subscription platform, needs to pay out sellers, vendors, or providers, mentions split payments, revenue sharing, multi-party payments, or similar payment distribution concepts, provides a company URL or business description for a recommendation, builds SaaS that routes money between parties (for example, POS, booking, invoicing — not operational SaaS without payment routing), asks about onboarding or KYC for merchants, sellers, and vendors, mentions connected account Dashboard or responsibility configurations, or asks about payment flows, white-label payments, or embedded payments.",
           "path": "skills/connect-recommend"
+        },
+        "stripe-apps": {
+          "name": "stripe-apps",
+          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
+          "path": "skills/stripe-apps"
         },
         "stripe-best-practices": {
           "name": "stripe-best-practices",
@@ -2333,8 +2348,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "1f4e9b59762f5b36764aa45cbc75bc5dbe208ec3",
-      "hash": "sha256-cv9eQvEk0eWd7R04zjVjsaRRe+F26YdXT354yCgSo7E=",
+      "rev": "195d9359bdc2890f83745df69927528ad4538406",
+      "hash": "sha256-DpLHCsb0FshNFmnbTdEaV7pyJndTTeIJJso7/xPfork=",
       "skills": {
         "architect": {
           "name": "architect",
