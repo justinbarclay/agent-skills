@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "7676817c12a1317454ae3898a0c5c1eacf5dd3d5",
-      "hash": "sha256-P9g6GT7DzwOEt9OsMecu9klc2WZiZ2pVsb6qrUsnAm4=",
+      "rev": "be42637c5af93fdc8526b68ec2f2651b930f316c",
+      "hash": "sha256-b/Z1Bl7IazUGz4WQaP1JFqUwBS60/KOHIzmcHPQJvLg=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2348,8 +2348,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "6f7e183aa9f48805c38746705fe6a17d42cafb94",
-      "hash": "sha256-z+W8E25KsOckQrjRYKwD3TGW0knHLJOSiueMVBjs1sY=",
+      "rev": "6dbbdd50cef1bdbfb540f80df8b598d0a546e3aa",
+      "hash": "sha256-87KOJFA4RqDtjknGAf4rg6eyxSTE3ZJumqvIexx4O58=",
       "skills": {
         "architect": {
           "name": "architect",
