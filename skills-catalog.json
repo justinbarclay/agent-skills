@@ -294,8 +294,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "7c180d9044c9ae2b442b567aad4e42a28dd5ed62",
-      "hash": "sha256-5i/QesRS+SQ4gDFCyj22uthen90GZsnhT7dQvetRbpA=",
+      "rev": "b8caa260a420a73042e35521de4b5c8baf6446cc",
+      "hash": "sha256-McF7KAswDpkX0FtjFX7vOva8YwQTFwxewjYhueQgtIA=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -1911,8 +1911,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "c5c31e2e96791ba7afd0957e344592719e201d65",
-      "hash": "sha256-qOfP7s5r7Bjxr+9NuRVRmxyV6GWgfukodfbmV2Ly18A=",
+      "rev": "c55f99b1158949752ae97ec466056eeafae5fcce",
+      "hash": "sha256-EUpsZSb1ZSJUs9b67xq3XLFvsJw9gqWERVeZup+5j3Q=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2165,8 +2165,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "84fdeffd12f2ee307994d1eb6feb48173b6e0502",
-      "hash": "sha256-pseSJJb5nBBGPzpxA1GzjGLB9OrT+u0At1saJ4NqZ1E=",
+      "rev": "8b78b531ab965735c5dc74f6f7a219e1e37326df",
+      "hash": "sha256-jsXcMkhu15MxR0zXnLLJeni0q0Aew2UxUSojl6zmOvg=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2190,7 +2190,7 @@
         },
         "domain-modeling": {
           "name": "domain-modeling",
-          "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
+          "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
           "path": "skills/engineering/domain-modeling"
         },
         "git-guardrails-claude-code": {
@@ -2746,8 +2746,8 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "44c9b2d6e889982ac18c27d05a19fefe335194e1",
-      "hash": "sha256-fnl+HbPL2qD5Zgz8a1NctjFJSqu6UsyHJAhQMLQNXXc=",
+      "rev": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "hash": "sha256-EsGNO0dULWf5Bx6bGrCv2kI2Z8aKH0kRvGiuN23wChQ=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
