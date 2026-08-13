@@ -195,13 +195,7 @@ def fetch-repo-skills [config: record] {
   let hash = (nix hash convert --hash-algo sha256 --to sri $raw_hash | str trim)
 
   # 3. Scan for SKILL.md files
-  let common_excludes = ["**/node_modules/**" "**/.git/**" "**/vendor/**"]
-  let skill_files = if ($skills_path | is-empty) {
-    glob $"($store_path)/**/SKILL.md" --depth 4 --exclude $common_excludes | sort
-  } else {
-    let scan_root = ($store_path | path join $skills_path)
-    glob $"($scan_root)/**/SKILL.md" --depth 3 --exclude $common_excludes | sort
-  }
+  let skill_files = (find-skill-files $store_path $skills_path)
 
   # PURELY FUNCTIONAL: Map files to records. Intermediate strings dropped every iteration.
   let parsed_skills_list = ($skill_files | each { |skill_file|
@@ -273,4 +267,29 @@ def parse-skill-description [md_content: string] {
   }
 
   null
+}
+
+# Find SKILL.md files under a single relative path within the store path
+def scan-skill-path [store_path: string, rel_path: string] {
+  let common_excludes = ["**/node_modules/**" "**/.git/**" "**/vendor/**"]
+  let scan_root = if ($rel_path | is-empty) {
+    $store_path
+  } else {
+    $store_path | path join $rel_path
+  }
+
+  glob $"($scan_root)/**/SKILL.md" --depth 6 --exclude $common_excludes
+}
+
+# Find all SKILL.md files across one or more relative paths
+def find-skill-files [store_path: string, skills_path: any] {
+  let paths = if ($skills_path | describe) =~ "list" {
+    $skills_path
+  } else if ($skills_path | is-empty) {
+    [""]
+  } else {
+    [$skills_path]
+  }
+
+  $paths | each { |p| scan-skill-path $store_path $p } | flatten | sort | uniq
 }
