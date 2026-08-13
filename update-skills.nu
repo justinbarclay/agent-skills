@@ -52,7 +52,9 @@ def main [
     { key: "superpowers", owner: "obra", repo: "superpowers", skills_path: "skills" },
     { key: "palkan", owner: "palkan", repo: "skills", skills_path: "", branch: "master" },
     { key: "rails_ai_agents", owner: "ThibautBaissac", repo: "rails_ai_agents", skills_path: ".agents/skills" },
-    { key: "statelyai", owner: "statelyai", repo: "skills", skills_path: "skills" }
+    { key: "statelyai", owner: "statelyai", repo: "skills", skills_path: "skills" },
+    { key: "pulumi", owner: "pulumi", repo: "agent-skills", skills_path: "" },
+    { key: "terraform", owner: "hashicorp", repo: "agent-skills", skills_path: "plugins/terraform" }
   ]
 
   let all_repo_keys = ($repo_configs | get key)
