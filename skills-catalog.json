@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "f17010c9bb483898c1d9c9f42dde2b3a98889434",
-      "hash": "sha256-vTqAu8eRY+8ymbf065SWHHjNX/li3SOR+sWq1npteTM=",
+      "rev": "f6656c1256d5a8adfa37db9110046ef20bac644c",
+      "hash": "sha256-5/0f5AnGWX3oM+M9Xm/zSmooz11+S1YRdFPmAX+DXi0=",
       "skills": {
         "algorithmic-art": {
           "name": "algorithmic-art",
@@ -2043,6 +2043,11 @@
           "name": "generate-docs",
           "description": "Generate fumadocs MDX documentation for agent skills. Use when users say \"generate docs\", \"document this skill\", \"create fumadocs for X\", \"update skill docs\", \"validate docs\", or when working with docs/content/docs directory. Handles initial generation, smart updates preserving manual edits, and validation. Uses SHA tracking for three-way merge logic.",
           "path": "skills/generate-docs"
+        },
+        "skill-template": {
+          "name": "skill-template",
+          "description": "Use when users say \"[trigger phrase 1]\", \"[trigger phrase 2]\", or when [specific scenario]. [WHAT this skill does]. [Additional trigger keywords for searchability].",
+          "path": "skills/accelint-skill-manager/assets/skill-template"
         }
       }
     },
@@ -2348,8 +2353,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "6dbbdd50cef1bdbfb540f80df8b598d0a546e3aa",
-      "hash": "sha256-87KOJFA4RqDtjknGAf4rg6eyxSTE3ZJumqvIexx4O58=",
+      "rev": "db620f542125142a568282c29f8d7421cb34cc51",
+      "hash": "sha256-SnwBXBlTSi4vkDsU9ifH5rJJyn0lbwgbPWLX9ibbunw=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2651,6 +2656,11 @@
           "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
           "path": "pstack/skills/reflect"
         },
+        "reproduce-and-fix-issues": {
+          "name": "reproduce-and-fix-issues",
+          "description": "Reproduce triaged Slack bugs through a configured app-control adapter, verify existing fixes, and open a bounded draft pull request only after before-and-after proof. Use only from the configured Benny repro automation.",
+          "path": "pstack/automations/benny/skills/reproduce-and-fix-issues"
+        },
         "review-and-ship": {
           "name": "review-and-ship",
           "description": "Review the current branch for bugs, intent fit, and test coverage; run or write tests; commit focused work; open or update a PR.",
@@ -2670,6 +2680,11 @@
           "name": "run-smoke-tests",
           "description": "Run Playwright smoke tests, debug failures, and verify fixes",
           "path": "cursor-team-kit/skills/run-smoke-tests"
+        },
+        "setup-benny": {
+          "name": "setup-benny",
+          "description": "Configure Benny and prepare its triage and repro automations. Use when installing Benny or changing its Slack, tracker, repository, routing, control, model, or budget settings.",
+          "path": "pstack/automations/benny/skills/setup-benny"
         },
         "setup-pstack": {
           "name": "setup-pstack",
@@ -2705,6 +2720,11 @@
           "name": "thermos-thermo-nuclear-code-quality-review",
           "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.",
           "path": "thermos/skills/thermo-nuclear-code-quality-review"
+        },
+        "triage-issue-reports": {
+          "name": "triage-issue-reports",
+          "description": "Triage Slack issue reports with one thread-only verdict, evidence review, cause-aware routing, tracker dedupe, and fail-closed ticket creation. Use only from the configured Benny triage automation.",
+          "path": "pstack/automations/benny/skills/triage-issue-reports"
         },
         "typescript-best-practices": {
           "name": "typescript-best-practices",
