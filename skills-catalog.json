@@ -2127,13 +2127,18 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "1953b6cce7344d880a054c42b8dd21ca3e50ebd5",
-      "hash": "sha256-4hfwzVCnYoT8p0prNmTGW8PSxDADM//LCpLU0ZlyftY=",
+      "rev": "2cda67e9ab99eec887c156c748d9a42d66ca5d53",
+      "hash": "sha256-7xaKWe8BHKv0ZaEwEPpip4RgQGF7fDGtiNS+bmJpCQs=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
           "description": "Use this skill when the user asks about Stripe Connect configuration, charge patterns, Dashboard access, or how to get started with Connect, is building a marketplace, platform, multi-vendor store, gig platform, or subscription platform, needs to pay out sellers, vendors, or providers, mentions split payments, revenue sharing, multi-party payments, or similar payment distribution concepts, provides a company URL or business description for a recommendation, builds SaaS that routes money between parties (for example, POS, booking, invoicing — not operational SaaS without payment routing), asks about onboarding or KYC for merchants, sellers, and vendors, mentions connected account Dashboard or responsibility configurations, or asks about payment flows, white-label payments, or embedded payments.",
           "path": "skills/connect-recommend"
+        },
+        "connect-required-verification-information": {
+          "name": "connect-required-verification-information",
+          "description": "Use this skill when the user asks what information a Stripe Connect connected account must provide for verification, onboarding, KYC, or account requirements; when they need to compare requirements between connected-account setups; or when they ask which verification fields, documents, or business details are required for a particular platform country, account country, business type, dashboard, service agreement, or capability.",
+          "path": "skills/connect-required-verification-information"
         },
         "stripe-apps": {
           "name": "stripe-apps",
@@ -2353,8 +2358,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "db620f542125142a568282c29f8d7421cb34cc51",
-      "hash": "sha256-SnwBXBlTSi4vkDsU9ifH5rJJyn0lbwgbPWLX9ibbunw=",
+      "rev": "2a8044425c7bddf429c3bdedf3ab61e791d34d65",
+      "hash": "sha256-CzY/qzk5FScg60s/o6nC2QOYVzzxAYKT9ga4R63lQ8U=",
       "skills": {
         "architect": {
           "name": "architect",
