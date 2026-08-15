@@ -575,8 +575,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "be42637c5af93fdc8526b68ec2f2651b930f316c",
-      "hash": "sha256-b/Z1Bl7IazUGz4WQaP1JFqUwBS60/KOHIzmcHPQJvLg=",
+      "rev": "df1edb2e05487d0aa6d93c747141e0aed1187f25",
+      "hash": "sha256-SA8dpLTYhkL2sqM8HqwgY3efkvlnFPUyeRTvxYvz1n4=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -675,7 +675,7 @@
         },
         "security-and-hardening": {
           "name": "security-and-hardening",
-          "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services.",
+          "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
           "path": "skills/security-and-hardening"
         },
         "shipping-and-launch": {
@@ -690,7 +690,7 @@
         },
         "spec-driven-development": {
           "name": "spec-driven-development",
-          "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea.",
+          "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
           "path": "skills/spec-driven-development"
         },
         "using-agent-skills": {
@@ -1911,8 +1911,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "c55f99b1158949752ae97ec466056eeafae5fcce",
-      "hash": "sha256-EUpsZSb1ZSJUs9b67xq3XLFvsJw9gqWERVeZup+5j3Q=",
+      "rev": "6ebbb6ec976f9a867af47412a83578747fbeb6fe",
+      "hash": "sha256-ISURu6Cr6jZqPsluMSadEHEjyB5XaTz5RlS5FONjLnQ=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2127,8 +2127,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "2cda67e9ab99eec887c156c748d9a42d66ca5d53",
-      "hash": "sha256-7xaKWe8BHKv0ZaEwEPpip4RgQGF7fDGtiNS+bmJpCQs=",
+      "rev": "f4abb4498d2e3298c6b9e52cdd4559cebfc70a2f",
+      "hash": "sha256-zGub2YozvswYUj4o/ffDvP8nPXI5hMd1pq69Xb5w34g=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2993,8 +2993,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "d083ad2cc8e3fecc4375f2dfe2edde941668df22",
-      "hash": "sha256-tMcPaRbr7a+7s0aynMwf2NjuO2hx+0qPLE6GBrkXRyw=",
+      "rev": "641c2fe26d673e4369ca51fd8aaeb5e126f852b9",
+      "hash": "sha256-J3os0FkZqcJr4ujKDu1TLEqGcRXhZwIM/h/0EDmPr+4=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
