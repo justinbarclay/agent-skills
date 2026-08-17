@@ -2175,8 +2175,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "068b6e0c62393147daf03530149cdce209c93da8",
-      "hash": "sha256-QYJScM5FqsN+QsHHo5oJx/1e7YqGxdod/Iv6kpnQZ+o=",
+      "rev": "9c9f36ccd3995266cd675468af71639c8dde1ec5",
+      "hash": "sha256-CJNC5fORkc+FGd+FlCXG6rZcVv2MCqCNHCVC0AW623Q=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2993,7 +2993,7 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "641c2fe26d673e4369ca51fd8aaeb5e126f852b9",
+      "rev": "b490e6cec81ad09b78bc089d2d017c23a1b85179",
       "hash": "sha256-J3os0FkZqcJr4ujKDu1TLEqGcRXhZwIM/h/0EDmPr+4=",
       "skills": {
         "cloudformation-to-pulumi": {
