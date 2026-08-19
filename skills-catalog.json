@@ -3,9 +3,14 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "f379e5ad66e2febc1616cf8d6284666fecbe514e",
-      "hash": "sha256-BDLEsQ4rJLspINlHpu0rkvaC4BHdwQ4QUTko/v+xbAE=",
+      "rev": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e",
+      "hash": "sha256-0ZtHTJVHeW8jIprKgCo/yU2ZI2cZxUqD3Riet3UWdt8=",
       "skills": {
+        "academy-guide": {
+          "name": "academy-guide",
+          "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together. Only recommend on a strong match; never invent Academy content.",
+          "path": "skills/academy-guide"
+        },
         "algorithmic-art": {
           "name": "algorithmic-art",
           "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
@@ -30,11 +35,6 @@
           "name": "canvas-design",
           "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
           "path": "skills/canvas-design"
-        },
-        "claude-academy-guide": {
-          "name": "claude-academy-guide",
-          "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"what can Claude do\", \"teach me\", \"learn to use\"; questions about artifacts, projects, skills, plugins, connectors, MCP, Claude Code, Claude Cowork, Claude in Excel, Claude in PowerPoint, Claude in Chrome, the Claude API, or prompting technique; requests about rolling Claude out to a team, class, or organization; and any ask for training materials, onboarding content, or learning resources. Use it when the user is learning how to use a feature or product — not when they are mid-task and just want the task done. This skill composes with other skills: after consulting product documentation to answer how a Claude feature works, also check here for a matching course or tutorial — a docs-grounded answer and an Academy recommendation belong together, even when another skill has already answered the question. Only recommend on a strong match; never invent Academy content.",
-          "path": "skills/claude-academy-guide"
         },
         "claude-api": {
           "name": "claude-api",
@@ -2368,8 +2368,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "c7f203457c16815379130697c41e74fd202e9978",
-      "hash": "sha256-xbIj+GVf0H9kEv14buTnqOe0n47gfvEvVXra20khsV0=",
+      "rev": "60c641e4fad674784b30abcf9f8915dea39df38d",
+      "hash": "sha256-xgL/L1VK6YzRdDdvQoIgOqWd9TcblvF8z4t9vWNhA6U=",
       "skills": {
         "architect": {
           "name": "architect",
