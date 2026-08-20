@@ -1921,8 +1921,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "6ebbb6ec976f9a867af47412a83578747fbeb6fe",
-      "hash": "sha256-ISURu6Cr6jZqPsluMSadEHEjyB5XaTz5RlS5FONjLnQ=",
+      "rev": "fa734fc517a045b936fd8df6ed40c3f955388694",
+      "hash": "sha256-g2NqKHp37ZzIZ69n2vjWdsAvCK6A+6ZsGwxScDnTA40=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -1946,7 +1946,7 @@
         },
         "accelint-english-manager": {
           "name": "accelint-english-manager",
-          "description": "Use when drafting, rewriting, simplifying, reviewing, editing, polishing, humanizing, de-slopping, cleaning up, or checking written English that must become plainer, clearer, more direct, easier to scan, or easier to act on without changing the user's intended meaning, audience, tone, or explicit constraints. Also use when the user says \"plain English\", \"simple English\", \"make this readable\", \"make this clearer\", \"make this direct\", \"make this sound better\", \"too wordy\", \"too formal\", \"edit this\", \"clean this up\", \"review this writing\", \"grammar check\", \"Orwell\", \"STE\", \"ASD-STE100\", \"ADHD-friendly\", \"shorter\", \"less fluffy\", or asks for clearer docs, prompts, emails, UI copy, reports, support replies, release notes, or instructions. Make sure to use this skill for LLM-written documentation or LLM-generated responses that need stronger clarity, scanability, plain-language discipline, or tone-preserving cleanup.",
+          "description": "Use when the user wants prose rewritten, tightened, audited, simplified, polished, humanized, grammar-checked, or made plainer, clearer, shorter, easier to scan, or easier to act on without changing the intended meaning, audience, tone, or explicit constraints. Trigger on requests such as plain English, simple English, make this clearer, make this more direct, clean this up, edit this, review this writing, grammar check, too wordy, too formal, less fluffy, friendlier, shorter, audit then rewrite, keep the tone, mode=strict, STE, ASD-STE100, or ADHD-friendly. Also trigger for docs, prompts, emails, UI copy, support replies, release notes, status updates, incident notes, procedural text, and other LLM-written prose. Prefer this skill when the main job is improving English prose or preserving tone while increasing clarity, including audit-only requests and exact-text-preservation constraints, but not when the real task is fact-checking, policy setting, or substantive content design.",
           "path": "skills/accelint-english-manager"
         },
         "accelint-nextjs-best-practices": {
@@ -1971,7 +1971,7 @@
         },
         "accelint-prompt-manager": {
           "name": "accelint-prompt-manager",
-          "description": "Turn vague, underspecified, or confusing requests into clear, executable prompts across any domain. Use this skill aggressively when users ask to improve or optimize a prompt, seem unsure what to ask for, give ambiguous requirements, omit audience/constraints/success criteria, need help explaining something clearly, or want structure before execution. Also use it for meta-prompting, prompt-framework questions, non-technical users, and any request that would benefit from clarifying intent before doing the work. When in doubt, trigger this skill before execution.",
+          "description": "Turn user-provided requests, drafts, or prompt text into clearer, more executable prompts without performing the underlying task. Use when the user explicitly wants to improve, rewrite, optimize, tighten, clarify, structure, or adapt a prompt, when they have an idea but do not know how to phrase it, or when the prompt is missing audience, constraints, format, execution context, or success criteria. Also use for system prompts, meta-prompting, prompt frameworks, Claude Code prompts, and batch or API prompt design. Do not use when the user mainly wants the task executed, researched, or implemented rather than the prompt improved.",
           "path": "skills/accelint-prompt-manager"
         },
         "accelint-qrspi-apply": {
@@ -2016,7 +2016,7 @@
         },
         "accelint-skill-prose": {
           "name": "accelint-skill-prose",
-          "description": "Use when creating, auditing, tightening, simplifying, de-slopping, polishing, or reviewing `SKILL.md` files, agent-skill instructions, `CLAUDE.md`/`AGENTS.md`-style guidance, or other behavior-defining prompt artifacts where wording changes can alter trigger coverage, workflow order, guardrails, or exact technical meaning. Use this skill whenever the user wants clearer skill prose without changing behavior, asks for a safe skill-description rewrite, reviews prompt instructions for ambiguity, or needs to preserve exact paths, commands, fields, identifiers, or approval semantics while editing.",
+          "description": "Use when creating, auditing, tightening, simplifying, polishing, or reviewing `SKILL.md` files, agent-skill instructions, `CLAUDE.md` or `AGENTS.md` guidance, or other behavior-defining prompt artifacts whose wording controls trigger coverage, workflow order, guardrails, approval semantics, or exact technical meaning. Prefer this skill over general prose editing when the job is to make wording clearer without changing behavior, including safe description rewrites, ambiguity audits, and edits that must preserve exact paths, commands, fields, or identifiers. Do not use it when the main task is broader content strategy, policy design, domain review, or ordinary prose cleanup with no behavior risk.",
           "path": "skills/accelint-skill-prose"
         },
         "accelint-tanstack-query-best-practices": {
@@ -2137,8 +2137,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "96cfe6bf30e661f674950cd8dbd47beaeadc5b6e",
-      "hash": "sha256-CAUON5qUZ6Y7vi1tN5ayh6YJDdU85OLa7L978LRY0YI=",
+      "rev": "e8f9aee6f9a34a633243e632e650401a76c36c41",
+      "hash": "sha256-vDJLsG8COx7zIL7j8M73CirbI2TXo/ItZ/AY3bHapgo=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2185,8 +2185,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "9c9f36ccd3995266cd675468af71639c8dde1ec5",
-      "hash": "sha256-CJNC5fORkc+FGd+FlCXG6rZcVv2MCqCNHCVC0AW623Q=",
+      "rev": "885e2ca4d842d139e9aef4e48d366c63cb1b8013",
+      "hash": "sha256-BAhmwFuEZPKsnSCwZ9NzPG5b7alCXa2/f/LXSMuJX7o=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2260,7 +2260,7 @@
         },
         "pocock-code-review": {
           "name": "pocock-code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
           "path": "skills/engineering/code-review"
         },
         "pocock-tdd": {
@@ -2295,7 +2295,7 @@
         },
         "setup-matt-pocock-skills": {
           "name": "setup-matt-pocock-skills",
-          "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+          "description": "Configure this repo for the engineering skills: set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
           "path": "skills/engineering/setup-matt-pocock-skills"
         },
         "setup-pre-commit": {
@@ -2305,7 +2305,7 @@
         },
         "setup-ts-deep-modules": {
           "name": "setup-ts-deep-modules",
-          "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
+          "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
           "path": "skills/in-progress/setup-ts-deep-modules"
         },
         "to-questionnaire": {
@@ -2315,27 +2315,27 @@
         },
         "to-spec": {
           "name": "to-spec",
-          "description": "Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
+          "description": "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed.",
           "path": "skills/engineering/to-spec"
         },
         "to-tickets": {
           "name": "to-tickets",
-          "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.",
+          "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker (edges as text in one file per ticket locally, or native blocking links on a real tracker).",
           "path": "skills/engineering/to-tickets"
         },
         "triage": {
           "name": "triage",
-          "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
+          "description": "Move issues and external PRs through a state machine of triage roles, categorise, verify, grill if needed, and write agent-ready briefs.",
           "path": "skills/engineering/triage"
         },
         "wait-what": {
           "name": "wait-what",
-          "description": "Stop. That last message did not land — re-pitch it.",
+          "description": "Stop. That last message did not land: re-pitch it.",
           "path": "skills/productivity/wait-what"
         },
         "wayfinder": {
           "name": "wayfinder",
-          "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+          "description": "Plan a huge chunk of work (more than one agent session can hold) as a shared map of decision tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
           "path": "skills/engineering/wayfinder"
         },
         "wizard": {
@@ -2345,7 +2345,7 @@
         },
         "writing-beats": {
           "name": "writing-beats",
-          "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+          "description": "Writing, exploit; assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
           "path": "skills/in-progress/writing-beats"
         },
         "writing-for-agents": {
@@ -2355,12 +2355,12 @@
         },
         "writing-fragments": {
           "name": "writing-fragments",
-          "description": "Writing, explore — mine raw fragments, no structure yet.",
+          "description": "Writing, explore: mine raw fragments, no structure yet.",
           "path": "skills/in-progress/writing-fragments"
         },
         "writing-shape": {
           "name": "writing-shape",
-          "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
+          "description": "Writing, exploit: shape raw material into an article, paragraph by paragraph.",
           "path": "skills/in-progress/writing-shape"
         }
       }
@@ -2368,8 +2368,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "60c641e4fad674784b30abcf9f8915dea39df38d",
-      "hash": "sha256-xgL/L1VK6YzRdDdvQoIgOqWd9TcblvF8z4t9vWNhA6U=",
+      "rev": "fd6dd6f7276956a532bb78a748a8d2818b6eb5f4",
+      "hash": "sha256-3sX0B/Bi33jhu2h82ZdexGh/l+Op0P9JkYuOqVrqIiU=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2775,6 +2775,11 @@
           "name": "workflow-from-chats",
           "description": "Extract durable working preferences from recent Cursor chats and convert them into skills, rules, or workflow docs. Use when asked to learn preferences, mine feedback, personalize workflows, or generate team/person-specific agent guidance.",
           "path": "cursor-team-kit/skills/workflow-from-chats"
+        },
+        "x-api-mcp-guide": {
+          "name": "x-api-mcp-guide",
+          "description": "ALWAYS read this before using any X connection, X MCP, or X plugin, and again on any X error. Do not call an X tool until this file has been read in the current turn.",
+          "path": "third_party/x/skills/x-api-mcp-guide"
         }
       }
     },
@@ -3091,8 +3096,8 @@
     "terraform": {
       "owner": "hashicorp",
       "repo": "agent-skills",
-      "rev": "4451ceca5456e79cc776efee96a744f7ac96e5bf",
-      "hash": "sha256-h55m1tpG7KYs+5b+OemiNVMztpwrsFWrjjpBN5XuT1c=",
+      "rev": "647fd7dfd79f31020e239b0258a2d4e9400fb7c5",
+      "hash": "sha256-9vXteKaouJUQXf3p0wv26ZONTTo5JyPPTrnb23F7xXg=",
       "skills": {
         "azure-verified-modules": {
           "name": "azure-verified-modules",
