@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "0a64e398ec6bb34a494f0c347e8ccae53a862f8e",
-      "hash": "sha256-0ZtHTJVHeW8jIprKgCo/yU2ZI2cZxUqD3Riet3UWdt8=",
+      "rev": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "hash": "sha256-nVid8vENmLDh7ffDqh+bJbEWtXcVltA0qa2rItmniZM=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -304,8 +304,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "b8caa260a420a73042e35521de4b5c8baf6446cc",
-      "hash": "sha256-McF7KAswDpkX0FtjFX7vOva8YwQTFwxewjYhueQgtIA=",
+      "rev": "dd089a8c752c966dee8bf0f27cb625ba193ffd9e",
+      "hash": "sha256-fXbWS0+jtRYXdVn1KdqBdU0wEirrg5t/3IxdqPaAs8M=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "df1edb2e05487d0aa6d93c747141e0aed1187f25",
-      "hash": "sha256-SA8dpLTYhkL2sqM8HqwgY3efkvlnFPUyeRTvxYvz1n4=",
+      "rev": "5a5ea45e806f82273549fd85e60adb95d55f510d",
+      "hash": "sha256-vDJLmGx+8DtgBsOT8g2JLMqkUSgjg8VwJaQMYcg/eMY=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -1921,8 +1921,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "f3c27d87f8f2dd8cedca3117f5249c2635f63ced",
-      "hash": "sha256-BejxZ8owF+LJE1tHp8NNB1ER2cgRHorYZXNCOt10RK4=",
+      "rev": "68f6314447139c4644c87450ea44a7e3fbf27df7",
+      "hash": "sha256-vZ04uN2/Ja5k15fQ7HLbooEyhMNXRUliOrZWUEp3EFc=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -1931,7 +1931,7 @@
         },
         "accelint-architecture-doc": {
           "name": "accelint-architecture-doc",
-          "description": "Generate or update an ARCHITECTURE.md living document for any codebase. Use this skill whenever a user mentions \"architecture.md\", \"ARCHITECTURE.md\", \"document my architecture\", \"architecture overview\", \"system architecture\", \"generate architecture doc\", \"create architecture file\", \"update architecture\", \"architecture diagram\", or wants a technical overview of how their project is structured. Make sure to use this skill whenever users want to document how their system works — even if they phrase it as \"write up the system\", \"document the tech stack\", \"create a technical overview\", or \"help me describe the architecture\". Always prefer this skill over ad-hoc architecture documentation.",
+          "description": "Create or update a living ARCHITECTURE.md for a codebase. Use when the user wants to write, refresh, restructure, or maintain an architecture document; document how the system is organized across tech stack, deployment model, services, components, and data stores; or turn codebase findings into durable architecture docs for engineers or agents. Trigger on requests such as write an architecture doc, document this system, create or update ARCHITECTURE.md, give me a technical overview of this repo, or map out how this app is put together, even when the file is not named. Prefer this skill for file-producing architecture documentation, not for generic architecture advice, implementation planning, or diagram-only brainstorming unless that work is clearly part of updating the document.",
           "path": "skills/accelint-architecture-doc"
         },
         "accelint-archive-synthesis": {
@@ -2049,10 +2049,25 @@
           "description": "Comprehensive vitest testing guidance for TypeScript projects. Use when (1) Writing new tests with AAA pattern, parameterized tests, or async/await, (2) Reviewing test code for anti-patterns like loose assertions (toBeTruthy), over-mocking, or nested describe blocks, (3) Optimizing slow test suites, (4) Implementing property-based testing with fast-check - especially for encode/decode pairs, roundtrip properties, validators, normalizers, and idempotence checks. Covers test organization, assertions, test doubles hierarchy (fakes/stubs/mocks), async testing, performance patterns, and property-based testing patterns. Trigger keywords on vitest, *.test.ts, describe, it, expect, vi.mock, fast-check, fc.property, roundtrip, idempotence.",
           "path": "skills/accelint-ts-testing"
         },
+        "constraints-extractor": {
+          "name": "constraints-extractor",
+          "description": "Extract explicit and implicit constraints (compliance, security, hosting, tooling, stakeholder, scope, and external-dependency boundaries) from a project's documentation, then build or update a canonical CONSTRAINTS.md. Spawns one subagent per source document to flag externally-imposed boundaries with evidence citations and confidence ratings, then correlates, deduplicates, and organizes the results by category before writing them into CONSTRAINTS.md. Use this skill whenever a user mentions \"CONSTRAINTS.md\", \"extract constraints\", \"find our constraints\", \"document constraints\", \"compliance constraints\", \"what limits this project\", \"synthesize constraints\", or wants to capture externally-imposed boundaries (legal, security, compliance, stakeholder, vendor) that shape what a project can build and how. Always prefer this skill over ad-hoc constraint documentation.",
+          "path": "skills/constraints-extractor"
+        },
+        "epistemic-mapper": {
+          "name": "epistemic-mapper",
+          "description": "Build or update a canonical EPISTEMIC-MAP.md sorting a project's knowledge into four states: validated Facts, open Questions, undocumented Assumptions, and inferred Risks. Purpose-built for prototype-to-production handoff, where a signed contract means a new engineering team must take over before the original builder's tacit knowledge walks out the door. Spawns subagents across docs and the codebase to find what's proven, what's asked, what's silently assumed, and what nobody has noticed, then runs a dedicated synthesis pass for systemic risks no single source states. Use whenever a user mentions \"epistemic map\", \"knowledge map\", \"EPISTEMIC-MAP.md\", \"known unknowns\", \"unknown unknowns\", \"what do we actually know vs assume\", \"map our assumptions\", \"handoff risk map\", \"prototype handoff\", or \"onboarding a team onto a prototype\". Always prefer this skill over ad-hoc knowledge-gap documentation.",
+          "path": "skills/epistemic-mapper"
+        },
         "generate-docs": {
           "name": "generate-docs",
           "description": "Generate fumadocs MDX documentation for agent skills. Use when users say \"generate docs\", \"document this skill\", \"create fumadocs for X\", \"update skill docs\", \"validate docs\", or when working with docs/content/docs directory. Handles initial generation, smart updates preserving manual edits, and validation. Uses SHA tracking for three-way merge logic.",
           "path": "skills/generate-docs"
+        },
+        "jargon-extractor": {
+          "name": "jargon-extractor",
+          "description": "Extract internal terminology, acronyms, shorthand, and jargon from a set of documents, then build or update a project glossary in JARGON.md. Reuse an existing JARGON.md anywhere in the repo if one already exists; otherwise default to the repo root. Spawns one subagent per input file to flag terms with plain English definitions, then a single reduce subagent correlates, deduplicates, and alphabetizes the combined results, intelligently merging any overlapping definitions before writing them into the glossary. Use this skill whenever the user asks to extract jargon, build or update a glossary, catalog acronyms, document internal terminology, flag undefined terms, or mentions a JARGON.md file by name, even if phrased casually, for example 'go through these design docs and pull out anything a new hire wouldn't know' or 'scan this repo's markdown files and build a term list.' Also trigger when the user hands over several documents and asks what specialized vocabulary or shorthand appears across them.",
+          "path": "skills/jargon-extractor"
         },
         "skill-template": {
           "name": "skill-template",
@@ -2137,8 +2152,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "453dacd48aac27d751aa3cb7e410256efb3fcfca",
-      "hash": "sha256-qntvUL+eKL5JTxoQnJSZu6NgXWXeo+wqM6FnV3VPR8c=",
+      "rev": "bad904b02f7071592c38bcca83d33667ff015bb1",
+      "hash": "sha256-H9EM0zeHvYS/VTN59kFnO8EhLexTu5OZY45fXPsiiZA=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2185,8 +2200,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "0ab1b63a410a03d3627979a109c8695de27af954",
-      "hash": "sha256-Zg64vWsmtVk7WCH/f+bifju+L8yHeAwYbDNh6Ah43V0=",
+      "rev": "5b15a47f2d7150f545fbcacbfe381787fc0230dc",
+      "hash": "sha256-FPAAotNqA5aHrFDlj/XddoLs4TDKi+4J5H/mvevlOlk=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2242,6 +2257,11 @@
           "name": "implement",
           "description": "Implement a piece of work based on a spec or set of tickets.",
           "path": "skills/engineering/implement"
+        },
+        "implement-spec": {
+          "name": "implement-spec",
+          "description": "Implement a specification in code.",
+          "path": "skills/in-progress/implement-spec"
         },
         "improve-codebase-architecture": {
           "name": "improve-codebase-architecture",
