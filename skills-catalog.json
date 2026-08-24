@@ -766,6 +766,11 @@
           "description": "Guidelines for developing GraphQL APIs and React applications using Apollo Client for state management, data fetching, and caching",
           "path": "apollo-graphql"
         },
+        "aspnet-core": {
+          "name": "aspnet-core",
+          "description": "Guidelines for ASP.NET Core web development covering API design, authentication, caching, and best practices",
+          "path": "aspnet-core"
+        },
         "astro": {
           "name": "astro",
           "description": "Expert in Astro framework with static generation and partial hydration patterns",
@@ -1296,25 +1301,10 @@
           "description": "Guidelines for building production-grade microservices with FastAPI/Python and Go, covering serverless patterns, clean architecture, observability, and resilience.",
           "path": "microservices"
         },
-        "mindrally-aspnet-core": {
-          "name": "mindrally-aspnet-core",
-          "description": "Guidelines for ASP.NET Core web development covering API design, authentication, caching, and best practices",
-          "path": "aspnet-core"
-        },
         "mindrally-performance-optimization": {
           "name": "mindrally-performance-optimization",
           "description": "Performance optimization guidelines for web development including server-side rendering, CSS best practices, and JavaScript optimization",
           "path": "performance-optimization"
-        },
-        "mindrally-playwright": {
-          "name": "mindrally-playwright",
-          "description": "Playwright end-to-end testing best practices for web applications, covering test design, locator strategies, and assertion patterns.",
-          "path": "playwright"
-        },
-        "mindrally-security-best-practices": {
-          "name": "mindrally-security-best-practices",
-          "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
-          "path": "security-best-practices"
         },
         "mindrally-technical-writing": {
           "name": "mindrally-technical-writing",
@@ -1470,6 +1460,11 @@
           "name": "pixi-js",
           "description": "Expert guidance for Pixi.js game development with TypeScript, focusing on high-performance web and mobile games",
           "path": "pixi-js"
+        },
+        "playwright": {
+          "name": "playwright",
+          "description": "Playwright end-to-end testing best practices for web applications, covering test design, locator strategies, and assertion patterns.",
+          "path": "playwright"
         },
         "playwright-cursor-rules": {
           "name": "playwright-cursor-rules",
@@ -1665,6 +1660,11 @@
           "name": "scss-best-practices",
           "description": "SCSS/Sassy CSS best practices and coding guidelines for maintainable, scalable stylesheets",
           "path": "scss-best-practices"
+        },
+        "security-best-practices": {
+          "name": "security-best-practices",
+          "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
+          "path": "security-best-practices"
         },
         "selenium-automation": {
           "name": "selenium-automation",
@@ -2466,16 +2466,6 @@
           "description": "Guide users building apps, scripts, CI pipelines, or automations on top of the Cursor TypeScript SDK (`@cursor/sdk`). Use this skill whenever the user mentions integrating, installing, or writing code against the Cursor SDK; whenever they say `Agent.create`, `Agent.prompt`, `Agent.resume`, `agent.send`, `run.stream`, `CursorAgentError`, or `@cursor/sdk`; whenever they ask to run Cursor agents programmatically from a script, CI/CD pipeline, GitHub Action, backend service, or any other code that isn't the Cursor IDE itself; and whenever they want to pick between local and cloud runtime, configure MCP servers for an SDK agent, or handle streaming, cancellation, or errors from an SDK agent. Also trigger when a user is wiring Cursor into an automation, writing a bot that runs Cursor, or porting REST `/v1/agents` calls to the SDK, even if they don't explicitly name the package. Use this eagerly rather than answering from memory; the SDK surface evolves and this skill plus its references are the source of truth for the external package.",
           "path": "cursor-sdk/skills/cursor-sdk"
         },
-        "cursor-tdd": {
-          "name": "cursor-tdd",
-          "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
-          "path": "pstack/skills/tdd"
-        },
-        "cursor-teach": {
-          "name": "cursor-teach",
-          "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
-          "path": "pstack/skills/teach"
-        },
         "cursor-technical-writing": {
           "name": "cursor-technical-writing",
           "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
@@ -2736,6 +2726,16 @@
           "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
           "path": "pstack/skills/swarm"
         },
+        "tdd": {
+          "name": "tdd",
+          "description": "Use only when the user explicitly asks for TDD, a failing test, or a regression test, OR when the bug has an obvious cheap local test target. Skip when the test path is unclear, expensive, integration-heavy, or not requested.",
+          "path": "pstack/skills/tdd"
+        },
+        "teach": {
+          "name": "teach",
+          "description": "Explain a body of work plainly so a person actually understands it. Runs the `how` and `why` skills and weaves what they find into one clear explanation. Use for 'teach me this', 'help me really understand X', 'explain this change or subsystem to me'.",
+          "path": "pstack/skills/teach"
+        },
         "thermo-nuclear-code-quality-review": {
           "name": "thermo-nuclear-code-quality-review",
           "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.",
@@ -2935,6 +2935,11 @@
           "description": "Implements Rails caching patterns for performance optimization. Use when adding fragment caching, Russian doll caching, low-level caching, cache invalidation, or when user mentions caching, performance, cache keys, or memoization. WHEN NOT: General query optimization (use performance-optimization), background job processing, or problems caused by N+1 queries rather than missing caches.",
           "path": ".agents/skills/caching-strategies"
         },
+        "code-review": {
+          "name": "code-review",
+          "description": "Analyzes Rails code quality, architecture, and patterns without modifying code. Use when the user wants a code review, quality analysis, architecture audit, or when user mentions review, audit, code quality, anti-patterns, or SOLID principles. WHEN NOT: Actually implementing fixes (use specialist agents), writing new tests (use rspec-agent), or generating new features.",
+          "path": ".agents/skills/code-review"
+        },
         "codex-review": {
           "name": "codex-review",
           "description": "Get an independent second opinion from OpenAI Codex CLI on a plan, diff, spec, or Claude's last response. Use when the user asks to \"get a second opinion\", \"have codex review\", \"cross-check with codex\", or wants adversarial review of Claude's output. Argument is one of plan|diff|spec|last-response (default last-response).",
@@ -2979,11 +2984,6 @@
           "name": "rails-concern",
           "description": "Creates Rails concerns for shared behavior across models or controllers with TDD. Use when extracting shared code, creating reusable modules, DRYing up models/controllers, or when user mentions concerns, modules, mixins, or shared behavior. WHEN NOT: Logic used by only one model or controller (keep it in place), complex business logic (use service objects), or query encapsulation (use query objects).",
           "path": ".agents/skills/rails-concern"
-        },
-        "rails_ai_agents-code-review": {
-          "name": "rails_ai_agents-code-review",
-          "description": "Analyzes Rails code quality, architecture, and patterns without modifying code. Use when the user wants a code review, quality analysis, architecture audit, or when user mentions review, audit, code quality, anti-patterns, or SOLID principles. WHEN NOT: Actually implementing fixes (use specialist agents), writing new tests (use rspec-agent), or generating new features.",
-          "path": ".agents/skills/code-review"
         },
         "rails_ai_agents-performance-optimization": {
           "name": "rails_ai_agents-performance-optimization",
