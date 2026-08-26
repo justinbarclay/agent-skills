@@ -1921,8 +1921,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "a01b0e36ce6765fd7a51c4ddf7c94b256043e555",
-      "hash": "sha256-D4vCtUFZ8ObWulLV1H19ut5mFtRMse3tFbhvptqJIc4=",
+      "rev": "459a846a65544cf311164059f2ea4623ec443b02",
+      "hash": "sha256-0mSfaZabk2v8cBGvN8hiIUIpqnea8sv+mRgXYv2XuTI=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2157,8 +2157,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "bad904b02f7071592c38bcca83d33667ff015bb1",
-      "hash": "sha256-H9EM0zeHvYS/VTN59kFnO8EhLexTu5OZY45fXPsiiZA=",
+      "rev": "1dc126b93cc62e28aff7e00e51406dfeb8ac88d5",
+      "hash": "sha256-UxvHuwEeiO1/n47qX1afYlTgTBZOxli3KJi2ekC5kDk=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2172,7 +2172,7 @@
         },
         "stripe-apps": {
           "name": "stripe-apps",
-          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
+          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing, plus submitting one agentic feedback report after a build. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
           "path": "skills/stripe-apps"
         },
         "stripe-best-practices": {
