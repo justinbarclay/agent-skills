@@ -304,8 +304,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "dd089a8c752c966dee8bf0f27cb625ba193ffd9e",
-      "hash": "sha256-fXbWS0+jtRYXdVn1KdqBdU0wEirrg5t/3IxdqPaAs8M=",
+      "rev": "20e89cc4bb256eb7b1fcbdc68f7175284709a847",
+      "hash": "sha256-D+agUOd4xDQ3uHft1UjQwzg2BLQhLJoUegLQF+Qr2kg=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "5a5ea45e806f82273549fd85e60adb95d55f510d",
-      "hash": "sha256-vDJLmGx+8DtgBsOT8g2JLMqkUSgjg8VwJaQMYcg/eMY=",
+      "rev": "36fc35c13b28e4c58320eb6db7a6eee843453b47",
+      "hash": "sha256-kM0Rk5PRZQTdv2uICW4HcWhOSip7efdUOc8IOMBnEe4=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -655,7 +655,7 @@
         },
         "git-workflow-and-versioning": {
           "name": "git-workflow-and-versioning",
-          "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
+          "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
           "path": "skills/git-workflow-and-versioning"
         },
         "idea-refine": {
@@ -2398,8 +2398,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "bdf7aa355337897f167153e05069aca505dae17c",
-      "hash": "sha256-wXxvdyS8gs3okplWpK6THQ+TWBln2E4VEKFcQuBlTGQ=",
+      "rev": "fdf357fae76feff7e5f2e5aaff57f99f644b55f8",
+      "hash": "sha256-CKD7Y1pxhLKRDtUUpWsSMlfTDgcXMKE08rE6HsL3kyc=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2540,6 +2540,11 @@
           "name": "maintain-verification-skill",
           "description": "Periodic pass that keeps a project's verification skill and feature map honest: parallel source readers per feature, one live session driving every feature, at most one PR of proven corrections. Use for /maintain-verification-skill or \"audit the verify skill\".",
           "path": "pstack/skills/maintain-verification-skill"
+        },
+        "make-bot-ui": {
+          "name": "make-bot-ui",
+          "description": "Use when building a custom UI (page, dashboard, buttons) that should wake a Grok Bot over a webhook, when the user must provide a webhook sender key, or when exposing that UI on Tailscale.",
+          "path": "pstack/skills/make-bot-ui"
         },
         "make-pr-easy-to-review": {
           "name": "make-pr-easy-to-review",
@@ -3126,8 +3131,8 @@
     "terraform": {
       "owner": "hashicorp",
       "repo": "agent-skills",
-      "rev": "6333093c37a318cb800d57a6de7d0877a9e048a4",
-      "hash": "sha256-hzL1bVyptTYysSXXAB4zPKQjNmAuhamRLasrPVnBCgI=",
+      "rev": "326846817128fd1d052d25fbfded490ce2c5886e",
+      "hash": "sha256-bci75VnUKNAujge7FSYxMSKW4CJX4mQZqWI4e7HW+kQ=",
       "skills": {
         "azure-verified-modules": {
           "name": "azure-verified-modules",
