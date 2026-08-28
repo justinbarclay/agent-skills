@@ -304,8 +304,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "20e89cc4bb256eb7b1fcbdc68f7175284709a847",
-      "hash": "sha256-D+agUOd4xDQ3uHft1UjQwzg2BLQhLJoUegLQF+Qr2kg=",
+      "rev": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "hash": "sha256-tTSJf53OQltUfxTH4hdqcnw5ywCjCZP8/JqQ593cyB8=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "36fc35c13b28e4c58320eb6db7a6eee843453b47",
-      "hash": "sha256-kM0Rk5PRZQTdv2uICW4HcWhOSip7efdUOc8IOMBnEe4=",
+      "rev": "f63ec56a3cc936408d792956ae583c3c96a825bd",
+      "hash": "sha256-Lp/vWfMIrC2tso+nPBaUynP904VjoRywibSV8H2YHmY=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2157,8 +2157,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "1dc126b93cc62e28aff7e00e51406dfeb8ac88d5",
-      "hash": "sha256-UxvHuwEeiO1/n47qX1afYlTgTBZOxli3KJi2ekC5kDk=",
+      "rev": "3ca4090c2aef3fc1fd21754c5ef82efe0d56149e",
+      "hash": "sha256-sz2lmHpOtOSyXUdESDWqedET53xHu51b4ReHB5GX3rY=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2217,6 +2217,11 @@
           "name": "claude-handoff",
           "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
           "path": "skills/in-progress/claude-handoff"
+        },
+        "code-review": {
+          "name": "code-review",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "path": "skills/engineering/code-review"
         },
         "codebase-design": {
           "name": "codebase-design",
@@ -2282,11 +2287,6 @@
           "name": "migrate-to-shoehorn",
           "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
           "path": "skills/misc/migrate-to-shoehorn"
-        },
-        "pocock-code-review": {
-          "name": "pocock-code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
-          "path": "skills/engineering/code-review"
         },
         "pocock-tdd": {
           "name": "pocock-tdd",
@@ -2398,8 +2398,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "fdf357fae76feff7e5f2e5aaff57f99f644b55f8",
-      "hash": "sha256-CKD7Y1pxhLKRDtUUpWsSMlfTDgcXMKE08rE6HsL3kyc=",
+      "rev": "68836ddaf5697224520f1847d90cdb90ca8babaa",
+      "hash": "sha256-dt4cl0kJzmluQ/n24QqWqhl0k5EvFTJB2HSVKCEBfBo=",
       "skills": {
         "architect": {
           "name": "architect",
