@@ -2403,8 +2403,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "68836ddaf5697224520f1847d90cdb90ca8babaa",
-      "hash": "sha256-dt4cl0kJzmluQ/n24QqWqhl0k5EvFTJB2HSVKCEBfBo=",
+      "rev": "fd878692de15a3069c21c8f429eb0b9f2fe178fa",
+      "hash": "sha256-geVSGwsuGiskuqNr4nOIkFNwwyeC7uxg3SCjVpkd+QQ=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2818,7 +2818,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, send the user the capabilities message defined here. Estimate the cost of every X call before making it and confirm with the user before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools are available, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. If X is connected but tools are missing (tools=0, user-X-* not found), that is a setup failure — not a paywall. Estimate the cost of every X call before making it and confirm with the user before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
         }
       }
