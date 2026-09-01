@@ -1926,8 +1926,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "459a846a65544cf311164059f2ea4623ec443b02",
-      "hash": "sha256-0mSfaZabk2v8cBGvN8hiIUIpqnea8sv+mRgXYv2XuTI=",
+      "rev": "e0ec6a7f13aae8c3e5f2113143ded3e3b38becf0",
+      "hash": "sha256-P3IRoGoeTJYpAg1rbN1sjia4xn2SuYJ+xoXMzsk5aKo=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -1991,7 +1991,7 @@
         },
         "accelint-qrspi-archive": {
           "name": "accelint-qrspi-archive",
-          "description": "Archive an OpenSpec change end-to-end. This skill invokes `/opsx:archive` or `/opsx:bulk-archive` itself to perform the native merge, then immediately follows up with the cross-capability linking and running indices OpenSpec doesn't build on its own — linking every capability a change touched via a shared `related:` frontmatter list, keeping `openspec/specs/INDEX.md` current, and appending a row to `openspec/changes/archive/INDEX.md`. Use this skill whenever the user wants to archive a change, says \"archive this change\", \"bulk archive these changes\", \"run opsx:archive\", \"run opsx:bulk-archive\", \"update the specs index\", \"cross-link the specs\", or wants the archived-change changelog kept current. This skill is purely additive on the linking side — it never prunes a `related:` entry and never changes a change's `Status` column after the initial write; that pruning/synthesis work belongs to `accelint-archive-synthesis`.",
+          "description": "Archive an OpenSpec change end-to-end. This skill invokes openspec-archive-change or openspec-bulk-archive-change itself to perform the native merge, then immediately follows up with the cross-capability linking and running indices OpenSpec doesn't build on its own — linking every capability a change touched via a shared `related:` frontmatter list, keeping `openspec/specs/INDEX.md` current, and appending a row to `openspec/changes/archive/INDEX.md`. Use this skill whenever the user wants to archive a change, says \"archive this change\", \"bulk archive these changes\", \"run openspec-archive-change\", \"run openspec-bulk-archive-change\", \"update the specs index\", \"cross-link the specs\", or wants the archived-change changelog kept current. This skill is purely additive on the linking side — it never prunes a `related:` entry and never changes a change's `Status` column after the initial write; that pruning/synthesis work belongs to `accelint-archive-synthesis`.",
           "path": "skills/accelint-qrspi-archive"
         },
         "accelint-qrspi-propose": {
@@ -2403,8 +2403,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "fd878692de15a3069c21c8f429eb0b9f2fe178fa",
-      "hash": "sha256-geVSGwsuGiskuqNr4nOIkFNwwyeC7uxg3SCjVpkd+QQ=",
+      "rev": "b9ddc83c32972210b8a94d389130713e8eed346e",
+      "hash": "sha256-JAbkPR/pWmv0Qn5Pxa4ctcjrUuUiHS1tcchTD9oLXnQ=",
       "skills": {
         "architect": {
           "name": "architect",
