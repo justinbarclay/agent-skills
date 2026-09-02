@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "3b3fad96af16a10759d930941b4520ba0c40edae",
-      "hash": "sha256-nVid8vENmLDh7ffDqh+bJbEWtXcVltA0qa2rItmniZM=",
+      "rev": "53048666b05b4799081517d00e09e0a2dd688678",
+      "hash": "sha256-xaxkXFpzH4s2OIOcZqPy+HzfRAy2HbKpagjMhY+uinA=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2162,8 +2162,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9f39fa607a63582d8c5b62aaf6fa4898b9c7caac",
-      "hash": "sha256-E3tL9RRAF3QpLAmi54kCvSiSNOWZ3Lk4y3FEg3wF7yU=",
+      "rev": "cf681787184a493e7106b0ae1ee88a1fede65017",
+      "hash": "sha256-2wHoxeRJnASwfKjuIEsMdSGyyezm2x8/QvkiQ+WcT3E=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2403,8 +2403,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "b9ddc83c32972210b8a94d389130713e8eed346e",
-      "hash": "sha256-JAbkPR/pWmv0Qn5Pxa4ctcjrUuUiHS1tcchTD9oLXnQ=",
+      "rev": "efa2a531985e0a8084d36ff3cf87233be8a9f34b",
+      "hash": "sha256-RC5cFtLx9sVM6pFTnIzHgvRQX5Co7il6EhComqN9XTk=",
       "skills": {
         "architect": {
           "name": "architect",
@@ -2904,8 +2904,8 @@
     "palkan": {
       "owner": "palkan",
       "repo": "skills",
-      "rev": "dd92521693d3179d1134b19746cccd1e8ab45ecc",
-      "hash": "sha256-umaADUylzUh8y9EfXPBdI0viwRIs6nKsx96Hsh0zZDQ=",
+      "rev": "8fb4b26b674dc01612d582f0328bc6cf9bb0ce85",
+      "hash": "sha256-cihgKuEV+0KwKD9bfj4Dn+zN/ZII4gbUgUYBK5QqF0E=",
       "skills": {
         "layered-rails": {
           "name": "layered-rails",
