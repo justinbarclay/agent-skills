@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "d2c37ef6225dd8726cdd369a8030307f48592d26",
-      "hash": "sha256-cETMU2Pfha4cXWTORfu0wXJXOTrAmmEk3GDY2lAoQnw=",
+      "rev": "020ec10a788f5703108d093a4bd3d9a7c3847d36",
+      "hash": "sha256-rxkV4Eb4fJDbgpblW27/rPJcMoof2n+tWUpM2sVpLhM=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -640,7 +640,7 @@
         },
         "deprecation-and-migration": {
           "name": "deprecation-and-migration",
-          "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when deciding whether to maintain or sunset existing code.",
+          "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
           "path": "skills/deprecation-and-migration"
         },
         "documentation-and-adrs": {
@@ -690,7 +690,7 @@
         },
         "security-and-hardening": {
           "name": "security-and-hardening",
-          "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+          "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
           "path": "skills/security-and-hardening"
         },
         "shipping-and-launch": {
@@ -2089,8 +2089,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "f96bff754e428838818017f75817f0f9428acd48",
-      "hash": "sha256-r8HeH9XWV9qhbMq3fPASNfT5Y1mrfsgBI5STiUi/LVA=",
+      "rev": "9177f9a0bafc1ab61a0dae8dca57a8eb4d9f636d",
+      "hash": "sha256-WFgtwZyu2dxx51Drq1xW7WLUHJo12M45FiATin2i2d4=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2162,8 +2162,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "cf681787184a493e7106b0ae1ee88a1fede65017",
-      "hash": "sha256-2wHoxeRJnASwfKjuIEsMdSGyyezm2x8/QvkiQ+WcT3E=",
+      "rev": "68382523846ea5bfad75ba1ef58dc5db031d0a5a",
+      "hash": "sha256-pckE6WF3X/UroE2w5mjZWDongLVVccOVaYsET0iSCfM=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2403,8 +2403,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "efa2a531985e0a8084d36ff3cf87233be8a9f34b",
-      "hash": "sha256-RC5cFtLx9sVM6pFTnIzHgvRQX5Co7il6EhComqN9XTk=",
+      "rev": "7314f723a487ec406b6369fe5865ba034cfed166",
+      "hash": "sha256-/9i9uAhF6VytUM6vR00eChwXGy5/2zMP5nAet3A5EI8=",
       "skills": {
         "architect": {
           "name": "architect",
