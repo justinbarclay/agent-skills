@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "1c760d643497e9da289300e5eb2f5aca861503f7",
-      "hash": "sha256-39Iwaxo605n9hyY8N5lTlpcA89EMQBnKwa+tKQrA4Oo=",
+      "rev": "84ee50673804b95c287d1e4eb4f1c1dad7c5188a",
+      "hash": "sha256-29Kj16nWhmr1l3EP9lI3zxr7bq4iJIZyTPngbC5/m0A=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "f9f5f8139b7a57269f807cd3f6a7dbc305e96264",
-      "hash": "sha256-SIzw/1hBhUC2T/N3XInPWUkd5XPm5B6CfWa+LD90MA8=",
+      "rev": "afbb7e3f474567a9b1ee51c57020f91df93c6b8c",
+      "hash": "sha256-XRqM5T9Hixsb23dolCZ/8xHjQAhC9+iwhUSxGuOQO5E=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2089,10 +2089,10 @@
           "description": "Next.js performance optimization and best practices. Use when writing Next.js code (App Router or Pages Router); implementing Server Components, Server Actions, or API routes; optimizing RSC serialization, data fetching, or server-side rendering; reviewing Next.js code for performance issues; fixing authentication in Server Actions; or implementing Suspense boundaries, parallel data fetching, or request deduplication.",
           "path": "skills/accelint-nextjs-best-practices"
         },
-        "accelint-onboard-agent": {
-          "name": "accelint-onboard-agent",
-          "description": "Interactively onboard a project to agent-driven development by running a structured interview and generating a complete AGENTS.md (or CLAUDE.md). Use this skill whenever a user mentions \"AGENTS.md\", \"CLAUDE.md\", \"agent behavior\", \"agent instructions\", \"agent config\", \"set up agent rules\", \"onboard agent\", \"configure claude code\", \"agent guardrails\", \"agent workflow\", or asks how to tell an AI agent how to behave in their project — even if they just say \"help me write AGENTS.md\" or \"what should go in CLAUDE.md\". Always prefer this skill over ad-hoc agent instruction generation.",
-          "path": "skills/accelint-onboard-agent"
+        "accelint-onboard-agents": {
+          "name": "accelint-onboard-agents",
+          "description": "Onboard a repository to agent-driven development by creating or refreshing a complete AGENTS.md or CLAUDE.md through behavior-focused discovery, structured interviewing, drift-aware updates, conflict-aware synthesis, proportional updates, and preview-before-write review. Use when the user wants to create, replace, refresh, import, restructure, append to, dry-run, or review AGENTS.md or CLAUDE.md guidance, mentions agent behavior, instructions, guardrails, workflow, Claude Code conventions, package-level agent files, or monorepo inheritance, or asks how to tell an AI coding agent how to behave in a project. Also use it when the user wants behavior rules kept separate from `openspec/config.yml` or `openspec/config.yaml` project DNA. Do not use it for OpenSpec config onboarding, architecture docs, or one-line AGENTS.md or CLAUDE.md edits that do not require discovery, synthesis, or section-level review.",
+          "path": "skills/accelint-onboard-agents"
         },
         "accelint-onboard-openspec": {
           "name": "accelint-onboard-openspec",
@@ -2214,8 +2214,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "9177f9a0bafc1ab61a0dae8dca57a8eb4d9f636d",
-      "hash": "sha256-WFgtwZyu2dxx51Drq1xW7WLUHJo12M45FiATin2i2d4=",
+      "rev": "b8aeca6d7e2d614d7bd0e5220c8dd7645fe58a93",
+      "hash": "sha256-4/7slJLXBkjIN+/yeoqWAkyb6QYaCE8gf61h1Wm3VQk=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2528,8 +2528,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "659a6363c09babba0602edd0dff7d308ed2f3b18",
-      "hash": "sha256-Uldb9bj6IOiC1vVRuMWoi929+/nHFD2d38B1OdC/E2A=",
+      "rev": "93b00b89ef425a9c1bac0d0b317dfc49c930ac99",
+      "hash": "sha256-wA+B7ho81xzhoLgg+30fX9Cx1RvEF2N4qsQZexSZT0s=",
       "skills": {
         "advisor": {
           "name": "advisor",
