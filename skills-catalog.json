@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "84ee50673804b95c287d1e4eb4f1c1dad7c5188a",
-      "hash": "sha256-29Kj16nWhmr1l3EP9lI3zxr7bq4iJIZyTPngbC5/m0A=",
+      "rev": "48cb1168aeaaa70dfc2bbf709eddfa2a8ed8129a",
+      "hash": "sha256-GA9xc5vN8TTs4K8HBhBBGibA/dzgkLLNEu00pUvuMjc=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2214,72 +2214,77 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "b8aeca6d7e2d614d7bd0e5220c8dd7645fe58a93",
-      "hash": "sha256-4/7slJLXBkjIN+/yeoqWAkyb6QYaCE8gf61h1Wm3VQk=",
+      "rev": "d924cd8f59e75e08fd3dd52843bb2776de35c77e",
+      "hash": "sha256-DdIutn1688pRbzl+tOHpbyChfw1cyCyng+FqJk6P85s=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
-          "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+          "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package.",
           "path": "skills/agents-sdk"
         },
         "cloudflare": {
           "name": "cloudflare",
-          "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+          "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation.",
           "path": "skills/cloudflare"
         },
         "cloudflare-email-service": {
           "name": "cloudflare-email-service",
-          "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app — Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" — this skill has critical config details.",
+          "description": "Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration.",
           "path": "skills/cloudflare-email-service"
         },
         "cloudflare-one": {
           "name": "cloudflare-one",
-          "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity. Use when designing, configuring, troubleshooting, or reviewing Cloudflare One deployments. Retrieval-first: use current Cloudflare docs/API schemas instead of embedded product docs.",
+          "description": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors.",
           "path": "skills/cloudflare-one"
         },
         "cloudflare-one-migrations": {
           "name": "cloudflare-one-migrations",
-          "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis.",
+          "description": "Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout.",
           "path": "skills/cloudflare-one-migrations"
         },
         "durable-objects": {
           "name": "durable-objects",
-          "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+          "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
           "path": "skills/durable-objects"
+        },
+        "nextjs-on-cloudflare": {
+          "name": "nextjs-on-cloudflare",
+          "description": "Build, migrate, and deploy Next.js apps on Cloudflare Workers with vinext. Use when starting a Next.js project on Cloudflare, moving an existing app to Workers, choosing between vinext and OpenNext, or setting up vinext for Workers. For setup, migration, or deployment, install vinext's upstream skills with `npx skills add cloudflare/vinext` if missing, then read and follow the applicable skill and docs.",
+          "path": "skills/nextjs-on-cloudflare"
         },
         "sandbox-migrate-to-next": {
           "name": "sandbox-migrate-to-next",
-          "description": "Use when porting a Cloudflare Sandbox app from stable @cloudflare/sandbox to @cloudflare/sandbox@next (Sandbox SDK 1.0 preview), or when the user asks to migrate or upgrade to Sandbox 1.0 / @next. Not for day-to-day stable work (sandbox-stable) or new @next apps (sandbox-next).",
+          "description": "Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview.",
           "path": "skills/sandbox-migrate-to-next"
         },
         "sandbox-next": {
           "name": "sandbox-next",
-          "description": "Use when building or changing Cloudflare Sandbox apps on @cloudflare/sandbox@next (Sandbox SDK 1.0 preview)—code execution, AI runners, interpreters, CI-like jobs, terminals, files, mounts, tunnels, preview URLs, lifecycle, or errors. Not for the default stable package (use sandbox-stable) or for porting stable to @next (use sandbox-migrate-to-next).",
+          "description": "Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app.",
           "path": "skills/sandbox-next"
         },
         "sandbox-stable": {
           "name": "sandbox-stable",
-          "description": "Use when building or changing Cloudflare Sandbox apps on the current stable @cloudflare/sandbox package (default npm tag)—commands, sessions, files, ports, tunnels, terminals, bridge, production, or deprecated-API cleanup while staying on stable. Not for @cloudflare/sandbox@next (use sandbox-next) or for porting to 1.0 (use sandbox-migrate-to-next).",
+          "description": "Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable-to-preview migrations.",
           "path": "skills/sandbox-stable"
         },
         "turnstile-spin": {
           "name": "turnstile-spin",
-          "description": "Set up Cloudflare Turnstile end-to-end in a project. Scan the codebase, create the widget via the Cloudflare API, embed it where user requests need bot verification (form submissions, SPA actions, API endpoints, download links, comment or vote submissions, etc.), wire canonical server-side siteverify in the customer's existing backend, validate, and persist the skill. Load this when a user asks to add Turnstile, set up CAPTCHA, protect a form or endpoint from bots, or fix a Turnstile integration. Mirrors developers.cloudflare.com/turnstile/spin.",
+          "description": "Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify.",
           "path": "skills/turnstile-spin"
         },
         "web-perf": {
           "name": "web-perf",
-          "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge.",
+          "description": "Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores.",
           "path": "skills/web-perf"
         },
         "workers-best-practices": {
           "name": "workers-best-practices",
-          "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+          "description": "Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.",
           "path": "skills/workers-best-practices"
         },
         "wrangler": {
           "name": "wrangler",
-          "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+          "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, deployment, and Cloudflare resource management.",
           "path": "skills/wrangler"
         }
       }
