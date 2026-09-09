@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "68382523846ea5bfad75ba1ef58dc5db031d0a5a",
-      "hash": "sha256-pckE6WF3X/UroE2w5mjZWDongLVVccOVaYsET0iSCfM=",
+      "rev": "12f48810695e79d14ae1ffb251124685488e6c63",
+      "hash": "sha256-JVa2zppl52IoyoNkbEoWvwQtR92t+o/wdRB+IX8V9Q8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2312,7 +2312,7 @@
         },
         "stripe-best-practices": {
           "name": "stripe-best-practices",
-          "description": "Guides Stripe integration decisions across API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, restricted keys, webhooks, OAuth). Use when building, modifying, or reviewing any Stripe integration, including accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling.",
+          "description": "Guides Stripe integration decisions across API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, API key permissions, webhooks, OAuth). Use when building, modifying, or reviewing any Stripe integration, including accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling.",
           "path": "skills/stripe-best-practices"
         },
         "stripe-directory": {
@@ -2322,7 +2322,7 @@
         },
         "stripe-docs": {
           "name": "stripe-docs",
-          "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content.",
+          "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content. Use to fetch gated documentation.",
           "path": "skills/stripe-docs"
         },
         "stripe-projects": {
@@ -2533,9 +2533,24 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "71ed0d1076fec562c1b74ee353121a8d00f75382",
-      "hash": "sha256-hzEFZjWoz2sspBtViddJ28d3rNFPgj/kXPadH0id5W0=",
+      "rev": "df3fb154fb982fb83f649de8646d4af6a0cb16b3",
+      "hash": "sha256-1QW7N6qDe9hhQqKoNVaBODbriBsyPuZ9/A71CRHRfw0=",
       "skills": {
+        "add-dictation": {
+          "name": "add-dictation",
+          "description": "Use when the user runs /add-dictation or wants speech turned into text with Grok speech-to-text: a mic button that dictates into the composer, live captions, or transcribing recorded audio (files, uploads, URLs) with word timestamps, diarization, subtitles, meeting notes. STT, transcribe, transcription. For a voice agent that talks back use /add-voice.",
+          "path": "grok-voice/skills/add-dictation"
+        },
+        "add-read-aloud": {
+          "name": "add-read-aloud",
+          "description": "Use when the user runs /add-read-aloud or wants the app to speak text with Grok text-to-speech: read-aloud button on assistant replies, auto-speak, TTS, voice output, narration, IVR prompts, speech tags, voice_id. For a two-way voice agent use /add-voice. For speech-to-text use /add-dictation.",
+          "path": "grok-voice/skills/add-read-aloud"
+        },
+        "add-voice": {
+          "name": "add-voice",
+          "description": "Use when the user runs /add-voice, types Voice Mode, or asks to add Grok realtime voice to an app, including replacing an STT-LLM-TTS cascade or OpenAI Realtime.   Wire speech-to-speech, safe auth, and app mic. Composer: waveform button, mic icon reserved for dictation. For mic-to-text only use /add-dictation; to speak text replies use /add-read-aloud. To add debug logging and fix from logs use /debug-voice.",
+          "path": "grok-voice/skills/add-voice"
+        },
         "advisor": {
           "name": "advisor",
           "description": "Advisor mode. Consult a stronger (or different) model at key checkpoints: before major decisions, when stuck on an error, and before declaring a task done. Use when the user types /advisor, asks to turn the advisor on or off, picks an advisor model, or explicitly asks for a second opinion from a stronger or different model. Never enable it on your own.",
@@ -2630,6 +2645,11 @@
           "name": "cursor-technical-writing",
           "description": "Layered technical-writing standard: Diátaxis structure, Google developer style sentences, STE instruction rules, Global English syntax. Use for /technical-writing or when writing or reviewing docs, RFCs, readmes, PR descriptions, or commit messages.",
           "path": "pstack/skills/technical-writing"
+        },
+        "debug-voice": {
+          "name": "debug-voice",
+          "description": "Use when the user runs /debug-voice, says voice mode has flaws, asks to see or capture what happened in a Grok realtime voice session, or a voice integration has no debug logging yet. Proposes a plan, then installs a dev-only log pipeline (client logger → local NDJSON) in the app's own language and conventions, then runs the fix loop: match the user's report to log signatures, fix one thing, re-test.",
+          "path": "grok-voice/skills/debug-voice"
         },
         "deslop": {
           "name": "deslop",
