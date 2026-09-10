@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "afbb7e3f474567a9b1ee51c57020f91df93c6b8c",
-      "hash": "sha256-XRqM5T9Hixsb23dolCZ/8xHjQAhC9+iwhUSxGuOQO5E=",
+      "rev": "8d979e68783cd8fa45a8c7aa34e708be9221f484",
+      "hash": "sha256-+dA3FhG5Kh+UZ6bUEDhkUE/y4X344OTCmOburS6ve9M=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2151,7 +2151,7 @@
         },
         "accelint-skill-prose": {
           "name": "accelint-skill-prose",
-          "description": "Use when creating, auditing, tightening, simplifying, polishing, or reviewing `SKILL.md` files, agent-skill instructions, `CLAUDE.md` or `AGENTS.md` guidance, or other behavior-defining prompt artifacts whose wording controls trigger coverage, workflow order, guardrails, approval semantics, or exact technical meaning. Prefer this skill over general prose editing when the job is to make wording clearer without changing behavior, including safe description rewrites, ambiguity audits, and edits that must preserve exact paths, commands, fields, or identifiers. Do not use it when the main task is broader content strategy, policy design, domain review, or ordinary prose cleanup with no behavior risk.",
+          "description": "Use when auditing or revising behavior-defining agent guidance—such as `SKILL.md`, `AGENTS.md`, `CLAUDE.md`, prompt templates, workflow instructions, guardrails, and behavior-bearing references—where wording controls trigger scope, workflow order, approval semantics, guardrail strength, or exact technical meaning. Prefer this skill over general prose editing when clarity must improve without changing behavior, including ambiguity audits and edits that preserve exact paths, commands, fields, identifiers, and scope-defining examples. Do not use it for broader content strategy, policy design, domain review, ordinary low-risk prose cleanup, or optimizing a skill description’s trigger performance.",
           "path": "skills/accelint-skill-prose"
         },
         "accelint-tanstack-query-best-practices": {
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "12f48810695e79d14ae1ffb251124685488e6c63",
-      "hash": "sha256-JVa2zppl52IoyoNkbEoWvwQtR92t+o/wdRB+IX8V9Q8=",
+      "rev": "ea3c6ffc035e12e5547dbf7e6e154564ae279664",
+      "hash": "sha256-OsdpEtPkonomyrFZApftYanJmnefT3TGqapqaKELTTQ=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2312,7 +2312,7 @@
         },
         "stripe-best-practices": {
           "name": "stripe-best-practices",
-          "description": "Guides Stripe integration decisions across API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, API key permissions, webhooks, OAuth). Use when building, modifying, or reviewing any Stripe integration, including accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling.",
+          "description": "Guides Stripe integration decisions across development and test environment planning (separate sandboxes vs the shared test mode sandbox), API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, API key permissions, webhooks, OAuth). Use when planning, building, modifying, testing, or reviewing any Stripe integration, including choosing a development environment, accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling.",
           "path": "skills/stripe-best-practices"
         },
         "stripe-directory": {
@@ -2533,8 +2533,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "df3fb154fb982fb83f649de8646d4af6a0cb16b3",
-      "hash": "sha256-1QW7N6qDe9hhQqKoNVaBODbriBsyPuZ9/A71CRHRfw0=",
+      "rev": "7366ac128bdf95f45e6734f412b49a4031800169",
+      "hash": "sha256-730pvi9ov1lC23F8d5MwjYWIsm3T8hXsfCUo4+59UkQ=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
