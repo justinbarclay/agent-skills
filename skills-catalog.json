@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "41bbe19d1a1a7eaab5e7bb9050a417e5c6cffc8f",
-      "hash": "sha256-sjgPv9tZZVTXPxZWaCOc7JwFceNn3C1ghy8mSHqgqB8=",
+      "rev": "34040c9c568585f6929bedeaad110ad08f079624",
+      "hash": "sha256-tI4bTTBfI1ylltklGyiyA7pLoKXEWtrT6lrmwrpLbCw=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "ea3c6ffc035e12e5547dbf7e6e154564ae279664",
-      "hash": "sha256-OsdpEtPkonomyrFZApftYanJmnefT3TGqapqaKELTTQ=",
+      "rev": "583467aab18cc7113dcd2c2e20028fe73c26eaa3",
+      "hash": "sha256-ZxbwBjQ63/4KJrVQWN2FpzB9JDsIVzE3hb9lgQQsqiE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2533,8 +2533,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "7366ac128bdf95f45e6734f412b49a4031800169",
-      "hash": "sha256-730pvi9ov1lC23F8d5MwjYWIsm3T8hXsfCUo4+59UkQ=",
+      "rev": "f5bdd6826fd0a0d9cbc4347134c3a74a200b9d9d",
+      "hash": "sha256-rP4nj+DjPypCwLk7K9JU5qV13b4kkSG2r7uHEOq1pfs=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3213,8 +3213,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "681aafed85e138462f0cd08c7bd56b1a767fb640",
-      "hash": "sha256-C0JF0+4tzVrTUaXjAAIJXyZZ/m+b/Eq6ueaJXd674Eg=",
+      "rev": "e57d1d117b585a3b5bf6bc612ff327acfa89bd29",
+      "hash": "sha256-+NKtqBQTFSi1NQh9uJhGsBWS4oVcidAcxOdV1cKLBTA=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
