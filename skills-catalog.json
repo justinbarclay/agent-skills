@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "6ca0cd7db39b41b1c37e26d335c507ee92382c6d",
-      "hash": "sha256-26aWgnw92KcA4b6bqpbWvs6aSCwBmIsANffUI445B8U=",
+      "rev": "be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39",
+      "hash": "sha256-jWoq4RqzvGnKEwjQ+FPyQU82gBqyz00U4X/eLGDavfE=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "8d979e68783cd8fa45a8c7aa34e708be9221f484",
-      "hash": "sha256-+dA3FhG5Kh+UZ6bUEDhkUE/y4X344OTCmOburS6ve9M=",
+      "rev": "3336c8eda617308f1df327c83d9f6601eb2b79de",
+      "hash": "sha256-b/Vqolf3Ale2eynNQ0jJqcgV/nTv2XQu9nrme3D8WUo=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2533,8 +2533,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "f5bdd6826fd0a0d9cbc4347134c3a74a200b9d9d",
-      "hash": "sha256-rP4nj+DjPypCwLk7K9JU5qV13b4kkSG2r7uHEOq1pfs=",
+      "rev": "889ec4b68fa5aab0e867dad71ec3fdf386ae48f3",
+      "hash": "sha256-ooO3vHgG4bnLlhpKNjuBx6KJDOTzlXtdphqAUF9wmN0=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
