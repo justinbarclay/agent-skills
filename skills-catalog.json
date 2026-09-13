@@ -2533,8 +2533,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "889ec4b68fa5aab0e867dad71ec3fdf386ae48f3",
-      "hash": "sha256-ooO3vHgG4bnLlhpKNjuBx6KJDOTzlXtdphqAUF9wmN0=",
+      "rev": "5bf2b1544db739998121a306340631963c2ff3de",
+      "hash": "sha256-+6DzILL46FWQYrPpVkPzKF2AUPasRKQB8OrLogv9Bec=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2908,7 +2908,7 @@
         },
         "setup-pstack": {
           "name": "setup-pstack",
-          "description": "Configure which models pstack uses per role. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", or changing pstack's model choices.",
+          "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
           "path": "pstack/skills/setup-pstack"
         },
         "show-me-your-work": {
