@@ -16,6 +16,16 @@
           "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
           "path": "skills/algorithmic-art"
         },
+        "anthropics-pdf": {
+          "name": "anthropics-pdf",
+          "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+          "path": "skills/pdf"
+        },
+        "anthropics-skill-creator": {
+          "name": "anthropics-skill-creator",
+          "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+          "path": "skills/skill-creator"
+        },
         "brand-guidelines": {
           "name": "brand-guidelines",
           "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
@@ -61,20 +71,10 @@
           "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
           "path": "skills/mcp-builder"
         },
-        "pdf": {
-          "name": "pdf",
-          "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
-          "path": "skills/pdf"
-        },
         "pptx": {
           "name": "pptx",
           "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
           "path": "skills/pptx"
-        },
-        "skill-creator": {
-          "name": "skill-creator",
-          "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
-          "path": "skills/skill-creator"
         },
         "slack-gif-creator": {
           "name": "slack-gif-creator",
@@ -771,11 +771,6 @@
           "description": "Guidelines for developing GraphQL APIs and React applications using Apollo Client for state management, data fetching, and caching",
           "path": "apollo-graphql"
         },
-        "aspnet-core": {
-          "name": "aspnet-core",
-          "description": "Guidelines for ASP.NET Core web development covering API design, authentication, caching, and best practices",
-          "path": "aspnet-core"
-        },
         "astro": {
           "name": "astro",
           "description": "Expert in Astro framework with static generation and partial hydration patterns",
@@ -1356,10 +1351,25 @@
           "description": "Guidelines for building production-grade microservices with FastAPI/Python and Go, covering serverless patterns, clean architecture, observability, and resilience.",
           "path": "microservices"
         },
+        "mindrally-aspnet-core": {
+          "name": "mindrally-aspnet-core",
+          "description": "Guidelines for ASP.NET Core web development covering API design, authentication, caching, and best practices",
+          "path": "aspnet-core"
+        },
         "mindrally-performance-optimization": {
           "name": "mindrally-performance-optimization",
           "description": "Performance optimization guidelines for web development including server-side rendering, CSS best practices, and JavaScript optimization",
           "path": "performance-optimization"
+        },
+        "mindrally-playwright": {
+          "name": "mindrally-playwright",
+          "description": "Playwright end-to-end testing best practices for web applications, covering test design, locator strategies, and assertion patterns.",
+          "path": "playwright"
+        },
+        "mindrally-security-best-practices": {
+          "name": "mindrally-security-best-practices",
+          "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
+          "path": "security-best-practices"
         },
         "mindrally-technical-writing": {
           "name": "mindrally-technical-writing",
@@ -1520,11 +1530,6 @@
           "name": "pixi-js",
           "description": "Expert guidance for Pixi.js game development with TypeScript, focusing on high-performance web and mobile games",
           "path": "pixi-js"
-        },
-        "playwright": {
-          "name": "playwright",
-          "description": "Playwright end-to-end testing best practices for web applications, covering test design, locator strategies, and assertion patterns.",
-          "path": "playwright"
         },
         "playwright-cursor-rules": {
           "name": "playwright-cursor-rules",
@@ -1750,11 +1755,6 @@
           "name": "scss-best-practices",
           "description": "SCSS/Sassy CSS best practices and coding guidelines for maintainable, scalable stylesheets",
           "path": "scss-best-practices"
-        },
-        "security-best-practices": {
-          "name": "security-best-practices",
-          "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
-          "path": "security-best-practices"
         },
         "security-devsecops": {
           "name": "security-devsecops",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "583467aab18cc7113dcd2c2e20028fe73c26eaa3",
-      "hash": "sha256-ZxbwBjQ63/4KJrVQWN2FpzB9JDsIVzE3hb9lgQQsqiE=",
+      "rev": "9dde68ae5ef35b015166abfd1f189f4c729f93ad",
+      "hash": "sha256-mwhKoh8DVpBGNy6sZhaoaUImhUPJ3VdoG0XnlLV4hoo=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2324,6 +2324,11 @@
           "name": "stripe-docs",
           "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content. Use to fetch gated documentation.",
           "path": "skills/stripe-docs"
+        },
+        "stripe-pay": {
+          "name": "stripe-pay",
+          "description": "Helps users send funds to another Stripe business, transfer money to a Stripe Profile handle or network ID, or ask whether an agent can pay a Stripe business. Use Stripe Directory to find or verify a recipient when the user doesn't provide an exact Stripe Profile handle or network ID.",
+          "path": "skills/stripe-pay"
         },
         "stripe-projects": {
           "name": "stripe-projects",
@@ -2533,8 +2538,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "5bf2b1544db739998121a306340631963c2ff3de",
-      "hash": "sha256-+6DzILL46FWQYrPpVkPzKF2AUPasRKQB8OrLogv9Bec=",
+      "rev": "c1c0a32802223f4be824112dd83d33ad29a8b26c",
+      "hash": "sha256-SXKrsJqj8OzwWGuFA/cdsrxovL7q8DsUD1aJpaOev+k=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3213,8 +3218,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "e57d1d117b585a3b5bf6bc612ff327acfa89bd29",
-      "hash": "sha256-+NKtqBQTFSi1NQh9uJhGsBWS4oVcidAcxOdV1cKLBTA=",
+      "rev": "9b794aec9c4169f137285c2763c06064d247dd47",
+      "hash": "sha256-Ki6TF4V6Fx++4EcXpfnSDzGjz49dKA5e5lHV4sgj/DQ=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
