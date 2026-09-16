@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9dde68ae5ef35b015166abfd1f189f4c729f93ad",
-      "hash": "sha256-mwhKoh8DVpBGNy6sZhaoaUImhUPJ3VdoG0XnlLV4hoo=",
+      "rev": "38d8933bffbdba219ba530803316bb3a4fbaee0d",
+      "hash": "sha256-1ABJfD6N0GYpVN7nF/st68tLNEYTQraxLmZ3SGOBdzE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2345,8 +2345,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "3cca18b368ae95cdbdebbff572ccafa662551015",
-      "hash": "sha256-dF5i37jHnqfcXD1IRSVzSSm/pfCYSUmOsEhhs5Zx340=",
+      "rev": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "hash": "sha256-AbIlPEE0VWJq+NJpa56SDzhM8o7vXDBtlJHS5FCTElE=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
