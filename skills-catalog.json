@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "38d8933bffbdba219ba530803316bb3a4fbaee0d",
-      "hash": "sha256-1ABJfD6N0GYpVN7nF/st68tLNEYTQraxLmZ3SGOBdzE=",
+      "rev": "da4991b0a0b9299d423ae2d5856e6d7e2b31b031",
+      "hash": "sha256-Ya7zgnKpsY/D3nznn10sePWNIqeO35Phz/hPMt+h9XM=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2538,8 +2538,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "c1c0a32802223f4be824112dd83d33ad29a8b26c",
-      "hash": "sha256-SXKrsJqj8OzwWGuFA/cdsrxovL7q8DsUD1aJpaOev+k=",
+      "rev": "e31650eea443aaea1e84cc15d88c13f40080b275",
+      "hash": "sha256-b7GnBdZhAhu/WvWMsC6Z0kwmI9Fk70z1lVyFBSF5odE=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2988,8 +2988,13 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools are available, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. If X is connected but tools are missing (tools=0, user-X-* not found), that is a setup failure — not a paywall. Estimate the cost of every X call before making it and confirm with the user before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools are available, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. If X is connected but tools are missing (tools=0, user-X-* not found), that is a setup failure — not a paywall. For encrypted X Chat / XChat DMs, also read skills/x-chat/SKILL.md. If chat tools or dm.read/dm.write are missing while other X tools work, tell them to reconnect the X plugin. Estimate the cost of every X call before making it and confirm with the user before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
+        },
+        "x-chat": {
+          "name": "x-chat",
+          "description": "Read, summarize, or send encrypted X Chat (XChat) DMs via the X plugin MCP plus local chatxdk / xchat_lite.py. Use when the user mentions X Chat, xchat, encrypted DMs, Chat PIN, juicebox, inbox messages, or wants to reply in X Chat. Not for classic unencrypted DMs, posting tweets, or always-on daemons. If chat tools or dm.read/dm.write are missing, tell them to reconnect the X plugin — do not create an app or ask for Bearer tokens.",
+          "path": "third_party/x/skills/x-chat"
         }
       }
     },
