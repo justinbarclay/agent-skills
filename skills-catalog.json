@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "be4e44a9fbc5e8df0beaefadbb28bd22ee61cc39",
-      "hash": "sha256-jWoq4RqzvGnKEwjQ+FPyQU82gBqyz00U4X/eLGDavfE=",
+      "rev": "c004a74784a08295d52749b04cda634125b9a581",
+      "hash": "sha256-BZRybfWYCKPzCBeZzxM7tBsaQdft68HDSUQdvdyyNOI=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2345,8 +2345,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
-      "hash": "sha256-AbIlPEE0VWJq+NJpa56SDzhM8o7vXDBtlJHS5FCTElE=",
+      "rev": "74ca5fe077456a0b3b2f5310cf9430999fd0b5fd",
+      "hash": "sha256-jV54LyJWtC/UJ7xHH0NRNVN/zwUT8vYS6gzH9gpo+yo=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2437,6 +2437,11 @@
           "name": "pocock-teach",
           "description": "Teach the user a new skill or concept, within this workspace.",
           "path": "skills/productivity/teach"
+        },
+        "pr": {
+          "name": "pr",
+          "description": "Use when writing a PR body.",
+          "path": "skills/in-progress/pr"
         },
         "prototype": {
           "name": "prototype",
