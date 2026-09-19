@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "da4991b0a0b9299d423ae2d5856e6d7e2b31b031",
-      "hash": "sha256-Ya7zgnKpsY/D3nznn10sePWNIqeO35Phz/hPMt+h9XM=",
+      "rev": "82d5d332c2eff45581030dcaf9f8ebabd28d0c88",
+      "hash": "sha256-nExwNTFNMZ+fU5LBesEtbheuZOJAf5ehaFtABQapBAs=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2304,6 +2304,11 @@
           "name": "connect-required-verification-information",
           "description": "Use this skill when the user asks what information a Stripe Connect connected account must provide for verification, onboarding, KYC, or account requirements; when they need to compare requirements between connected-account setups; or when they ask which verification fields, documents, or business details are required for a particular platform country, account country, business type, dashboard, service agreement, or capability.",
           "path": "skills/connect-required-verification-information"
+        },
+        "metronome": {
+          "name": "metronome",
+          "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable metrics), contract design (rate cards, overrides, dimensional pricing, products), invoicing lifecycle (grace periods, finalization, Stripe sync), credit and commit management (prepaid, postpaid, thresholds, auto-recharge), and Stripe integration (arrears invoicing, tax providers, line item limits). Use when building, modifying, or reviewing any Metronome integration — including ingesting usage events, creating contracts or rate cards, managing credits and commits, configuring invoicing, or syncing invoices with Stripe Billing.",
+          "path": "skills/metronome"
         },
         "stripe-apps": {
           "name": "stripe-apps",
@@ -2345,8 +2350,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "74ca5fe077456a0b3b2f5310cf9430999fd0b5fd",
-      "hash": "sha256-jV54LyJWtC/UJ7xHH0NRNVN/zwUT8vYS6gzH9gpo+yo=",
+      "rev": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+      "hash": "sha256-L3CpIT2DeI+fUFl9fcygojtQo2DzEen69rMD1XqR1vM=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2543,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "e31650eea443aaea1e84cc15d88c13f40080b275",
-      "hash": "sha256-b7GnBdZhAhu/WvWMsC6Z0kwmI9Fk70z1lVyFBSF5odE=",
+      "rev": "032be146865d973682535de75f2287da438550bf",
+      "hash": "sha256-ZOCJ6KD/WRrSBGuBISgX1JouC93two2j4swK+6nmxcI=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3006,13 +3011,18 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
-      "hash": "sha256-EsGNO0dULWf5Bx6bGrCv2kI2Z8aKH0kRvGiuN23wChQ=",
+      "rev": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
+      "hash": "sha256-rgeJhjQyABYlhlyFRmgyhbZmmmIPPNkch4CXyTkGEyM=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
           "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
           "path": "skills/brainstorming"
+        },
+        "diagnosing-superpowers": {
+          "name": "diagnosing-superpowers",
+          "description": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
+          "path": "skills/diagnosing-superpowers"
         },
         "dispatching-parallel-agents": {
           "name": "dispatching-parallel-agents",
@@ -3021,7 +3031,7 @@
         },
         "executing-plans": {
           "name": "executing-plans",
-          "description": "Use when you have a written implementation plan to execute in a separate session with review checkpoints",
+          "description": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
           "path": "skills/executing-plans"
         },
         "finishing-a-development-branch": {
