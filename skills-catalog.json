@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "c004a74784a08295d52749b04cda634125b9a581",
-      "hash": "sha256-BZRybfWYCKPzCBeZzxM7tBsaQdft68HDSUQdvdyyNOI=",
+      "rev": "dc27a9c2e13721158157632de61b4106c6c2a2a1",
+      "hash": "sha256-mliEs4QGO3W1vm5i4PfTNXCGtYVNUmEedWVmt5l7sxY=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "36287aa29d14988847d11ca0005eed93c7dc0ed9",
-      "hash": "sha256-UmkbBHDDh8yFUEj4Hthwx5If4fIHAOrojk8oSwQvZK0=",
+      "rev": "ea6997c4551d1bfa010b70d875d1aa738a379b25",
+      "hash": "sha256-lpzBoXV2KWYQJcwlLORdLMmjYBqUTysg1ZfBlDkYF0w=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "032be146865d973682535de75f2287da438550bf",
-      "hash": "sha256-ZOCJ6KD/WRrSBGuBISgX1JouC93two2j4swK+6nmxcI=",
+      "rev": "6ed0f7a9504f577d7529064103cecce9be7dfc5e",
+      "hash": "sha256-UxLW3/Xw/U19c87RHa3nYazUvNzRe0ZwWEshnh61TcM=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
