@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "ea6997c4551d1bfa010b70d875d1aa738a379b25",
-      "hash": "sha256-lpzBoXV2KWYQJcwlLORdLMmjYBqUTysg1ZfBlDkYF0w=",
+      "rev": "db0f0c3cdb52691652db4c038da1328f52733fc7",
+      "hash": "sha256-6z5TYaY58TmVrTCCJqHl14O4K/GNfqfHyQjq7fYOiGo=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "6ed0f7a9504f577d7529064103cecce9be7dfc5e",
-      "hash": "sha256-UxLW3/Xw/U19c87RHa3nYazUvNzRe0ZwWEshnh61TcM=",
+      "rev": "53e579f1481697931fc44f5445171397cfa2b24b",
+      "hash": "sha256-HR6/Y53GQVbtSqIBHWaLB9WHLLYfVdE2Sn602kgLSpw=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2695,6 +2695,21 @@
           "name": "get-pr-comments",
           "description": "Fetch and summarize review comments from the active pull request",
           "path": "cursor-team-kit/skills/get-pr-comments"
+        },
+        "google-docs": {
+          "name": "google-docs",
+          "description": "Author and edit Google Docs through the google-docs MCP tools - structured writing, character and paragraph styling, lists, tables, images, and safe index math. Use when creating a formatted document, editing document content, or applying styles.",
+          "path": "third_party/google-docs/skills/google-docs"
+        },
+        "google-sheets": {
+          "name": "google-sheets",
+          "description": "Build and edit Google Sheets through the google-sheets MCP tools - values, formatting, charts, conditional formatting, structure, and validation. Use when creating a spreadsheet or dashboard, formatting cells, adding charts, or reorganizing tabs and rows.",
+          "path": "third_party/google-sheets/skills/google-sheets"
+        },
+        "google-slides": {
+          "name": "google-slides",
+          "description": "Build and edit Google Slides through the google-slides MCP tools - slides, text boxes, shapes, images, tables, styling, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, or verifying how a slide looks.",
+          "path": "third_party/google-slides/skills/google-slides"
         },
         "how": {
           "name": "how",
