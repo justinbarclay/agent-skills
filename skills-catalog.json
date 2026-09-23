@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "dc27a9c2e13721158157632de61b4106c6c2a2a1",
-      "hash": "sha256-mliEs4QGO3W1vm5i4PfTNXCGtYVNUmEedWVmt5l7sxY=",
+      "rev": "bcab6a1b8503100e8618c3b4e32cc78de43de769",
+      "hash": "sha256-b3+ZzsukEYdkTlGACKVlofuGsmcP2KIy7fL7fwAAag0=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2214,8 +2214,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "b052c32bab7dd493513260228a36c88294f343f1",
-      "hash": "sha256-eObCxuhTN/mujcUpIzGlX62M5ocFgrUUwEWSrHMbcf8=",
+      "rev": "6dc7604903127485e7e4cb26314651ebd4a4df19",
+      "hash": "sha256-5Qf3xeVzMrR0vE2oQZQypO63mE8Nz41GzxZT1fPDecA=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2284,7 +2284,7 @@
         },
         "wrangler": {
           "name": "wrangler",
-          "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, deployment, and Cloudflare resource management.",
+          "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management.",
           "path": "skills/wrangler"
         }
       }
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "db0f0c3cdb52691652db4c038da1328f52733fc7",
-      "hash": "sha256-6z5TYaY58TmVrTCCJqHl14O4K/GNfqfHyQjq7fYOiGo=",
+      "rev": "99ef7ddd24df10b78f2e0eba98c577349dd01611",
+      "hash": "sha256-Ft2DtigOZ26LoIdAOd43gVIbzEM1ugwZGJarQwP5aMY=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "53e579f1481697931fc44f5445171397cfa2b24b",
-      "hash": "sha256-HR6/Y53GQVbtSqIBHWaLB9WHLLYfVdE2Sn602kgLSpw=",
+      "rev": "b42effe0aa50f59c693d7e2924714e015e00bf7c",
+      "hash": "sha256-TS6XW/o9LCL6lD79NHua9H2BM4K/c4EFdtgo7ZNaFKI=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2698,17 +2698,17 @@
         },
         "google-docs": {
           "name": "google-docs",
-          "description": "Author and edit Google Docs through the google-docs MCP tools - structured writing, character and paragraph styling, lists, tables, images, and safe index math. Use when creating a formatted document, editing document content, or applying styles.",
+          "description": "Author and edit Google Docs with the google-docs tools - structured writing, character and paragraph styling, lists, tables, images, headers/footers. Use when creating a formatted document, editing document content, or applying styles.",
           "path": "third_party/google-docs/skills/google-docs"
         },
         "google-sheets": {
           "name": "google-sheets",
-          "description": "Build and edit Google Sheets through the google-sheets MCP tools - values, formatting, charts, conditional formatting, structure, and validation. Use when creating a spreadsheet or dashboard, formatting cells, adding charts, or reorganizing tabs and rows.",
+          "description": "Build and edit Google Sheets with the google-sheets tools - values, formatting, charts, conditional formatting, structure, validation, named and protected ranges. Use when creating a spreadsheet or dashboard, formatting cells, adding or fixing charts, or reorganizing tabs and rows.",
           "path": "third_party/google-sheets/skills/google-sheets"
         },
         "google-slides": {
           "name": "google-slides",
-          "description": "Build and edit Google Slides through the google-slides MCP tools - slides, text boxes, shapes, images, tables, styling, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, or verifying how a slide looks.",
+          "description": "Build and edit Google Slides through the google-slides MCP tools - slides, grids of cards and columns, text boxes, shapes, images, tables, styling, layout inspection, and per-slide PNG rendering. Use when creating a deck, laying out slide elements, matching a template, or verifying how a slide looks.",
           "path": "third_party/google-slides/skills/google-slides"
         },
         "how": {
@@ -3020,6 +3020,11 @@
           "name": "x-chat",
           "description": "Read, summarize, or send encrypted X Chat (XChat) DMs via the X plugin MCP plus local chatxdk / xchat_lite.py. Use when the user mentions X Chat, xchat, encrypted DMs, Chat PIN, juicebox, inbox messages, or wants to reply in X Chat. Not for classic unencrypted DMs, posting tweets, or always-on daemons. If chat tools or dm.read/dm.write are missing, tell them to reconnect the X plugin — do not create an app or ask for Bearer tokens.",
           "path": "third_party/x/skills/x-chat"
+        },
+        "x-money-guide": {
+          "name": "x-money-guide",
+          "description": "Read this before the first X Money action in a session and again on any X Money error, refusal, or missing capability. Covers the approval rule for every action that moves money (always ask, every time, no exceptions), how the connection works (connection code plus passkey in the X app), how to guide the user through connect, reconnect, and revoke at x.com/i/money/settings/connections, and what each failure message means.",
+          "path": "third_party/x-money/skills/x-money-guide"
         }
       }
     },
