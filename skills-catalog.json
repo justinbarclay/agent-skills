@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "99ef7ddd24df10b78f2e0eba98c577349dd01611",
-      "hash": "sha256-Ft2DtigOZ26LoIdAOd43gVIbzEM1ugwZGJarQwP5aMY=",
+      "rev": "a682cd5788a6fbcc64dadf872ea91d1f0da1908c",
+      "hash": "sha256-Hsmu5lKw0zc4jb4ZWqG7Sc1GZ3GNK+eg2sJP6G8wIIk=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2342,7 +2342,7 @@
         },
         "upgrade-stripe": {
           "name": "upgrade-stripe",
-          "description": "Guide for upgrading Stripe API versions and SDKs",
+          "description": "Guide for upgrading Stripe API versions, webhook endpoints, server-side SDKs, Stripe.js, and mobile SDKs",
           "path": "skills/upgrade-stripe"
         }
       }
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "b42effe0aa50f59c693d7e2924714e015e00bf7c",
-      "hash": "sha256-TS6XW/o9LCL6lD79NHua9H2BM4K/c4EFdtgo7ZNaFKI=",
+      "rev": "12d587dfb20741cafc376c42c696c5f6e2a64487",
+      "hash": "sha256-ir2L4nqPFgBc6n4uFbpDxQPPLJRBSsCR92T6/itICGQ=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
