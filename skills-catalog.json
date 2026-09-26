@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "bcab6a1b8503100e8618c3b4e32cc78de43de769",
-      "hash": "sha256-b3+ZzsukEYdkTlGACKVlofuGsmcP2KIy7fL7fwAAag0=",
+      "rev": "2686b620fc1fed2e8f60c704839c766b8594c6b6",
+      "hash": "sha256-IpYCTJh5T2VJF0RYYwkvqrB6l22gXCymR8YTdpgVo0I=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -615,7 +615,7 @@
         },
         "code-review-and-quality": {
           "name": "code-review-and-quality",
-          "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch.",
+          "description": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when the diff is pasted inline.",
           "path": "skills/code-review-and-quality"
         },
         "code-simplification": {
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "af7c088ac40115e23ab5fa60b5b968d71e801b97",
-      "hash": "sha256-/ZQwAzM09nX6xP+s1p/dIliqkFT8Yjm4nRevbXwIWcE=",
+      "rev": "d547667fd443b3c8575a3dffbfd7758df883addf",
+      "hash": "sha256-gRBJ7C2FHhiEzbFBxnzr4NH7eBx4JWcRSHui9USc2aY=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2312,7 +2312,7 @@
         },
         "stripe-apps": {
           "name": "stripe-apps",
-          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing, plus submitting one agentic feedback report after a build. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
+          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing, plus submitting one agentic feedback report after a build. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, @stripe/extensibility-sdk, script extensions, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
           "path": "skills/stripe-apps"
         },
         "stripe-best-practices": {
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "fadd23794c0075468eb8964b0fd93e06e09486ad",
-      "hash": "sha256-5MJEYhB6V7UyZn/glye4JKQw1h14aC4CdxI+8FKUyU4=",
+      "rev": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
+      "hash": "sha256-okjUS0AVmgoQfCO3nzzqjL1PnZ8X3r8wjtz5SwrFse0=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3031,8 +3031,8 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "5bf4e78011075bcfc0dc295f0724994cd123ee71",
-      "hash": "sha256-rgeJhjQyABYlhlyFRmgyhbZmmmIPPNkch4CXyTkGEyM=",
+      "rev": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
+      "hash": "sha256-BWPiXoXV+jePP+wn/Z+Af4iehIL7oei00plaWaTzq8s=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
