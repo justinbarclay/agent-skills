@@ -2214,8 +2214,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "6dc7604903127485e7e4cb26314651ebd4a4df19",
-      "hash": "sha256-5Qf3xeVzMrR0vE2oQZQypO63mE8Nz41GzxZT1fPDecA=",
+      "rev": "626547c06881a20b3322bdc2ed6e6451b33a4fb6",
+      "hash": "sha256-Lb01y94HkR1mmyhpPldlYAnGsr1QA3w+6XODDoRGvI4=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "d547667fd443b3c8575a3dffbfd7758df883addf",
-      "hash": "sha256-gRBJ7C2FHhiEzbFBxnzr4NH7eBx4JWcRSHui9USc2aY=",
+      "rev": "79ccee2edc0edc5b57491eef1c4ce96269e850a7",
+      "hash": "sha256-AXiutymWHyMyZk+kgbxCr9mYlHUvzouUMSRj0uw7414=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
