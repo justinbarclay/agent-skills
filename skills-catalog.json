@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "79ccee2edc0edc5b57491eef1c4ce96269e850a7",
-      "hash": "sha256-AXiutymWHyMyZk+kgbxCr9mYlHUvzouUMSRj0uw7414=",
+      "rev": "f23b5bad7a5b20d403bb11cf425044b85ee7c716",
+      "hash": "sha256-1W1/KdSc9l7ywsHRtVdy1MhXs82t8jZvu1qOEKTGvKk=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
