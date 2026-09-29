@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "33375500bcea98d610eb30ce10ac4e59b89c390d",
-      "hash": "sha256-xUs7UX8pOcZwR0okaSbI/f8EE5F4Zi/BUd+nIZNafPc=",
+      "rev": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
+      "hash": "sha256-PRBkTEGNwT73EFCvuTprzIBGiG+UGSYiaCkY7Ji13us=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "f23b5bad7a5b20d403bb11cf425044b85ee7c716",
-      "hash": "sha256-1W1/KdSc9l7ywsHRtVdy1MhXs82t8jZvu1qOEKTGvKk=",
+      "rev": "6a482a7ab5aa0a2e461f68c5c1ea107232a80a45",
+      "hash": "sha256-w88PVYIXWJyUYzH4psZq3CjlJE+Z2zZbEYqjg5AsoI0=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2548,8 +2548,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "ecc249f1e306fc64ddf83c7bed16cacf7c2239db",
-      "hash": "sha256-okjUS0AVmgoQfCO3nzzqjL1PnZ8X3r8wjtz5SwrFse0=",
+      "rev": "adf3218ca2f5b9971eedc07a76bef22df7701539",
+      "hash": "sha256-mQ6+lYLBYkmdOOsXXGR0wxPcHj35dLdb5sMaR/CvQ58=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2700,6 +2700,11 @@
           "name": "google-docs",
           "description": "Author and edit Google Docs with the google-docs tools - structured writing, character and paragraph styling, lists, tables, images, headers/footers. Use when creating a formatted document, editing document content, or applying styles.",
           "path": "third_party/google-docs/skills/google-docs"
+        },
+        "google-drive": {
+          "name": "google-drive",
+          "description": "Work with Google Drive through its MCP tools - search, read, create, organize, share, comment, and export files. Use when creating files in specific folders, moving or renaming, converting Markdown/CSV into Docs/Sheets, managing comments, or exporting a rendered PDF.",
+          "path": "third_party/google-drive/skills/google-drive"
         },
         "google-sheets": {
           "name": "google-sheets",
@@ -3351,8 +3356,8 @@
     "terraform": {
       "owner": "hashicorp",
       "repo": "agent-skills",
-      "rev": "516354c484b43fa5469567485113dd0c769c3d24",
-      "hash": "sha256-hFk9cQYpfO+sCxnKIK+Fun1qJJfTaU6WeZj35W0cTao=",
+      "rev": "f706481af9b8fedb66de909f6243ad29601afa0c",
+      "hash": "sha256-0v+QQqIClVddw8zNg7Zb2CkPA1+AJNf5bNRRHHDWU7s=",
       "skills": {
         "azure-verified-modules": {
           "name": "azure-verified-modules",
