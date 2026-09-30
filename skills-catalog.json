@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "3336c8eda617308f1df327c83d9f6601eb2b79de",
-      "hash": "sha256-b/Vqolf3Ale2eynNQ0jJqcgV/nTv2XQu9nrme3D8WUo=",
+      "rev": "fe1ce07cb214548a95c7ffbbb97ecef896ade972",
+      "hash": "sha256-RQjXQfSPZrVLCurGlPz0qy4TEwhfRxDk06FK1h0fruE=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2292,8 +2292,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "6a482a7ab5aa0a2e461f68c5c1ea107232a80a45",
-      "hash": "sha256-w88PVYIXWJyUYzH4psZq3CjlJE+Z2zZbEYqjg5AsoI0=",
+      "rev": "a188b0d644166d57b93dc6fb338a0e2e8c37b5fc",
+      "hash": "sha256-eMz1n7Q9dKojwjq39nu+5/6TDFzu2PntpgesSet0OaI=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2307,7 +2307,7 @@
         },
         "metronome": {
           "name": "metronome",
-          "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable metrics), contract design (rate cards, overrides, dimensional pricing, products), invoicing lifecycle (grace periods, finalization, Stripe sync), credit and commit management (prepaid, postpaid, thresholds, auto-recharge), and Stripe integration (arrears invoicing, tax providers, line item limits). Use when building, modifying, or reviewing any Metronome integration — including ingesting usage events, creating contracts or rate cards, managing credits and commits, configuring invoicing, or syncing invoices with Stripe Billing.",
+          "description": "Guides Metronome usage-based billing integration decisions — event ingestion (single and batch, idempotency, billable metrics), contract design (rate cards, overrides, dimensional pricing, products), invoicing lifecycle (grace periods, finalization, Stripe sync), credit and commit management (prepaid, postpaid, thresholds, auto-recharge), and Stripe integration (arrears invoicing, tax providers, line item limits). Use when building, modifying, or reviewing any Metronome integration — including ingesting usage events, creating customers, contracts, or rate cards, designing billable metric group keys, managing credits and commits, configuring invoicing, syncing invoices with Stripe Billing, billing AI applications for token usage, setting up self-serve (PLG) pricing, reviewing customer health, commit burn, portfolios, or renewals, or migrating from Stripe Billing Meters to Metronome.",
           "path": "skills/metronome"
         },
         "stripe-apps": {
@@ -2350,8 +2350,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
-      "hash": "sha256-L3CpIT2DeI+fUFl9fcygojtQo2DzEen69rMD1XqR1vM=",
+      "rev": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
+      "hash": "sha256-zQ/wVrcHjIC+UjP4nDw3HARMqZd6LIDFmHKlp8AADYI=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2375,7 +2375,7 @@
         },
         "domain-modeling": {
           "name": "domain-modeling",
-          "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a CONTEXT.md, or recording or editing an ADR.",
+          "description": "Build and sharpen a project's domain model. Use when discussing codebase terminology, writing or editing a GLOSSARY.md, or recording or editing an ADR.",
           "path": "skills/engineering/domain-modeling"
         },
         "git-guardrails-claude-code": {
@@ -2410,8 +2410,8 @@
         },
         "implement-spec": {
           "name": "implement-spec",
-          "description": "Implement a specification in code.",
-          "path": "skills/in-progress/implement-spec"
+          "description": "Implement the result of /to-spec and /to-tickets in code.",
+          "path": "skills/engineering/implement-spec"
         },
         "improve-codebase-architecture": {
           "name": "improve-codebase-architecture",
@@ -2446,7 +2446,7 @@
         "pr": {
           "name": "pr",
           "description": "Use when writing a PR body.",
-          "path": "skills/in-progress/pr"
+          "path": "skills/engineering/pr"
         },
         "prototype": {
           "name": "prototype",
@@ -2458,15 +2458,10 @@
           "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
           "path": "skills/engineering/research"
         },
-        "resolving-merge-conflicts": {
-          "name": "resolving-merge-conflicts",
-          "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
-          "path": "skills/engineering/resolving-merge-conflicts"
-        },
         "retro": {
           "name": "retro",
           "description": "Conduct a retrospective on a coding session.",
-          "path": "skills/in-progress/retro"
+          "path": "skills/engineering/retro"
         },
         "scaffold-exercises": {
           "name": "scaffold-exercises",
@@ -2548,8 +2543,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "adf3218ca2f5b9971eedc07a76bef22df7701539",
-      "hash": "sha256-mQ6+lYLBYkmdOOsXXGR0wxPcHj35dLdb5sMaR/CvQ58=",
+      "rev": "fae2c6ed95821bd85f614a73e4842e13229fa5e5",
+      "hash": "sha256-IWdnUJb3uWSn90LNtpvKTTW/rALr2dVTBQsAYHfIGV8=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2595,6 +2590,11 @@
           "name": "bro",
           "description": "Restate the last message in plain human language, with no jargon.",
           "path": "pstack/skills/bro"
+        },
+        "build-figma": {
+          "name": "build-figma",
+          "description": "Use for \"/build-figma\", a figma.com/design URL with node-id, or \"implement this Figma\" into a web, desktop, or shared UI. Orchestrates Figma MCP intake, maps nodes to the repo's own design system, then a verify-this visual judge. Do not paste Figma Tailwind.",
+          "path": "dyl-stack/skills/build-figma"
         },
         "cancel-ralph": {
           "name": "cancel-ralph",
@@ -2675,6 +2675,21 @@
           "name": "docs-canvas",
           "description": "Render a documentation-style Cursor Canvas that organizes architecture notes, API references, walkthroughs, and how-tos into a navigable layout with sections, tables of contents, and cross-references. Use when the user asks for a docs canvas, documentation overview, architecture walkthrough, API reference page, or wants to render structured documentation as an interactive canvas.",
           "path": "docs-canvas/skills/docs-canvas"
+        },
+        "dyl-mode": {
+          "name": "dyl-mode",
+          "description": "Dylan's agent style on top of pstack: concise verified delivery, root causes over symptom patches, The Algorithm before design, plain /bro replies, live UI proof, reuse/simplify, and hard merge gates. Use for Dylan, /dyl-mode, or his style. \"Get PR green\" → /dyl-ready-pr. \"Review this PR like me\" → /dyl-review. Figma URL → /build-figma.",
+          "path": "dyl-stack/skills/dyl-mode"
+        },
+        "dyl-ready-pr": {
+          "name": "dyl-ready-pr",
+          "description": "Get a PR merge-ready for Dylan: deep /dyl-review till 🟢, mark it ready, resolve conflicts, then babysit CI and comments. Use for /dyl-ready-pr, \"get PR green\", \"make the PR mergeable\", \"/dyl-review till green then ready\", or ready-to-merge asks under /dyl-mode.",
+          "path": "dyl-stack/skills/dyl-ready-pr"
+        },
+        "dyl-review": {
+          "name": "dyl-review",
+          "description": "Review one or more PRs in Dylan's style: up to 7 copy-pasteable asks and one 🟢/🟡/🔴 call. Quick by default; \"deep\" adds thermos and Bugbot. Use for /dyl-review, \"review this PR like me\", or terse design/correctness comments. Never posts to the PR.",
+          "path": "dyl-stack/skills/dyl-review"
         },
         "figure-it-out": {
           "name": "figure-it-out",
@@ -2885,6 +2900,11 @@
           "name": "principle-test-behavior-not-implementation",
           "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
           "path": "pstack/skills/principle-test-behavior-not-implementation"
+        },
+        "principle-the-algorithm": {
+          "name": "principle-the-algorithm",
+          "description": "Apply to any non-trivial change before designing it. Make the requirement less dumb, delete, optimize, accelerate, automate, in that order, then run it again on the result. The reply names the requirement you questioned and what you deleted.",
+          "path": "dyl-stack/skills/principle-the-algorithm"
         },
         "principle-type-system-discipline": {
           "name": "principle-type-system-discipline",
