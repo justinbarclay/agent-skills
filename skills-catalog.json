@@ -2214,13 +2214,18 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "626547c06881a20b3322bdc2ed6e6451b33a4fb6",
-      "hash": "sha256-Lb01y94HkR1mmyhpPldlYAnGsr1QA3w+6XODDoRGvI4=",
+      "rev": "d8c1937dcd7a11d447965a87330c3a0fbf70ae22",
+      "hash": "sha256-Aqgx4NiqqgXQ8xLzUUJkTYUjh2rKyKZHbb26RG6huoI=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
           "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package.",
           "path": "skills/agents-sdk"
+        },
+        "basin": {
+          "name": "basin",
+          "description": "Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL. Use for streaming data into R2 Iceberg tables, managing catalogs, or querying those tables; also use for requests using the former Data Platform, Pipelines, R2 Data Catalog, or R2 SQL names.",
+          "path": "skills/basin"
         },
         "cloudflare": {
           "name": "cloudflare",
@@ -2246,6 +2251,11 @@
           "name": "durable-objects",
           "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
           "path": "skills/durable-objects"
+        },
+        "k2": {
+          "name": "k2",
+          "description": "Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and consuming through subscriptions.",
+          "path": "skills/k2"
         },
         "nextjs-on-cloudflare": {
           "name": "nextjs-on-cloudflare",
@@ -2292,8 +2302,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "a188b0d644166d57b93dc6fb338a0e2e8c37b5fc",
-      "hash": "sha256-eMz1n7Q9dKojwjq39nu+5/6TDFzu2PntpgesSet0OaI=",
+      "rev": "85d998e928da17ee263312a77d02a4f15acc8121",
+      "hash": "sha256-+AVGxbx16Ik+/1GYKq/cxAazvM7NkXx5MeYeDHDDMps=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2543,8 +2553,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "fae2c6ed95821bd85f614a73e4842e13229fa5e5",
-      "hash": "sha256-IWdnUJb3uWSn90LNtpvKTTW/rALr2dVTBQsAYHfIGV8=",
+      "rev": "2eb7ed4613cfc8f098dfe464a23680ea44d84c5e",
+      "hash": "sha256-Vw2sCdlAPWmpF1ndDT6rO/Gd/Ozmh1BXzhBpxrjimkw=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3038,13 +3048,8 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools are available, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. If X is connected but tools are missing (tools=0, user-X-* not found), that is a setup failure — not a paywall. For encrypted X Chat / XChat DMs, also read skills/x-chat/SKILL.md. If chat tools or dm.read/dm.write are missing while other X tools work, tell them to reconnect the X plugin. Estimate the cost of every X call before making it and confirm with the user before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. Encrypted X Chat, XChat, inbox, DMs, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
-        },
-        "x-chat": {
-          "name": "x-chat",
-          "description": "Read, summarize, or send encrypted X Chat (XChat) DMs via the X plugin MCP plus local chatxdk / xchat_lite.py. Use when the user mentions X Chat, xchat, encrypted DMs, Chat PIN, juicebox, inbox messages, or wants to reply in X Chat. Not for classic unencrypted DMs, posting tweets, or always-on daemons. If chat tools or dm.read/dm.write are missing, tell them to reconnect the X plugin — do not create an app or ask for Bearer tokens.",
-          "path": "third_party/x/skills/x-chat"
         },
         "x-money-guide": {
           "name": "x-money-guide",
