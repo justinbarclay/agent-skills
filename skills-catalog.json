@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "2686b620fc1fed2e8f60c704839c766b8594c6b6",
-      "hash": "sha256-IpYCTJh5T2VJF0RYYwkvqrB6l22gXCymR8YTdpgVo0I=",
+      "rev": "9d0c60d406b454a78ccc0a175b19932047aa4dac",
+      "hash": "sha256-ETW4xARSd7+6ksH8PX0MWxGiTf57iOaCEtO1DbGcid0=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2214,8 +2214,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "d8c1937dcd7a11d447965a87330c3a0fbf70ae22",
-      "hash": "sha256-Aqgx4NiqqgXQ8xLzUUJkTYUjh2rKyKZHbb26RG6huoI=",
+      "rev": "41e0d19858946d18af9ee2c2feebbe2e11d829ff",
+      "hash": "sha256-U0pebg1Uu/L5gYy6aZXte5FZT0R3OPHxU34J+HOTBFk=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2302,8 +2302,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "85d998e928da17ee263312a77d02a4f15acc8121",
-      "hash": "sha256-+AVGxbx16Ik+/1GYKq/cxAazvM7NkXx5MeYeDHDDMps=",
+      "rev": "27db051dba7cee2e13d2dbf6d65939cf412f5b3c",
+      "hash": "sha256-gS643dIkSk9RCkgegWSOokYZRxi99RaQR3nDkdr6zxY=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2322,7 +2322,7 @@
         },
         "stripe-apps": {
           "name": "stripe-apps",
-          "description": "Use when building, modifying, or reviewing a Stripe App — or when the user describes something that implies one (e.g. \"add a panel to the customer page\", \"customize my Stripe Dashboard\", \"react to Stripe events from my app\", \"connect my service to Stripe without sharing API keys\"). Covers the full app development workflow (scaffold, preview, upload, versioning), UI extension architecture (sandboxed iframe, Stripe UI toolkit, viewports), extension types (UI extensions, backend-only, extension interfaces, embedded apps), authentication (platform keys, OAuth, restricted API keys), stripe-app.yaml manifest setup (permissions, viewports, CSP), webhook configuration for apps, Secret Store API, `fetchStripeSignature` auth, and marketplace publishing, plus submitting one agentic feedback report after a build. Use when the user mentions Stripe Apps, UI extensions, @stripe/ui-extension-sdk, @stripe/extensibility-sdk, script extensions, stripe-app.yaml, Dashboard extensions, or customizing the Stripe Dashboard.",
+          "description": "Build, modify, or review Stripe Apps and extensions using the relevant documentation and reference guides. Use for custom Stripe Dashboard UI, stripe-app.yaml, @stripe/ui-extension-sdk, @stripe/extensibility-sdk, script extensions, extension interfaces, custom workflow actions, and apps that authenticate to Stripe or react to events. Also use when deciding whether a Stripe extension can support the user's billing or workflow requirements.",
           "path": "skills/stripe-apps"
         },
         "stripe-best-practices": {
@@ -2553,8 +2553,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "2eb7ed4613cfc8f098dfe464a23680ea44d84c5e",
-      "hash": "sha256-Vw2sCdlAPWmpF1ndDT6rO/Gd/Ozmh1BXzhBpxrjimkw=",
+      "rev": "c47b12849e43f18d5c374c7069c744cc55b0ea00",
+      "hash": "sha256-LXdEtOTVAw6UhUeS/yYM8b3U75jxoMZOaHSX0T0AfzQ=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
