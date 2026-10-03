@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "9d0c60d406b454a78ccc0a175b19932047aa4dac",
-      "hash": "sha256-ETW4xARSd7+6ksH8PX0MWxGiTf57iOaCEtO1DbGcid0=",
+      "rev": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
+      "hash": "sha256-eYL6pAuS6dFle1lNzGd41Qnlw2NEcOvThT9cFUx4A/8=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "fe1ce07cb214548a95c7ffbbb97ecef896ade972",
-      "hash": "sha256-RQjXQfSPZrVLCurGlPz0qy4TEwhfRxDk06FK1h0fruE=",
+      "rev": "c64c4d9ea0642ab2076d56411fac5a27f99b0544",
+      "hash": "sha256-Ea6VQy8NiS7/GXnMCLUjCeJwSborUBSlrHUPvFfyQrY=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2189,6 +2189,11 @@
           "description": "Extract explicit and implicit constraints (compliance, security, hosting, tooling, stakeholder, scope, and external-dependency boundaries) from a project's documentation, then build or update a canonical CONSTRAINTS.md. Spawns one subagent per source document to flag externally-imposed boundaries with evidence citations and confidence ratings, then correlates, deduplicates, and organizes the results by category before writing them into CONSTRAINTS.md. Use this skill whenever a user mentions \"CONSTRAINTS.md\", \"extract constraints\", \"find our constraints\", \"document constraints\", \"compliance constraints\", \"what limits this project\", \"synthesize constraints\", or wants to capture externally-imposed boundaries (legal, security, compliance, stakeholder, vendor) that shape what a project can build and how. Always prefer this skill over ad-hoc constraint documentation.",
           "path": "skills/constraints-extractor"
         },
+        "context-drift": {
+          "name": "context-drift",
+          "description": "Use when the user wants to audit or correct drift across canonical project context files such as `AGENTS.md`, `CLAUDE.md`, `ARCHITECTURE.md`, `CONSTRAINTS.md`, `JARGON.md`, `EPISTEMIC-MAP.md`, `README.md`, and `openspec/config.yaml`, or mentions context drift, memory-file drift, redundant project docs, wrong document, layered documentation, or doc ownership. This skill checks whether each fact lives in the right document, identifies redundancy and layer-boundary violations, and prepares lossless move/delete proposals with diff previews and per-change approval. Prefer it over ad-hoc cleanup because these files are load-bearing and misplaced content can change agent behavior or tool behavior.",
+          "path": "skills/context-drift"
+        },
         "epistemic-mapper": {
           "name": "epistemic-mapper",
           "description": "Build or update a canonical EPISTEMIC-MAP.md sorting a project's knowledge into four states: validated Facts, open Questions, undocumented Assumptions, and inferred Risks. Purpose-built for prototype-to-production handoff, where a signed contract means a new engineering team must take over before the original builder's tacit knowledge walks out the door. Spawns subagents across docs and the codebase to find what's proven, what's asked, what's silently assumed, and what nobody has noticed, then runs a dedicated synthesis pass for systemic risks no single source states. Use whenever a user mentions \"epistemic map\", \"knowledge map\", \"EPISTEMIC-MAP.md\", \"known unknowns\", \"unknown unknowns\", \"what do we actually know vs assume\", \"map our assumptions\", \"handoff risk map\", \"prototype handoff\", or \"onboarding a team onto a prototype\". Always prefer this skill over ad-hoc knowledge-gap documentation.",
@@ -2302,8 +2307,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "27db051dba7cee2e13d2dbf6d65939cf412f5b3c",
-      "hash": "sha256-gS643dIkSk9RCkgegWSOokYZRxi99RaQR3nDkdr6zxY=",
+      "rev": "9a33771f666e59c21cd71a3d043459464a42f9e3",
+      "hash": "sha256-Yfl5Bwb44O9gVjw7SVm6lLD4AsvLnPPqt1S4VQYoh9I=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2553,8 +2558,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "c47b12849e43f18d5c374c7069c744cc55b0ea00",
-      "hash": "sha256-LXdEtOTVAw6UhUeS/yYM8b3U75jxoMZOaHSX0T0AfzQ=",
+      "rev": "23e4138daa01c42d4969f7a5465f82704e64f798",
+      "hash": "sha256-O0uR8DKErvCEa06+Di2JvRbNJQNEofEMZlKkjmmPFGE=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2590,6 +2595,11 @@
           "name": "automate-me",
           "description": "Use for \"automate me\", \"create/update/refresh my -mode skill\", \"turn/capture my preferences or working style into a skill\", or wanting agents to follow how the user works. Drafts or revises a personal -mode skill via create-skill + unslop, optionally pulling fresh evidence from recent transcripts.",
           "path": "pstack/skills/automate-me"
+        },
+        "benchmark-checklist": {
+          "name": "benchmark-checklist",
+          "description": "Vet a perf measurement (limiter, tuning, limits, errors, repeatability, relevance, and whether the work happened) before you report or act on it. Use when you run a benchmark or report a speedup or regression you measured.",
+          "path": "pstack/skills/benchmark-checklist"
         },
         "blast-radius": {
           "name": "blast-radius",
@@ -2830,6 +2840,11 @@
           "name": "principle-experience-first",
           "description": "Apply when product, UX, or feature-scope tradeoffs come up. Choose user delight over implementation convenience; ship fewer polished features over more rough ones.",
           "path": "pstack/skills/principle-experience-first"
+        },
+        "principle-explain-the-number": {
+          "name": "principle-explain-the-number",
+          "description": "Apply before you trust, report, or act on a number you measured: a speedup, a regression, a throughput, a latency, or an eval result. Find what limits it, and rule out that it measured something other than the work you think.",
+          "path": "pstack/skills/principle-explain-the-number"
         },
         "principle-fix-root-causes": {
           "name": "principle-fix-root-causes",
