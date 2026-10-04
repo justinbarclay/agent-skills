@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "a06bc63b3f8b829c14b0bbf53d99fefc39d58092",
-      "hash": "sha256-eYL6pAuS6dFle1lNzGd41Qnlw2NEcOvThT9cFUx4A/8=",
+      "rev": "1401c8b8030e023baeebb31781a6653fe8e93026",
+      "hash": "sha256-eeldNNDQjP/Uk/BIRo33Q/xzCdPV3kGRGqU3XyQZnFY=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2307,8 +2307,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9a33771f666e59c21cd71a3d043459464a42f9e3",
-      "hash": "sha256-Yfl5Bwb44O9gVjw7SVm6lLD4AsvLnPPqt1S4VQYoh9I=",
+      "rev": "1b5f55651a559db8e6d818f4a7139ed216b777a6",
+      "hash": "sha256-SkCFcUWYn/cINClBbHACe2KqcwHrXn0eQqsjmPEu5Vs=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2365,8 +2365,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "d81f3a183412e71a5b1e84ca21bc1a35eea03a60",
-      "hash": "sha256-zQ/wVrcHjIC+UjP4nDw3HARMqZd6LIDFmHKlp8AADYI=",
+      "rev": "24fe0ef7737efae15c87225755e9f6f5965e4888",
+      "hash": "sha256-/mAmj7QFdyOWhLmy3Rt2/Hfsh5qwirTRax7hmQffFdo=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2558,8 +2558,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "23e4138daa01c42d4969f7a5465f82704e64f798",
-      "hash": "sha256-O0uR8DKErvCEa06+Di2JvRbNJQNEofEMZlKkjmmPFGE=",
+      "rev": "e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a",
+      "hash": "sha256-AZlQa2TypJr8W8Y6YDwRc65LWK+CEbrTiM2BRYU+Rok=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2645,6 +2645,11 @@
           "name": "control-ui",
           "description": "Build or adapt a local browser/CDP harness to drive and inspect a web, IDE, or Electron UI. Use for local UI verification, screenshots, accessibility snapshots, perf profiles, visual diffs, or reproducing UI bugs.",
           "path": "cursor-team-kit/skills/control-ui"
+        },
+        "correct": {
+          "name": "correct",
+          "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
+          "path": "pstack/skills/correct"
         },
         "create-learning-path": {
           "name": "create-learning-path",
