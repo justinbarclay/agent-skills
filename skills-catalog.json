@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4",
-      "hash": "sha256-PRBkTEGNwT73EFCvuTprzIBGiG+UGSYiaCkY7Ji13us=",
+      "rev": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+      "hash": "sha256-APw+xMKqRvkLnuQxttiyyIeylrIMSxZovQnw3xEl1C4=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2307,8 +2307,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "1b5f55651a559db8e6d818f4a7139ed216b777a6",
-      "hash": "sha256-SkCFcUWYn/cINClBbHACe2KqcwHrXn0eQqsjmPEu5Vs=",
+      "rev": "c40002aa6047acaa72e290cdbb22d9b77739d798",
+      "hash": "sha256-wFuw3EX1WxxA11ng4BSx1SLOcXJb/x7htVmI8Cc2EPE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2365,13 +2365,18 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "24fe0ef7737efae15c87225755e9f6f5965e4888",
-      "hash": "sha256-/mAmj7QFdyOWhLmy3Rt2/Hfsh5qwirTRax7hmQffFdo=",
+      "rev": "4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d",
+      "hash": "sha256-oN3OQPouK6wrrGzmgNdvdOVLsOJVGaK7cy3BZoE10AA=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
           "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
           "path": "skills/engineering/ask-matt"
+        },
+        "chief-of-staff": {
+          "name": "chief-of-staff",
+          "description": "Pursue a long-running goal in a single session by co-ordinating subagents.",
+          "path": "skills/in-progress/chief-of-staff"
         },
         "claude-handoff": {
           "name": "claude-handoff",
@@ -2558,8 +2563,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "e43c7ee26e0038c6c1fa8380dd34ce86ff94cb2a",
-      "hash": "sha256-AZlQa2TypJr8W8Y6YDwRc65LWK+CEbrTiM2BRYU+Rok=",
+      "rev": "807c031086fcf71c88c863b4a4e6938b6785c58f",
+      "hash": "sha256-/OB6dIEsbr8Ob3qDM3BXsDJhNabOUZb4HlvxlmijVc0=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2800,6 +2805,11 @@
           "name": "orchestrate",
           "description": "Use only when the user explicitly types `/orchestrate <goal>` to decompose a large task, spawn a tree of parallel cloud-agent workers/subplanners/verifiers via the Cursor SDK, and collect structured handoffs; do not invoke autonomously.",
           "path": "orchestrate/skills/orchestrate"
+        },
+        "poteto-help": {
+          "name": "poteto-help",
+          "description": "Guides users through pstack setup, /poteto-mode, and picking the skill, playbook, or principle for a task. Type /poteto-help with a question.",
+          "path": "pstack/skills/poteto-help"
         },
         "poteto-mode": {
           "name": "poteto-mode",
@@ -3308,8 +3318,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "9b794aec9c4169f137285c2763c06064d247dd47",
-      "hash": "sha256-Ki6TF4V6Fx++4EcXpfnSDzGjz49dKA5e5lHV4sgj/DQ=",
+      "rev": "e2aa9b83fdb15269965ee5d58eadae6773d98a63",
+      "hash": "sha256-biSSu3dsWj+1DfZhVIbgNJzoStUkI/fdXARGXwy5+D0=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
@@ -3323,7 +3333,7 @@
         },
         "provider-upgrade": {
           "name": "provider-upgrade",
-          "description": "Upgrade any Pulumi provider to a newer version and reconcile the resulting diff. Use when users want to upgrade or update a provider (including editing package.json, requirements.txt, pyproject.toml, go.mod, or Pulumi.yaml to bump a provider SDK), check for breaking changes before or during an upgrade, fix resources that broke after a provider upgrade, or resolve unexpected replacements, creates, or deletes in a post-upgrade preview. Applies to all providers (aws, azure-native, gcp, kubernetes, aws-native, cloudflare, datadog, etc.) — not just Tier 1. Do NOT use for querying which stacks use what package versions; use skill `package-usage` for cross-stack audits. Do NOT use for general infrastructure tasks.",
+          "description": "Upgrade any Pulumi provider to a newer version and reconcile the resulting diff. Use when users want to upgrade or update a provider (including editing package.json, requirements.txt, pyproject.toml, go.mod, or Pulumi.yaml to bump a provider SDK), check for breaking changes before or during an upgrade, fix resources that broke after a provider upgrade, or resolve unexpected replacements, creates, or deletes in a post-upgrade preview, including pulumi-gcp v10 errors such as a missing gcp.notebooks or gcp.iap.Brand type or a required secretDataWoVersion. Applies to all providers (aws, azure-native, gcp, kubernetes, aws-native, cloudflare, datadog, etc.) — not just Tier 1. Do NOT use for querying which stacks use what package versions; use skill `package-usage` for cross-stack audits. Do NOT use for general infrastructure tasks.",
           "path": "pulumi/skills/provider-upgrade"
         },
         "pulumi-arm-to-pulumi": {
