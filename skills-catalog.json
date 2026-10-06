@@ -2307,8 +2307,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "c40002aa6047acaa72e290cdbb22d9b77739d798",
-      "hash": "sha256-wFuw3EX1WxxA11ng4BSx1SLOcXJb/x7htVmI8Cc2EPE=",
+      "rev": "e4856d5f871fb9c347db2ce8e5a96f6513393d11",
+      "hash": "sha256-BTUfx7YxPb3eOXVJ9gfyV+vK/dD3QsTE/jWc+ZDMy0g=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2365,8 +2365,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "4588b32ecab9ecc9fc8cc6b6c5e7d675b6004b0d",
-      "hash": "sha256-oN3OQPouK6wrrGzmgNdvdOVLsOJVGaK7cy3BZoE10AA=",
+      "rev": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
+      "hash": "sha256-c36sg+3AyW+iZ730QKXqwejpFOL+2neWlZhL5Jc7Rcs=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2563,8 +2563,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "807c031086fcf71c88c863b4a4e6938b6785c58f",
-      "hash": "sha256-/OB6dIEsbr8Ob3qDM3BXsDJhNabOUZb4HlvxlmijVc0=",
+      "rev": "df581122cde17e6e27686b5a448bde23e4ad4318",
+      "hash": "sha256-5ekIT7JbftDl0kBCtT1LKXy/oFl7AeebihQ/JCKf9s4=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2805,6 +2805,16 @@
           "name": "orchestrate",
           "description": "Use only when the user explicitly types `/orchestrate <goal>` to decompose a large task, spawn a tree of parallel cloud-agent workers/subplanners/verifiers via the Cursor SDK, and collect structured handoffs; do not invoke autonomously.",
           "path": "orchestrate/skills/orchestrate"
+        },
+        "origin-api": {
+          "name": "origin-api",
+          "description": "Routes questions about the Cursor Origin API to the right section of the Origin docs and names the few rules to check first. Use when a task mentions Origin, the Origin API, Origin Apps, or Origin webhooks, including creating an Origin App, authenticating as one, calling Origin endpoints, or handling Origin webhook deliveries.",
+          "path": "origin-apps/skills/origin-api"
+        },
+        "port-github-app-to-origin": {
+          "name": "port-github-app-to-origin",
+          "description": "Plans the port of an existing GitHub App to a Cursor Origin App. Use when the task is to bring a GitHub App to Origin or compare what it uses against the Origin API. Reads the app's needs out of its code, maps them onto the live Origin spec, and writes a porting brief with feedback for Cursor. Planning only.",
+          "path": "origin-apps/skills/port-github-app-to-origin"
         },
         "poteto-help": {
           "name": "poteto-help",
