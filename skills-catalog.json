@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "c64c4d9ea0642ab2076d56411fac5a27f99b0544",
-      "hash": "sha256-Ea6VQy8NiS7/GXnMCLUjCeJwSborUBSlrHUPvFfyQrY=",
+      "rev": "50de917492d927a439388346ae2d8d8be32e9e13",
+      "hash": "sha256-6xRA4XwOEzF0Z4/bADsvlB9e0qr7gC4sZnekO5it4ck=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2209,6 +2209,11 @@
           "description": "Extract internal terminology, acronyms, shorthand, and jargon from a set of documents, then build or update a project glossary in JARGON.md. Reuse an existing JARGON.md anywhere in the repo if one already exists; otherwise default to the repo root. Spawns one subagent per input file to flag terms with plain English definitions, then a single reduce subagent correlates, deduplicates, and alphabetizes the combined results, intelligently merging any overlapping definitions before writing them into the glossary. Use this skill whenever the user asks to extract jargon, build or update a glossary, catalog acronyms, document internal terminology, flag undefined terms, or mentions a JARGON.md file by name, even if phrased casually, for example 'go through these design docs and pull out anything a new hire wouldn't know' or 'scan this repo's markdown files and build a term list.' Also trigger when the user hands over several documents and asks what specialized vocabulary or shorthand appears across them.",
           "path": "skills/jargon-extractor"
         },
+        "pr-description": {
+          "name": "pr-description",
+          "description": "Use when the user wants to write, draft, rewrite, review, improve, or grade a pull request description or PR title; asks for a PR summary, rationale, reviewer context, test plan, or ready-to-paste GitHub/GitLab PR body; or needs to explain a code change to reviewers, future maintainers, or non-expert integrators. Trigger on requests such as \"write the PR,\" \"draft a pull request,\" \"improve this PR description,\" \"PR summary,\" \"PR title,\" \"test plan for the PR,\" or \"review my PR write-up.\" Do not use for commit-message-only requests, release notes, implementation planning, or code review without a request to describe the change.",
+          "path": "skills/pr-description"
+        },
         "skill-template": {
           "name": "skill-template",
           "description": "Use when users say \"[trigger phrase 1]\", \"[trigger phrase 2]\", or when [specific scenario]. [WHAT this skill does]. [Additional trigger keywords for searchability].",
@@ -2307,8 +2312,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "e4856d5f871fb9c347db2ce8e5a96f6513393d11",
-      "hash": "sha256-BTUfx7YxPb3eOXVJ9gfyV+vK/dD3QsTE/jWc+ZDMy0g=",
+      "rev": "9b91884e43839591abd6ee3c70667b2e71d5e687",
+      "hash": "sha256-3BfTSmojzFRMaJmXcfad+BIDuOVtp4zG5z9Jt7Xhweo=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2365,8 +2370,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "6fd947921b935b7e1e69293a200400f0fdd5c15f",
-      "hash": "sha256-c36sg+3AyW+iZ730QKXqwejpFOL+2neWlZhL5Jc7Rcs=",
+      "rev": "f3fc5632f401156837ee3872f14fe33ccf1024ea",
+      "hash": "sha256-rDTDP9smBDjVOloz61ZqWIMEn9sME5V4ulde1c79MaY=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2563,8 +2568,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "df581122cde17e6e27686b5a448bde23e4ad4318",
-      "hash": "sha256-5ekIT7JbftDl0kBCtT1LKXy/oFl7AeebihQ/JCKf9s4=",
+      "rev": "d0ef80d86795816da932a153458c5dbe192d294e",
+      "hash": "sha256-Jh2xVGPjUBcvR1JjjhbzEaRGL7mlahg766Lo2wPpYM8=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3328,8 +3333,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "e2aa9b83fdb15269965ee5d58eadae6773d98a63",
-      "hash": "sha256-biSSu3dsWj+1DfZhVIbgNJzoStUkI/fdXARGXwy5+D0=",
+      "rev": "900eacf4444f49a9b73f2be3e268b7689a008498",
+      "hash": "sha256-T40ZIqZPOU1wcMT59OJnL/fgy13nfycn1k/Yo3Q7AlE=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
