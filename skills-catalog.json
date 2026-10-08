@@ -2051,8 +2051,8 @@
     "hypergiant": {
       "owner": "gohypergiant",
       "repo": "agent-skills",
-      "rev": "50de917492d927a439388346ae2d8d8be32e9e13",
-      "hash": "sha256-6xRA4XwOEzF0Z4/bADsvlB9e0qr7gC4sZnekO5it4ck=",
+      "rev": "f7442a3fac3c2dc790703eb468952af8c1b27933",
+      "hash": "sha256-9R2JFtujo4P+QEpIqfXVjDI0xDrg+Etal7dkio87J6g=",
       "skills": {
         "accelint-ac-to-playwright": {
           "name": "accelint-ac-to-playwright",
@@ -2312,8 +2312,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9b91884e43839591abd6ee3c70667b2e71d5e687",
-      "hash": "sha256-3BfTSmojzFRMaJmXcfad+BIDuOVtp4zG5z9Jt7Xhweo=",
+      "rev": "08d371a9fbe098ecc943713a70a669ef05cfa6d6",
+      "hash": "sha256-t2QNmi3ah3nE5b9F1v3Pylhqy0sc+qvFqb+bvJ3Jec8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2370,8 +2370,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "f3fc5632f401156837ee3872f14fe33ccf1024ea",
-      "hash": "sha256-rDTDP9smBDjVOloz61ZqWIMEn9sME5V4ulde1c79MaY=",
+      "rev": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "hash": "sha256-1QwFBwG+gORvDvW4HM0LrZlHZKmKtWr7pUHU0MAXF2Y=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2568,8 +2568,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "d0ef80d86795816da932a153458c5dbe192d294e",
-      "hash": "sha256-Jh2xVGPjUBcvR1JjjhbzEaRGL7mlahg766Lo2wPpYM8=",
+      "rev": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "hash": "sha256-2znGxDWUZ8lO6g2gC/l0iRmRKjEnVZrk4TkEX9JAIjY=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
