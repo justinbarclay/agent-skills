@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
-      "hash": "sha256-APw+xMKqRvkLnuQxttiyyIeylrIMSxZovQnw3xEl1C4=",
+      "rev": "9d630808e4add0a7146de4af9384155d5dee350a",
+      "hash": "sha256-0cP92Q3ia3DUOkwHb134azFb0kKMBKDQOeRj/2/0fwg=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -718,8 +718,8 @@
     "mindrally": {
       "owner": "Mindrally",
       "repo": "skills",
-      "rev": "97184105b5daa3a6860a2aeb8e7e7fd1c42da40a",
-      "hash": "sha256-gSuARcMjJnevqoEB066hm5AN3B4hzqP8NPUonao8Ox8=",
+      "rev": "7682ca77710e0971eab4e0ae5dddfa281aea0ba5",
+      "hash": "sha256-ZRhNzHsFhOIFmv6oBzUGUNBLE/5RPpFil3lhqx+IFmM=",
       "skills": {
         "accessibility-a11y": {
           "name": "accessibility-a11y",
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "41e0d19858946d18af9ee2c2feebbe2e11d829ff",
-      "hash": "sha256-U0pebg1Uu/L5gYy6aZXte5FZT0R3OPHxU34J+HOTBFk=",
+      "rev": "a18ffe2a99448ebff262fc87915b0fd14bab9b70",
+      "hash": "sha256-UCw/28QVYktCFR1YQsMKWk3U8G8WRpQNIBEUnbX23DU=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2312,8 +2312,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "08d371a9fbe098ecc943713a70a669ef05cfa6d6",
-      "hash": "sha256-t2QNmi3ah3nE5b9F1v3Pylhqy0sc+qvFqb+bvJ3Jec8=",
+      "rev": "9bdda30e3caf8d512dd41c7304035ee891db5140",
+      "hash": "sha256-uy7k3IP+p8GEpBUKbaIXocQs1WrtAePDcbSkwWL7nyg=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2370,8 +2370,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "b0618bc436ad893b3c5e84e55fba86586d34a404",
-      "hash": "sha256-1QwFBwG+gORvDvW4HM0LrZlHZKmKtWr7pUHU0MAXF2Y=",
+      "rev": "49dd158d1076134a641b33efb035946536778336",
+      "hash": "sha256-NljCSZNI3sZ+vbCw7pRdrwR7try4BxOFp4gdjuWYtzs=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -3333,8 +3333,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "900eacf4444f49a9b73f2be3e268b7689a008498",
-      "hash": "sha256-T40ZIqZPOU1wcMT59OJnL/fgy13nfycn1k/Yo3Q7AlE=",
+      "rev": "2517e28e4bc029424e9c9ee48016394296be0f6a",
+      "hash": "sha256-Y4skex8CPcjIz08i+RgTETX18WxaCVwht7Gs3xpM0sw=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
