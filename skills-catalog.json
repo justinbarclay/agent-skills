@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "9d630808e4add0a7146de4af9384155d5dee350a",
-      "hash": "sha256-0cP92Q3ia3DUOkwHb134azFb0kKMBKDQOeRj/2/0fwg=",
+      "rev": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "hash": "sha256-+UIqBnzyeIOvJSKYaDaE3GYPEpLw7qQqyUw5S971AfU=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "1401c8b8030e023baeebb31781a6653fe8e93026",
-      "hash": "sha256-eeldNNDQjP/Uk/BIRo33Q/xzCdPV3kGRGqU3XyQZnFY=",
+      "rev": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
+      "hash": "sha256-nyW2EYFNux/vOgwsiUJi6Wsu0zLS8N73T7g5sBPjHUM=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "a18ffe2a99448ebff262fc87915b0fd14bab9b70",
-      "hash": "sha256-UCw/28QVYktCFR1YQsMKWk3U8G8WRpQNIBEUnbX23DU=",
+      "rev": "0871daceb347e3c51693fbe9c77555468df7e410",
+      "hash": "sha256-r9peamtHCoc4z6Hk+O2QxgkxE8eD7r5AW0sOA1g4+D0=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2312,8 +2312,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9bdda30e3caf8d512dd41c7304035ee891db5140",
-      "hash": "sha256-uy7k3IP+p8GEpBUKbaIXocQs1WrtAePDcbSkwWL7nyg=",
+      "rev": "e9deec62821ca59aa6ca18b4d243c9ced389cd54",
+      "hash": "sha256-x2DRtIG15b4tV2pWV2OpDRKi1JIgQ/sH7EoiUo5/BuA=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2568,8 +2568,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "ccb5507cec1546dc88135c1139c811e6c59115ba",
-      "hash": "sha256-2znGxDWUZ8lO6g2gC/l0iRmRKjEnVZrk4TkEX9JAIjY=",
+      "rev": "d73344bee8cf22e53b9d5f4cf5749d38ba38c174",
+      "hash": "sha256-Rxc5mywyFL01pUMyIB26Ag1ICGUlwQn2rzXbSuuawKA=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3106,12 +3106,12 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "8ca22dba9a94f28898bbce59f2537ff4d87c747d",
-      "hash": "sha256-BWPiXoXV+jePP+wn/Z+Af4iehIL7oei00plaWaTzq8s=",
+      "rev": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "hash": "sha256-UCVI+T7j1Xh1LDkrvnJduis7eHFqrizCyGTWAGW5d6U=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
-          "description": "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.",
+          "description": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
           "path": "skills/brainstorming"
         },
         "diagnosing-superpowers": {
