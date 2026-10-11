@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "0871daceb347e3c51693fbe9c77555468df7e410",
-      "hash": "sha256-r9peamtHCoc4z6Hk+O2QxgkxE8eD7r5AW0sOA1g4+D0=",
+      "rev": "c430dd965cea3a8faf0ef035e3b3d73b38518081",
+      "hash": "sha256-V/U2Xp1YpnxZXNtSBzPqJ466Tptiltc0+izRIi3JBZo=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2302,6 +2302,11 @@
           "description": "Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.",
           "path": "skills/workers-best-practices"
         },
+        "workers-profiling": {
+          "name": "workers-profiling",
+          "description": "Profile or debug CPU usage and memory allocation in deployed Cloudflare Workers and Durable Objects. Then use this information to optimize your code.",
+          "path": "skills/workers-profiling"
+        },
         "wrangler": {
           "name": "wrangler",
           "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management.",
@@ -2312,8 +2317,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "e9deec62821ca59aa6ca18b4d243c9ced389cd54",
-      "hash": "sha256-x2DRtIG15b4tV2pWV2OpDRKi1JIgQ/sH7EoiUo5/BuA=",
+      "rev": "735b42d3952b59fa3d9c42b11e884d988c102c7c",
+      "hash": "sha256-9vRXvkfYHk4v6zQanJBZGqeCc6Q3ZX1djpOR20gkQyc=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2568,8 +2573,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "d73344bee8cf22e53b9d5f4cf5749d38ba38c174",
-      "hash": "sha256-Rxc5mywyFL01pUMyIB26Ag1ICGUlwQn2rzXbSuuawKA=",
+      "rev": "11713c683fe4add4fd403ea880580abbc9e0875f",
+      "hash": "sha256-6eKYEwuHXrkaKZkuuqh2fcJd3/7j7PcxsMtEc5QxZSg=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2728,7 +2733,7 @@
         },
         "figure-it-out": {
           "name": "figure-it-out",
-          "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions via show-me-your-work. Use for /figure-it-out, 'figure it out', a large migration, or when no narrower playbook applies.",
+          "description": "Design an auditable playbook when no narrower one fits: a large migration, an ambitious multi-part change, or work a human reviews after stepping away. Scales rigor to the task, runs a hypothesis loop, and logs decisions. Use for /figure-it-out or 'figure it out'.",
           "path": "pstack/skills/figure-it-out"
         },
         "fix-ci": {
@@ -2775,6 +2780,11 @@
           "name": "interrogate",
           "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
           "path": "pstack/skills/interrogate"
+        },
+        "ketchup": {
+          "name": "ketchup",
+          "description": "Catch the user up on everything in this chat since their last message, in plain words. Give each action item an executive summary with enough context to make the call. Use for /ketchup.",
+          "path": "pstack/skills/ketchup"
         },
         "loop-on-ci": {
           "name": "loop-on-ci",
@@ -2913,12 +2923,12 @@
         },
         "principle-model-the-domain": {
           "name": "principle-model-the-domain",
-          "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files. Encode the domain in a structure instead of scattered conditionals.",
+          "description": "Apply when writing stateful logic, or when code branches a lot or repeats a shape assumption across files.",
           "path": "pstack/skills/principle-model-the-domain"
         },
         "principle-never-block-on-the-human": {
           "name": "principle-never-block-on-the-human",
-          "description": "Apply when tempted to ask 'should I do X?' on reversible work. Proceed, present the result, let the human course-correct after the fact; reserve confirmation for irreversible actions.",
+          "description": "Apply when tempted to ask 'should I do X?' on reversible work.",
           "path": "pstack/skills/principle-never-block-on-the-human"
         },
         "principle-outcome-oriented-execution": {
@@ -2933,7 +2943,7 @@
         },
         "principle-redesign-from-first-principles": {
           "name": "principle-redesign-from-first-principles",
-          "description": "Apply when integrating a new requirement into an existing design. Redesign as if the requirement had been a foundational assumption from day one, instead of bolting it on.",
+          "description": "Apply when integrating a new requirement into an existing design.",
           "path": "pstack/skills/principle-redesign-from-first-principles"
         },
         "principle-separate-before-serializing-shared-state": {
@@ -2953,7 +2963,7 @@
         },
         "principle-test-behavior-not-implementation": {
           "name": "principle-test-behavior-not-implementation",
-          "description": "Apply when you write, change, or keep a test. Call the code the way its users do and assert the result they observe against a literal expected value. If the test would still pass when every imported function returns undefined, rewrite the assertion or delete the test.",
+          "description": "Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined.",
           "path": "pstack/skills/principle-test-behavior-not-implementation"
         },
         "principle-the-algorithm": {
@@ -3093,7 +3103,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. Encrypted X Chat, XChat, inbox, DMs, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
         },
         "x-money-guide": {
