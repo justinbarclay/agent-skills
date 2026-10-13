@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "d7de3907f8ed32b23a6a71beeb2a0c774dfef4e1",
-      "hash": "sha256-KKSX4ieBKZ6xFN/ydZegR+Nd/jvnhoV+TKhrm/dU30A=",
+      "rev": "53395984c3ea1925d00fce03b266112302f050e6",
+      "hash": "sha256-/CCqZ6SKl9vLbzcIbs0dSm3UsS8p2LqjYGfwbJzkf0s=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2322,8 +2322,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "15e3db59ba17ff4ff08d787333ea803b47f38674",
-      "hash": "sha256-NK5NsveyWjDlLH/B4vuer3JMg6LU3Q0gw3Ng0eePZao=",
+      "rev": "deae744bc0cbf6034b4b6f22f51c690b71a4e779",
+      "hash": "sha256-YHKrYCATLsNQLlR1LqdJ4TLCD1Xj1Vpfr8XEeKsDZxc=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2578,8 +2578,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "1b6d44ff26d4e242f4e8f68c391e6d2f7ca16def",
-      "hash": "sha256-vKxN8rHgDvTod+AYKf9skFT5YJUzrpItrmnjP/dnPPs=",
+      "rev": "1dcc2bacde73ddd284803b7af28164d0436198fc",
+      "hash": "sha256-TxT+i3gTHqonghhTnJvvM9XpXBeKUp0880iH5aO4SGo=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3046,6 +3046,11 @@
           "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
           "path": "pstack/skills/swarm"
         },
+        "tailscale-setup": {
+          "name": "tailscale-setup",
+          "description": "Walk a user through connecting Grok Bot to their Tailscale tailnet - define tag:grokbot in the tailnet policy file, grant it only the MCP hosts and ports it should reach, sign in from the Tailscale plugin, approve the device, then add tailnet MCP servers. Use when the user asks to set up, troubleshoot, or disconnect Grok Bot's Tailscale connection.",
+          "path": "third_party/tailscale/skills/tailscale-setup"
+        },
         "thermo-nuclear-code-quality-review": {
           "name": "thermo-nuclear-code-quality-review",
           "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.",
@@ -3108,7 +3113,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X connection, and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the congrats + capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X tool, including Grok Bot's built-in public reads (no X connection or credits needed), and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, message requests, accepting a request, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
         },
         "x-money-guide": {
