@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "1be8e34187e34647bb83adc3a1323b26ae6f6abe",
-      "hash": "sha256-nyW2EYFNux/vOgwsiUJi6Wsu0zLS8N73T7g5sBPjHUM=",
+      "rev": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "hash": "sha256-HxaYbxuZwVo2wybYazM05YUJG/udQNQP6X0qA5wfYIs=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -595,7 +595,7 @@
         },
         "addyosmani-test-driven-development": {
           "name": "addyosmani-test-driven-development",
-          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality.",
+          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
           "path": "skills/test-driven-development"
         },
         "api-and-interface-design": {
@@ -2322,8 +2322,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "deae744bc0cbf6034b4b6f22f51c690b71a4e779",
-      "hash": "sha256-YHKrYCATLsNQLlR1LqdJ4TLCD1Xj1Vpfr8XEeKsDZxc=",
+      "rev": "789ef5e0a55ee1d0787a5974660b15bf76dc29b5",
+      "hash": "sha256-FyZXFHl25QrIuzsPPsNZUm84wyPYPO6bnn0S5c4ChIk=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2578,8 +2578,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "1dcc2bacde73ddd284803b7af28164d0436198fc",
-      "hash": "sha256-TxT+i3gTHqonghhTnJvvM9XpXBeKUp0880iH5aO4SGo=",
+      "rev": "1e5c90a4b6f249917bd21fe361b3a2a7deb741b8",
+      "hash": "sha256-je4ObBs03T/DR7Bbumxx+huySp8jGfRzdTPwZNeDdBY=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2781,6 +2781,11 @@
           "description": "Use for \"how does X work\", code walkthroughs before changing something, and placement / ownership / layering questions (\"where should this live\", \"which package owns this\", \"is this the right layer\"). Explains subsystem architecture, runtime flow, onboarding mental models. Use why for motivation.",
           "path": "pstack/skills/how"
         },
+        "in-your-own-words": {
+          "name": "in-your-own-words",
+          "description": "Restate in your own words what you think the user's goals are and what problem they're trying to solve. Use for /in-your-own-words.",
+          "path": "pstack/skills/in-your-own-words"
+        },
         "interrogate": {
           "name": "interrogate",
           "description": "Use for \"interrogate\", \"adversarial review\", \"multi-model review\", \"challenge this\", \"stress test this code\", \"find blind spots\", or \"tear this apart\". Multiple LLM reviewers challenge changes from independent angles.",
@@ -2788,7 +2793,7 @@
         },
         "ketchup": {
           "name": "ketchup",
-          "description": "Catch the user up on everything in this chat since their last message, in plain words. Give each action item an executive summary with enough context to make the call. Use for /ketchup.",
+          "description": "Catch the user up on what changed in this chat since their last message, in a few plain sentences and small visuals. Give each action item just enough context to make the call. Use for /ketchup.",
           "path": "pstack/skills/ketchup"
         },
         "loop-on-ci": {
@@ -3035,6 +3040,11 @@
           "name": "setup-pstack",
           "description": "Configure which models pstack uses per role and at what reasoning budget. Detects your available models and writes an always-applied rule that overrides the skill defaults. Use for /setup-pstack, \"configure pstack models\", \"pstack budget\", or changing pstack's model choices.",
           "path": "pstack/skills/setup-pstack"
+        },
+        "sharpen": {
+          "name": "sharpen",
+          "description": "Sharpen a task before starting: the expert approach, what the user is really after, and the right level of specification. Use for /sharpen.",
+          "path": "pstack/skills/sharpen"
         },
         "show-me-your-work": {
           "name": "show-me-your-work",
