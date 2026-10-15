@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "53395984c3ea1925d00fce03b266112302f050e6",
-      "hash": "sha256-/CCqZ6SKl9vLbzcIbs0dSm3UsS8p2LqjYGfwbJzkf0s=",
+      "rev": "be68fd8db614c22ed6f4d21a439a641e4904eb94",
+      "hash": "sha256-VGirU63I3jL/YRhCCtWlwVeDi9OE8zW202qRbLQD920=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2322,8 +2322,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "789ef5e0a55ee1d0787a5974660b15bf76dc29b5",
-      "hash": "sha256-FyZXFHl25QrIuzsPPsNZUm84wyPYPO6bnn0S5c4ChIk=",
+      "rev": "4f842d4e9084a941c12f1544006344036e0c28f9",
+      "hash": "sha256-dabijAiAG8Yy9eGsmgGbZtNin92yRiCDzOgLCtcLSrA=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2578,8 +2578,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "1e5c90a4b6f249917bd21fe361b3a2a7deb741b8",
-      "hash": "sha256-je4ObBs03T/DR7Bbumxx+huySp8jGfRzdTPwZNeDdBY=",
+      "rev": "e5136d82418d2db3165ea1050d17577cd618cc05",
+      "hash": "sha256-/7Rgy/4faxqhsPCQORxeAznyinBrXF3yF/xZD+BnNvU=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2863,7 +2863,7 @@
         },
         "principle-attack-the-premise": {
           "name": "principle-attack-the-premise",
-          "description": "Apply when two or more fixes that share one premise have failed the same gate. Take a census of which actors hold the imbalance before the next fix, then question the premise instead of writing another fix that assumes it.",
+          "description": "Apply when two or more fixes that share one premise have failed the same gate. Write the premise down and test it directly before you write another fix that assumes it.",
           "path": "pstack/skills/principle-attack-the-premise"
         },
         "principle-boundary-discipline": {
@@ -2898,7 +2898,7 @@
         },
         "principle-fix-root-causes": {
           "name": "principle-fix-root-causes",
-          "description": "Apply when debugging. Trace each symptom to its root cause and fix it there; reproduce first, ask why until you reach it, resist nil-check guards that silence crashes.",
+          "description": "Apply when debugging. Trace each symptom back to the first place the system went wrong and fix it there. A guard is a fix only when the state it handles is legitimate.",
           "path": "pstack/skills/principle-fix-root-causes"
         },
         "principle-foundational-thinking": {
@@ -2973,7 +2973,7 @@
         },
         "principle-test-behavior-not-implementation": {
           "name": "principle-test-behavior-not-implementation",
-          "description": "Apply when you write, change, or keep a test. Call the code as its users do and assert the exact result they see. Rewrite or delete a test that would pass if every imported function returned undefined.",
+          "description": "Apply when you write, change, or keep a test. Assert what the code's users can observe, so that the test fails when that behavior breaks and keeps passing when only the internals change.",
           "path": "pstack/skills/principle-test-behavior-not-implementation"
         },
         "principle-the-algorithm": {
