@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "be68fd8db614c22ed6f4d21a439a641e4904eb94",
-      "hash": "sha256-VGirU63I3jL/YRhCCtWlwVeDi9OE8zW202qRbLQD920=",
+      "rev": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
+      "hash": "sha256-lfrCyTZwnkjW6xn8lpxSw/jyHTZI7YuZIEO+QDDrBIk=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2266,6 +2266,11 @@
           "name": "durable-objects",
           "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
           "path": "skills/durable-objects"
+        },
+        "gateway-workers": {
+          "name": "gateway-workers",
+          "description": "Build, debug, or review Cloudflare Workers invoked by the Forward action in Gateway HTTP policies, including the GatewayMiddleware entrypoint, Gateway types, context, and continuation.",
+          "path": "skills/gateway-workers"
         },
         "k2": {
           "name": "k2",
@@ -2322,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "4f842d4e9084a941c12f1544006344036e0c28f9",
-      "hash": "sha256-dabijAiAG8Yy9eGsmgGbZtNin92yRiCDzOgLCtcLSrA=",
+      "rev": "ad3c5817e5c95fc71c3efcbdece25e7b331bb052",
+      "hash": "sha256-7S8iHHdLpTYDPU+aAe9346XK4kZas2jGtUxfwj/tKlU=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2578,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "e5136d82418d2db3165ea1050d17577cd618cc05",
-      "hash": "sha256-/7Rgy/4faxqhsPCQORxeAznyinBrXF3yF/xZD+BnNvU=",
+      "rev": "f713f14203cd6420cec13cd7c55c32d598dbab68",
+      "hash": "sha256-ql2vPKDIHqQxAcxpc2rTnIBv3rlxkE+I4X/Z71mQAoY=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2983,7 +2988,7 @@
         },
         "principle-type-system-discipline": {
           "name": "principle-type-system-discipline",
-          "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, refuse to lie to the compiler, exhaust variants, derive from authoritative schemas.",
+          "description": "Apply when designing types, reviewing a function signature, or writing code in any statically-typed language. Make illegal states unrepresentable, brand semantic primitives, parse external data at boundaries, exhaust variants, derive from authoritative schemas.",
           "path": "pstack/skills/principle-type-system-discipline"
         },
         "ralph-loop": {
