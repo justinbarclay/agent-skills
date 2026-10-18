@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "c1f5b0826f3f33d7e1cc7eff5e5e6cd42749808b",
-      "hash": "sha256-+TDpH/Px9+wHJYTKsZGT7+c531AsX2ECfK+Hs9Pg6Ts=",
+      "rev": "24947f1632ee3440ba9f27f92404beea164517b9",
+      "hash": "sha256-D0MFe6BhxzFRUHO+YSaStxankeI69Lu8Av7WC+yFshE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "101b274dd991f694e1f7024be2157e5f3adf07de",
-      "hash": "sha256-R8zwlTpAw0gQbOO/SnglSN3YhqUh5r0IOg7PHU1scJg=",
+      "rev": "0b8e952052d482ee6de06deebf14d590d77b1b34",
+      "hash": "sha256-9y7/JHWLK4T75Q25RnmPzEyLmkXfJV1KMB6+pAQGZl8=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2675,6 +2675,11 @@
           "name": "correct",
           "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
           "path": "harness/pstack/claude-code/skills/correct"
+        },
+        "create-formal-verification-skill": {
+          "name": "create-formal-verification-skill",
+          "description": "Generate a project-local skill that formally verifies the code where a bug costs the most and tests reach the least, in any language, with whichever verification tool fits. Use for /create-formal-verification-skill, \"model-check this race\", \"prove this invariant\", or when concurrency, retries, state machines, parsers, or unsafe code need more than tests.",
+          "path": "harness/pstack/claude-code/skills/create-formal-verification-skill"
         },
         "create-learning-path": {
           "name": "create-learning-path",
@@ -2798,7 +2803,7 @@
         },
         "ketchup": {
           "name": "ketchup",
-          "description": "Catch the user up on what changed in this chat since their last message, in a few plain sentences and small visuals. Give each action item just enough context to make the call. Use for /ketchup.",
+          "description": "Catch the user up on what changed in this chat since their last message, in plain words and small visuals. List every item waiting on them with what they need to decide it from the reply alone. Use for /ketchup.",
           "path": "harness/pstack/claude-code/skills/ketchup"
         },
         "loop-on-ci": {
@@ -3026,6 +3031,11 @@
           "description": "Find the mistakes agents keep repeating in this repo and make each one impossible. Try architecture first, then types, then a lint whose error names the fix, then a test, and write docs last. Prove each check fails on a real past mistake. Repeat this each time the operator corrects you. Use for /correct.",
           "path": "pstack/skills/correct"
         },
+        "pstack-create-formal-verification-skill": {
+          "name": "pstack-create-formal-verification-skill",
+          "description": "Generate a project-local skill that formally verifies the code where a bug costs the most and tests reach the least, in any language, with whichever verification tool fits. Use for /create-formal-verification-skill, \"model-check this race\", \"prove this invariant\", or when concurrency, retries, state machines, parsers, or unsafe code need more than tests.",
+          "path": "pstack/skills/create-formal-verification-skill"
+        },
         "pstack-create-verification-skill": {
           "name": "pstack-create-verification-skill",
           "description": "Generate a project-local verification skill that drives your app the way a user does — any language, framework, or platform. Use for /create-verification-skill, \"make a control skill for this repo\", or when a project has no scripted way to prove UI/CLI/service behavior.",
@@ -3053,7 +3063,7 @@
         },
         "pstack-ketchup": {
           "name": "pstack-ketchup",
-          "description": "Catch the user up on what changed in this chat since their last message, in a few plain sentences and small visuals. Give each action item just enough context to make the call. Use for /ketchup.",
+          "description": "Catch the user up on what changed in this chat since their last message, in plain words and small visuals. List every item waiting on them with what they need to decide it from the reply alone. Use for /ketchup.",
           "path": "pstack/skills/ketchup"
         },
         "pstack-maintain-verification-skill": {
