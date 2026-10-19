@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "24947f1632ee3440ba9f27f92404beea164517b9",
-      "hash": "sha256-D0MFe6BhxzFRUHO+YSaStxankeI69Lu8Av7WC+yFshE=",
+      "rev": "2f68b6e13ceab52310058fd60d3ea24adaf8df32",
+      "hash": "sha256-hZj+JHHPvSc29P4WArfTnKdhi1Cd/lIqjKZoasgrLLE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "0b8e952052d482ee6de06deebf14d590d77b1b34",
-      "hash": "sha256-9y7/JHWLK4T75Q25RnmPzEyLmkXfJV1KMB6+pAQGZl8=",
+      "rev": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
+      "hash": "sha256-giSJhNYzEnlWyxdY8hZUXKQR3kgaQXn4ABqkyaXlIYw=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2810,6 +2810,11 @@
           "name": "loop-on-ci",
           "description": "Monitor PR checks and fix failures until green. Uses gh pr checks as the source of truth for PR-attached checks.",
           "path": "cursor-team-kit/skills/loop-on-ci"
+        },
+        "maintain-formal-verification-skill": {
+          "name": "maintain-formal-verification-skill",
+          "description": "Bring a project's formal verification back in line with the code after the code changes: find the commits that touched verified code, update the model, harness, or properties to describe the code as it is now, rerun, and say whether each failure is drift in the verification or a bug in the code. Use for /maintain-formal-verification-skill, \"is the model still true to the code\", or after merges and refactors that touched verified code without rechecking it.",
+          "path": "harness/pstack/claude-code/skills/maintain-formal-verification-skill"
         },
         "maintain-verification-skill": {
           "name": "maintain-verification-skill",
@@ -3065,6 +3070,11 @@
           "name": "pstack-ketchup",
           "description": "Catch the user up on what changed in this chat since their last message, in plain words and small visuals. List every item waiting on them with what they need to decide it from the reply alone. Use for /ketchup.",
           "path": "pstack/skills/ketchup"
+        },
+        "pstack-maintain-formal-verification-skill": {
+          "name": "pstack-maintain-formal-verification-skill",
+          "description": "Bring a project's formal verification back in line with the code after the code changes: find the commits that touched verified code, update the model, harness, or properties to describe the code as it is now, rerun, and say whether each failure is drift in the verification or a bug in the code. Use for /maintain-formal-verification-skill, \"is the model still true to the code\", or after merges and refactors that touched verified code without rechecking it.",
+          "path": "pstack/skills/maintain-formal-verification-skill"
         },
         "pstack-maintain-verification-skill": {
           "name": "pstack-maintain-verification-skill",
