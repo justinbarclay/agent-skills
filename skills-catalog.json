@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "2f68b6e13ceab52310058fd60d3ea24adaf8df32",
-      "hash": "sha256-hZj+JHHPvSc29P4WArfTnKdhi1Cd/lIqjKZoasgrLLE=",
+      "rev": "579b067ffb461b82afc845c47b17fc8e8910488c",
+      "hash": "sha256-W9hRLWgbulYxSvBFLervQ3cFOGGbJXcsGrRryA/3ns4=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2385,8 +2385,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "49dd158d1076134a641b33efb035946536778336",
-      "hash": "sha256-NljCSZNI3sZ+vbCw7pRdrwR7try4BxOFp4gdjuWYtzs=",
+      "rev": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "hash": "sha256-2FKfe3/Fwc4MmwBLa+d/oQW4/gtYIssdWapy2MPd39I=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "d457567332aa6989e753ea289f30ea2bfbc80bc0",
-      "hash": "sha256-giSJhNYzEnlWyxdY8hZUXKQR3kgaQXn4ABqkyaXlIYw=",
+      "rev": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
+      "hash": "sha256-yXjGs5U4vNFeIXlRiFrxxpEeqGTSY3U0oQgfaLxvyII=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3238,7 +3238,7 @@
         },
         "pstack-sharpen": {
           "name": "pstack-sharpen",
-          "description": "Sharpen a task before starting: the expert approach, what the user is really after, and the right level of specification. Use for /sharpen.",
+          "description": "Make a task deeper, not bigger, then rewrite the prompt. Use for /sharpen.",
           "path": "pstack/skills/sharpen"
         },
         "pstack-show-me-your-work": {
@@ -3338,7 +3338,7 @@
         },
         "sharpen": {
           "name": "sharpen",
-          "description": "Sharpen a task before starting: the expert approach, what the user is really after, and the right level of specification. Use for /sharpen.",
+          "description": "Make a task deeper, not bigger, then rewrite the prompt. Use for /sharpen.",
           "path": "harness/pstack/claude-code/skills/sharpen"
         },
         "show-me-your-work": {
@@ -3418,7 +3418,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X tool, including Grok Bot's built-in public reads (no X connection or credits needed), and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, message requests, accepting a request, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Scheduled X calls use schedule_call, list_scheduled_calls, get_scheduled_call, update_scheduled_call, cancel_scheduled_call, and respond_to_scheduled_call. Missing those tools or calls.read/calls.write while other X tools work: reconnect the X plugin. Estimate every X call and confirm before anything expensive.",
+          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X tool, including Grok Bot's built-in public reads (no X connection or credits needed), and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, message requests, accepting a request, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Scheduled X calls use schedule_call, list_scheduled_calls, get_scheduled_call, update_scheduled_call, cancel_scheduled_call, and respond_to_scheduled_call. Missing those tools or calls.read/calls.write while other X tools work: reconnect the X plugin. Livestreams (stream sources, broadcasts, scheduled broadcasts, chat moderators and mutes) use list_sources, create_source, list_broadcasts, create_scheduled_broadcast and the other tools in the Livestreams section. Missing those tools or broadcast.read/broadcast.write while other X tools work: reconnect the X plugin. Going live right now is not supported. Estimate every X call and confirm before anything expensive.",
           "path": "third_party/x/skills/x-api-mcp-guide"
         },
         "x-money-guide": {
