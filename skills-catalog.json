@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "579b067ffb461b82afc845c47b17fc8e8910488c",
-      "hash": "sha256-W9hRLWgbulYxSvBFLervQ3cFOGGbJXcsGrRryA/3ns4=",
+      "rev": "1bcd18aa0e69b0e4dad9e268b873c7e245d6da5e",
+      "hash": "sha256-ttFfSPnFmP9G7OcsQaz4e13oGh2sHuOFqjtWhayShec=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "88d47514b82e7c44f00f2b2a72ff6dd12158038c",
-      "hash": "sha256-yXjGs5U4vNFeIXlRiFrxxpEeqGTSY3U0oQgfaLxvyII=",
+      "rev": "190d28736eff128ec94f502a22c7fe0c4b56cd37",
+      "hash": "sha256-h9BH844KDHFsl8oWBHqHShzvLBVvcQ2pFqKEcx/ObIk=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3418,7 +3418,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this when a user connects the X plugin or any X MCP, before using any X tool, including Grok Bot's built-in public reads (no X connection or credits needed), and again on any X error. Do not call an X tool until this file has been read in the current turn. On first connect, confirm X tools exist, fetch get_usage_credits BEFORE any user-facing text, then send the capabilities message. Never tell the user to buy credits until that check returns ~$0 or a job would exceed the balance. tools=0 / user-X-* not found is a setup failure, not a paywall. X Chat, XChat, inbox, DMs, message requests, accepting a request, Chat PIN, juicebox, and xchat_lite live in THIS file: clone xchat-grokbot-helper and run xchat_lite.py locally — do not wait for the user to name the helper or another skill. Missing chat tools or dm.read/dm.write while other X tools work: reconnect the X plugin. Scheduled X calls use schedule_call, list_scheduled_calls, get_scheduled_call, update_scheduled_call, cancel_scheduled_call, and respond_to_scheduled_call. Missing those tools or calls.read/calls.write while other X tools work: reconnect the X plugin. Livestreams (stream sources, broadcasts, scheduled broadcasts, chat moderators and mutes) use list_sources, create_source, list_broadcasts, create_scheduled_broadcast and the other tools in the Livestreams section. Missing those tools or broadcast.read/broadcast.write while other X tools work: reconnect the X plugin. Going live right now is not supported. Estimate every X call and confirm before anything expensive.",
+          "description": "ALWAYS read this before using any X tool (the X plugin, any X MCP, or Grok Bot's built-in public X reads) and again on any X error. X tools are included in Grok Bot at no cost: never estimate costs, check credits, or tell the user to buy credits. tools=0 / user-X-* not found is a setup failure, not a paywall. Covers Spaces, communities, and Lists (reads and list writes), X Chat (XChat, inbox, DMs, unread, message requests, Chat PIN, juicebox, xchat_lite: clone xchat-grokbot-helper yourself and decrypt locally), scheduled X calls (schedule_call, list_scheduled_calls and the other call tools), and livestreams (stream sources, broadcasts, scheduled broadcasts, broadcast chat, moderators, mutes). Chat, call, livestream, Spaces, or Lists tools missing while other X tools work: reconnect the X plugin.",
           "path": "third_party/x/skills/x-api-mcp-guide"
         },
         "x-money-guide": {
@@ -3431,8 +3431,8 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
-      "hash": "sha256-UCVI+T7j1Xh1LDkrvnJduis7eHFqrizCyGTWAGW5d6U=",
+      "rev": "b739a8af570e10a95898f2bdf6cec97467fa6c12",
+      "hash": "sha256-hy6aavA88hoqdUsV7vCTa0nV4YooZDSBPPPX6Jb7ZCs=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
