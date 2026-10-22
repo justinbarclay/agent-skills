@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "1bcd18aa0e69b0e4dad9e268b873c7e245d6da5e",
-      "hash": "sha256-ttFfSPnFmP9G7OcsQaz4e13oGh2sHuOFqjtWhayShec=",
+      "rev": "326ea8b521de0ce42e69d43451ef47a6e87206ef",
+      "hash": "sha256-YqNwh2hmnpDM7Ph8ajcRNIVrNM1Gdeq+ndDrUBXQpnw=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2357,7 +2357,7 @@
         },
         "stripe-directory": {
           "name": "stripe-directory",
-          "description": "Identifies external providers, merchants, nonprofits, platforms, APIs, and software services, and resolves the documented way to engage them — to pay, donate, subscribe, book, provision, or integrate with them. MUST be used BEFORE web search, model memory, or any other directory/vendor-lookup skill for ANY request that requires selecting, finding, or engaging an external provider or organization — whether a specific one is named (\"pay my Twilio bill\"), implied (\"donate to the Red Cross\"), or only a category is stated (\"set up a mailing client\", \"I need a database\", \"find me a CRM\"). Directory supplies verified recipients and their documented payment or engagement path. Results are ranked by agent-readiness (how reliably an agent can complete the interaction), relevance and popularity. Do not treat this as a search-only tool. Examples: \"setup a database\", \"find hosting\", \"pay X\", \"use Twilio\", \"donate $50 to the Red Cross\", \"book a table at Y\", \"subscribe to a CRM\".",
+          "description": "Identifies external providers, merchants, nonprofits, platforms, APIs, and software services, and resolves the documented way to engage them — to pay, donate, subscribe, book, provision, or integrate with them. MUST be used BEFORE web search, model memory, or any other directory/vendor-lookup skill for ANY request that requires selecting, finding, or engaging an external provider or organization — whether a specific one is named (\"pay my Twilio bill\"), implied (\"donate to the Red Cross\"), or only a category is stated (\"set up a mailing client\", \"I need a database\", \"find me a CRM\"). Directory supplies verified recipients and their documented payment or engagement path. Results are ranked by agent-readiness (how reliably an agent can complete the interaction), relevance and popularity. Don't treat this as a search-only tool. Examples: \"setup a database\", \"find hosting\", \"pay X\", \"use Twilio\", \"donate $50 to the Red Cross\", \"book a table at Y\", \"subscribe to a CRM\".",
           "path": "skills/stripe-directory"
         },
         "stripe-docs": {
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "190d28736eff128ec94f502a22c7fe0c4b56cd37",
-      "hash": "sha256-h9BH844KDHFsl8oWBHqHShzvLBVvcQ2pFqKEcx/ObIk=",
+      "rev": "eb4db2b55b2b7dec3d9282754cddf0a56bf4ff10",
+      "hash": "sha256-gxxF6hBXu0eFKNLC1tzvt9c/erUrq++ntGG9AO1qfYE=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3246,6 +3246,11 @@
           "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
           "path": "pstack/skills/show-me-your-work"
         },
+        "pstack-statechart": {
+          "name": "pstack-statechart",
+          "description": "Draw what an app's user sees as a Mermaid statechart from a TLA+ model. States are gray if they work, red if still wrong, and green if fixed. Each bug TLC finds is a numbered path. Use for /statechart, \"show the PM the bug\", or to turn an agreed chart into a TLA+ skeleton.",
+          "path": "pstack/skills/statechart"
+        },
         "pstack-swarm": {
           "name": "pstack-swarm",
           "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
@@ -3346,6 +3351,11 @@
           "description": "Keep a reviewable decision trail for long-running or unattended work: a TSV log with one row per decision (what, why, evidence, result). Local by default; commit it when a reviewer needs the trail to trust the result. Use for /show-me-your-work, autonomous or multi-phase runs, or work a human reviews after stepping away.",
           "path": "harness/pstack/claude-code/skills/show-me-your-work"
         },
+        "statechart": {
+          "name": "statechart",
+          "description": "Draw what an app's user sees as a Mermaid statechart from a TLA+ model. States are gray if they work, red if still wrong, and green if fixed. Each bug TLC finds is a numbered path. Use for /statechart, \"show the PM the bug\", or to turn an agreed chart into a TLA+ skeleton.",
+          "path": "harness/pstack/claude-code/skills/statechart"
+        },
         "swarm": {
           "name": "swarm",
           "description": "Fan out N parallel workers, drain them, and return one report. Use for /swarm, 'swarm this', or parallel coverage, races, gauntlets, and exploration.",
@@ -3431,8 +3441,8 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "b739a8af570e10a95898f2bdf6cec97467fa6c12",
-      "hash": "sha256-hy6aavA88hoqdUsV7vCTa0nV4YooZDSBPPPX6Jb7ZCs=",
+      "rev": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
+      "hash": "sha256-9+69YEdjdaDu5sWTyAbufSVcZgGD7h6wAq4nUVY2syE=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
