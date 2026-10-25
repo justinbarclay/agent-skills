@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "8a8818e856376003701bb0d4a569c26bacac1d0e",
-      "hash": "sha256-imF42DpOLvshp40BpyffYGl4U4e8V7F98oSvZWoQRog=",
+      "rev": "8bbcc4bcc8b6b0d6addb886a72994134cb0334da",
+      "hash": "sha256-M+WXYtvXfXkfaSEQlvvNQBGPhx+CIgqZb3mI++9NRhU=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "8b3326d99fd4b993cb33a24dad8af03175c642c5",
-      "hash": "sha256-p2cKFbYKwv3QwcIU0Gg8iLiyI+nZCsdYQuT8bkXL2nU=",
+      "rev": "99b609a72323b70204eab407c622f436e858e112",
+      "hash": "sha256-ccSz2dGaXlo69t6A7qn2xQ2uLPjQ2OqSGV2fjDEQ3Bc=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -2805,6 +2805,11 @@
           "name": "ketchup",
           "description": "Catch the user up on what changed in this chat since their last message, in plain words and small visuals. List every item waiting on them with what they need to decide it from the reply alone. Use for /ketchup.",
           "path": "harness/pstack/claude-code/skills/ketchup"
+        },
+        "ketchup-video": {
+          "name": "ketchup-video",
+          "description": "Catch the user up like /ketchup, with a short silent video of slides for what happened and the waiting calls as text under it. Use for /ketchup-video.",
+          "path": "harness/pstack/claude-code/skills/ketchup-video"
         },
         "loop-on-ci": {
           "name": "loop-on-ci",
@@ -3071,6 +3076,11 @@
           "description": "Catch the user up on what changed in this chat since their last message, in plain words and small visuals. List every item waiting on them with what they need to decide it from the reply alone. Use for /ketchup.",
           "path": "pstack/skills/ketchup"
         },
+        "pstack-ketchup-video": {
+          "name": "pstack-ketchup-video",
+          "description": "Catch the user up like /ketchup, with a short silent video of slides for what happened and the waiting calls as text under it. Use for /ketchup-video.",
+          "path": "pstack/skills/ketchup-video"
+        },
         "pstack-maintain-formal-verification-skill": {
           "name": "pstack-maintain-formal-verification-skill",
           "description": "Bring a project's formal verification back in line with the code after the code changes: find the commits that touched verified code, update the model, harness, or properties to describe the code as it is now, rerun, and say whether each failure is drift in the verification or a bug in the code. Use for /maintain-formal-verification-skill, \"is the model still true to the code\", or after merges and refactors that touched verified code without rechecking it.",
@@ -3248,7 +3258,7 @@
         },
         "pstack-statechart": {
           "name": "pstack-statechart",
-          "description": "Draw what an app's user sees as a Mermaid statechart from a TLA+ model. States are gray if they work, red if still wrong, and green if fixed. Each bug TLC finds is a numbered path. Use for /statechart, \"show the PM the bug\", or to turn an agreed chart into a TLA+ skeleton.",
+          "description": "Draw how any system moves between states, such as a product flow, a protocol, or a service, as a Mermaid statechart from a TLA+ model. Each bug is a numbered path with blue borders to a state that breaks a rule. Use for /statechart, to show a bug as a path through states, or to turn an agreed chart into a TLA+ skeleton.",
           "path": "pstack/skills/statechart"
         },
         "pstack-swarm": {
@@ -3353,7 +3363,7 @@
         },
         "statechart": {
           "name": "statechart",
-          "description": "Draw what an app's user sees as a Mermaid statechart from a TLA+ model. States are gray if they work, red if still wrong, and green if fixed. Each bug TLC finds is a numbered path. Use for /statechart, \"show the PM the bug\", or to turn an agreed chart into a TLA+ skeleton.",
+          "description": "Draw how any system moves between states, such as a product flow, a protocol, or a service, as a Mermaid statechart from a TLA+ model. Each bug is a numbered path with blue borders to a state that breaks a rule. Use for /statechart, to show a bug as a path through states, or to turn an agreed chart into a TLA+ skeleton.",
           "path": "harness/pstack/claude-code/skills/statechart"
         },
         "swarm": {
@@ -3363,7 +3373,7 @@
         },
         "tailscale-setup": {
           "name": "tailscale-setup",
-          "description": "Walk a user through connecting Grok Bot to their Tailscale tailnet - define tag:grokbot in the tailnet policy file, grant it only the MCP hosts and ports it should reach, sign in from the Tailscale plugin, approve the device, then add tailnet MCP servers. Use when the user asks to set up, troubleshoot, or disconnect Grok Bot's Tailscale connection.",
+          "description": "Walk a user or team admin through connecting Grok Bot to a Tailscale tailnet - a personal tailnet (one-click Connect, or a tag:grokbot device when the user's policy should limit it), or a team's company tailnets with each member's own device - granting only the MCP hosts it should reach, and adding tailnet MCP servers, including ones on internal DNS names, behind subnet routes or app connectors, on any port, or with a private CA. Use when the user asks to set up, troubleshoot, or disconnect Grok Bot's Tailscale connection.",
           "path": "third_party/tailscale/skills/tailscale-setup"
         },
         "thermo-nuclear-code-quality-review": {
