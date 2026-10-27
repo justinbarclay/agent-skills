@@ -304,8 +304,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "063bee94c3f4df8453406c830b0a7df0f2860278",
-      "hash": "sha256-tTSJf53OQltUfxTH4hdqcnw5ywCjCZP8/JqQ593cyB8=",
+      "rev": "6ec269328bc400712ee225a173a14b6b29128df7",
+      "hash": "sha256-s3ZcOVM7sb+NvpQTCLuPCpi1PvBTjHc31F0yjkJ4X28=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "57e355b6b00f54b7a667948b9648cc05bc353e06",
-      "hash": "sha256-9AmuuFWGQBb6olPZnJjwtpDdxbKcGJtf8JgPJAL6po0=",
+      "rev": "acbfbb292b3d88d209d4511006c2a89a46c11f8e",
+      "hash": "sha256-VFWMTKctKSLQYTQwANw+WR+JK+Sey4i8hp18ZR9hX4A=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2385,8 +2385,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
-      "hash": "sha256-2FKfe3/Fwc4MmwBLa+d/oQW4/gtYIssdWapy2MPd39I=",
+      "rev": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
+      "hash": "sha256-CkNJKbSlW8bUSfvHqfl7JTPnq8o1iYdzI24LGDMojE4=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "99b609a72323b70204eab407c622f436e858e112",
-      "hash": "sha256-ccSz2dGaXlo69t6A7qn2xQ2uLPjQ2OqSGV2fjDEQ3Bc=",
+      "rev": "519d36aa98955bf680db01bcde5fdfba686dc901",
+      "hash": "sha256-BHLbamlLNZmPn6uqO2pKAghL/l9TqtQI3YQTZnUQ2Cg=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3258,7 +3258,7 @@
         },
         "pstack-statechart": {
           "name": "pstack-statechart",
-          "description": "Draw how any system moves between states, such as a product flow, a protocol, or a service, as a Mermaid statechart from a TLA+ model. Each bug is a numbered path with blue borders to a state that breaks a rule. Use for /statechart, to show a bug as a path through states, or to turn an agreed chart into a TLA+ skeleton.",
+          "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
           "path": "pstack/skills/statechart"
         },
         "pstack-swarm": {
@@ -3363,7 +3363,7 @@
         },
         "statechart": {
           "name": "statechart",
-          "description": "Draw how any system moves between states, such as a product flow, a protocol, or a service, as a Mermaid statechart from a TLA+ model. Each bug is a numbered path with blue borders to a state that breaks a rule. Use for /statechart, to show a bug as a path through states, or to turn an agreed chart into a TLA+ skeleton.",
+          "description": "Check a TLA+ model of a system that moves between states, such as a product flow, a protocol, or a service, and draw it as a Mermaid statechart. The report gives the shortest path to each state that breaks a rule. Use for /statechart, or to show a bug as a path through states.",
           "path": "harness/pstack/claude-code/skills/statechart"
         },
         "swarm": {
@@ -3373,7 +3373,7 @@
         },
         "tailscale-setup": {
           "name": "tailscale-setup",
-          "description": "Walk a user or team admin through connecting Grok Bot to a Tailscale tailnet - a personal tailnet (one-click Connect, or a tag:grokbot device when the user's policy should limit it), or a team's company tailnets with each member's own device - granting only the MCP hosts it should reach, and adding tailnet MCP servers, including ones on internal DNS names, behind subnet routes or app connectors, on any port, or with a private CA. Use when the user asks to set up, troubleshoot, or disconnect Grok Bot's Tailscale connection.",
+          "description": "Connect Grok Bot to Tailscale on a company tailnet (a team admin enables it at cursor.com; each member authenticates their own device and an admin limits it with custom:grokbot postures) or a personal tailnet (one-click Connect when the member owns or administers the tailnet, otherwise a tag:grokbot device). Several tailnets can be connected at once. Use when the user asks to set up, troubleshoot, change the default tailnet, or disconnect Grok Bot's Tailscale connection.",
           "path": "third_party/tailscale/skills/tailscale-setup"
         },
         "thermo-nuclear-code-quality-review": {
