@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
-      "hash": "sha256-+UIqBnzyeIOvJSKYaDaE3GYPEpLw7qQqyUw5S971AfU=",
+      "rev": "ca45fc496a3436251f191354091d557da31c15b5",
+      "hash": "sha256-MkCOANBAqCc1WmNf7S8PsyAphGJAIzEXGyCm8RrCR9M=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -585,13 +585,18 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "aeac41d4d005999432bb7312f7ff06383a91d59d",
-      "hash": "sha256-HxaYbxuZwVo2wybYazM05YUJG/udQNQP6X0qA5wfYIs=",
+      "rev": "eb07f19f52c2669f2364897aaa293e2aaddd7b1c",
+      "hash": "sha256-YUYdQQf9tWKjs/iWkxrG1tvryEOA+PrY6TjItOMLzYE=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
           "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
           "path": "skills/performance-optimization"
+        },
+        "addyosmani-test-driven-development": {
+          "name": "addyosmani-test-driven-development",
+          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
+          "path": "skills/test-driven-development"
         },
         "api-and-interface-design": {
           "name": "api-and-interface-design",
@@ -615,7 +620,7 @@
         },
         "code-simplification": {
           "name": "code-simplification",
-          "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity.",
+          "description": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Use when asked to simplify, clean up, or reduce the nesting of a function or module that already works, even when the code is pasted inline and nothing else needs to change.",
           "path": "skills/code-simplification"
         },
         "constraint-driven-development": {
@@ -702,11 +707,6 @@
           "name": "spec-driven-development",
           "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying.",
           "path": "skills/spec-driven-development"
-        },
-        "test-driven-development": {
-          "name": "test-driven-development",
-          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline and the request does not mention tests.",
-          "path": "skills/test-driven-development"
         },
         "using-agent-skills": {
           "name": "using-agent-skills",
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "86505e44f87d801aa1864a3c4109e9a8ae5c409f",
-      "hash": "sha256-lfrCyTZwnkjW6xn8lpxSw/jyHTZI7YuZIEO+QDDrBIk=",
+      "rev": "49a31e0b3229ccdffe4944be9c61bc7481d1d432",
+      "hash": "sha256-Tw3l/VK24yUO8TIUBBuWEFiJ+Adws8CK1C9SUDgEHBM=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "6780831d12912f6a592f7a94d2bae0dc70eda6bb",
-      "hash": "sha256-xmjoSK7yINOSsojhsc5tiTQBnoXDmuW0YUcLVzpos44=",
+      "rev": "d9c9287ae870688bb3703b50e59ef1dd3692ffcb",
+      "hash": "sha256-DVfO5FCSS6JqUGCTn79GeIdHxow/R9A978S3AGfgk+k=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2403,11 +2403,6 @@
           "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
           "path": "skills/in-progress/claude-handoff"
         },
-        "code-review": {
-          "name": "code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
-          "path": "skills/engineering/code-review"
-        },
         "codebase-design": {
           "name": "codebase-design",
           "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
@@ -2472,6 +2467,11 @@
           "name": "migrate-to-shoehorn",
           "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
           "path": "skills/misc/migrate-to-shoehorn"
+        },
+        "pocock-code-review": {
+          "name": "pocock-code-review",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "path": "skills/engineering/code-review"
         },
         "pocock-tdd": {
           "name": "pocock-tdd",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
-      "hash": "sha256-YB+9AIZJ6aR5Yx1OC22Xc6HdoxvDDjja/z2yMUt5gWs=",
+      "rev": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
+      "hash": "sha256-rrg6yOdbD/0G3Q2frUyitvBNDJBX8TEwiR1wyHx2aR4=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3771,8 +3771,8 @@
     "terraform": {
       "owner": "hashicorp",
       "repo": "agent-skills",
-      "rev": "f706481af9b8fedb66de909f6243ad29601afa0c",
-      "hash": "sha256-0v+QQqIClVddw8zNg7Zb2CkPA1+AJNf5bNRRHHDWU7s=",
+      "rev": "bc6b14b77481c3cbfbb06a0166be7245ed45798c",
+      "hash": "sha256-JYWOiyTgMeu8NLsUxkk56/GyeEA2GDV2vUhU8p+WZtk=",
       "skills": {
         "azure-verified-modules": {
           "name": "azure-verified-modules",
