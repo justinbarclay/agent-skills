@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "49a31e0b3229ccdffe4944be9c61bc7481d1d432",
-      "hash": "sha256-Tw3l/VK24yUO8TIUBBuWEFiJ+Adws8CK1C9SUDgEHBM=",
+      "rev": "83a27eb901c2c63f6caaf0eca6168993a322d268",
+      "hash": "sha256-MxxMY2hMsivHt+a962qTty5sjHkC/ksHNd5OIyguVIc=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "d9c9287ae870688bb3703b50e59ef1dd3692ffcb",
-      "hash": "sha256-DVfO5FCSS6JqUGCTn79GeIdHxow/R9A978S3AGfgk+k=",
+      "rev": "867a59830ea0def5b3f06184236d105f2da8bd62",
+      "hash": "sha256-D6moh5+FvF2KIyAfAE4fC042XYsVpOTKnJtS0xyHT3g=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2385,8 +2385,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "59db609eb1e18aaf59b63284d0e52255aff0c63c",
-      "hash": "sha256-CkNJKbSlW8bUSfvHqfl7JTPnq8o1iYdzI24LGDMojE4=",
+      "rev": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
+      "hash": "sha256-XpP8D7V2seR0sJ9bErscXgVLY2+6QiaA8TR/l8v2gx0=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
-      "hash": "sha256-rrg6yOdbD/0G3Q2frUyitvBNDJBX8TEwiR1wyHx2aR4=",
+      "rev": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
+      "hash": "sha256-QW55Vg593fNhoQ2dUlr/HLV/5OkGORLZfencXEInbWk=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
