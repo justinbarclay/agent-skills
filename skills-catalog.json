@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "eb07f19f52c2669f2364897aaa293e2aaddd7b1c",
-      "hash": "sha256-YUYdQQf9tWKjs/iWkxrG1tvryEOA+PrY6TjItOMLzYE=",
+      "rev": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
+      "hash": "sha256-PlvPPYcFT+kNrkxWxrakNfwD38KuAT+vDnwodwUwXOw=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -660,7 +660,7 @@
         },
         "git-workflow-and-versioning": {
           "name": "git-workflow-and-versioning",
-          "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, splitting uncommitted work in a messy working tree into clean atomic commits, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
+          "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, splitting uncommitted work in a messy working tree into clean atomic commits, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog. Use when asked to write a commit message or a changelog entry for a change, or to split a change into commits, even when the diff is pasted inline and the message seems easy to write from it.",
           "path": "skills/git-workflow-and-versioning"
         },
         "idea-refine": {
@@ -690,7 +690,7 @@
         },
         "security-and-hardening": {
           "name": "security-and-hardening",
-          "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+          "description": "Hardens code against vulnerabilities. Use when auditing an input handler for vulnerabilities, when handling user input, authentication, data storage, or external integrations, or when checking a login flow is safe against the OWASP Top Ten. Use when building any feature that accepts untrusted data, manages user sessions or session cookies, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
           "path": "skills/security-and-hardening"
         },
         "shipping-and-launch": {
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "83a27eb901c2c63f6caaf0eca6168993a322d268",
-      "hash": "sha256-MxxMY2hMsivHt+a962qTty5sjHkC/ksHNd5OIyguVIc=",
+      "rev": "1a33048817d06df12882cb881dfc754e7039954a",
+      "hash": "sha256-FdrVIoV4nEcvIvPF+16WdjcCRX9nsscw6WkN70u9AQw=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "867a59830ea0def5b3f06184236d105f2da8bd62",
-      "hash": "sha256-D6moh5+FvF2KIyAfAE4fC042XYsVpOTKnJtS0xyHT3g=",
+      "rev": "85f3e2f62770ffd7b1739765df926ce2190d1b98",
+      "hash": "sha256-yf82Z+11PMfLNd3wijOWHyTuwfHsH4IChunbwRL+9vc=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2385,8 +2385,8 @@
     "pocock": {
       "owner": "mattpocock",
       "repo": "skills",
-      "rev": "a496f5513d4a4cf889bc48e189e579f4b0bdf6aa",
-      "hash": "sha256-XpP8D7V2seR0sJ9bErscXgVLY2+6QiaA8TR/l8v2gx0=",
+      "rev": "4ae2317ddb22b046e26455e4f9c9b3aaaf62212d",
+      "hash": "sha256-3vhd77xfZjKUYJsIwPFevIZPUAzUgZXr0RYj5NQrBwk=",
       "skills": {
         "ask-matt": {
           "name": "ask-matt",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "4dd1d05818d19792e7cd6e818f1667f95f7e1dbe",
-      "hash": "sha256-QW55Vg593fNhoQ2dUlr/HLV/5OkGORLZfencXEInbWk=",
+      "rev": "ae5650febf4320793844c12c4adaa937f417f8da",
+      "hash": "sha256-sX6KIElyFreuDPt4zViNis2nuAn9QG0n38z3uejJU98=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3678,8 +3678,8 @@
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "2517e28e4bc029424e9c9ee48016394296be0f6a",
-      "hash": "sha256-Y4skex8CPcjIz08i+RgTETX18WxaCVwht7Gs3xpM0sw=",
+      "rev": "82f222a529a499e8005a820000148cc5e28c934c",
+      "hash": "sha256-OrDnSRKU21Y3+Lr/rBH03EN5sGovKInB8Z8sZNcNB08=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
