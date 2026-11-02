@@ -585,8 +585,8 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "8bfcc1f9916f2eea55494d8c1fa7f4bde867dd9e",
-      "hash": "sha256-PlvPPYcFT+kNrkxWxrakNfwD38KuAT+vDnwodwUwXOw=",
+      "rev": "301b02b12bff98e4688e6984af6556802322bbde",
+      "hash": "sha256-ewVxgb5GqtUeWcGydFz3GbzUkM0p+cuRfP+tlPAg4PY=",
       "skills": {
         "addyosmani-performance-optimization": {
           "name": "addyosmani-performance-optimization",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "85f3e2f62770ffd7b1739765df926ce2190d1b98",
-      "hash": "sha256-yf82Z+11PMfLNd3wijOWHyTuwfHsH4IChunbwRL+9vc=",
+      "rev": "b3ab9149225f837894b7de08c1b14650d7cc64eb",
+      "hash": "sha256-BkKloKc72+NqePzcMyNUffVF1xKgtO/U2Nv90Opfb/8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
