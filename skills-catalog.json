@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "1a33048817d06df12882cb881dfc754e7039954a",
-      "hash": "sha256-FdrVIoV4nEcvIvPF+16WdjcCRX9nsscw6WkN70u9AQw=",
+      "rev": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
+      "hash": "sha256-U+CATnXtDti9aFxGWRmO3cfle3jVfRuyiVe70rauxm8=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "5091f72943e6cb4ca439c98ee4783d6085de1318",
-      "hash": "sha256-2u+iCEH5KOR/fQLltI/8Uo8y7ERy+R0nIClzV+dMCF8=",
+      "rev": "8f4c6295246b771bdfbffd4a50171f75a03507c8",
+      "hash": "sha256-+3LwouHMMZatDkIlWLVGGnxkX87mRbOspgHVk2dejtw=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "ae5650febf4320793844c12c4adaa937f417f8da",
-      "hash": "sha256-sX6KIElyFreuDPt4zViNis2nuAn9QG0n38z3uejJU98=",
+      "rev": "bb68f2365eceafa0cb2d253112f675acf5f144cc",
+      "hash": "sha256-4dgaC7yhlVnM7B3s4gg5iqxnqm6TsKwhLbGC/ukhwew=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3373,7 +3373,7 @@
         },
         "tailscale-setup": {
           "name": "tailscale-setup",
-          "description": "Connect Grok Bot to Tailscale on a company tailnet (a team admin enables it at cursor.com; each member authenticates their own device and an admin limits it with custom:grokbot postures) or a personal tailnet (one-click Connect when the member owns or administers the tailnet, otherwise a tag:grokbot device). Several tailnets can be connected at once. Use when the user asks to set up, troubleshoot, change the default tailnet, or disconnect Grok Bot's Tailscale connection.",
+          "description": "Connect Grok Bot to Tailscale on a company tailnet (a team admin enables it at cursor.com; each member authenticates their own device and an admin limits it with custom:grokbot postures) or a personal tailnet (one-click Connect when the member owns or administers the tailnet). Several tailnets can be connected at once. Use when the user asks to set up, troubleshoot, change the default tailnet, or disconnect Grok Bot's Tailscale connection.",
           "path": "third_party/tailscale/skills/tailscale-setup"
         },
         "thermo-nuclear-code-quality-review": {
@@ -3438,7 +3438,7 @@
         },
         "x-api-mcp-guide": {
           "name": "x-api-mcp-guide",
-          "description": "ALWAYS read this before using any X tool (the X plugin, any X MCP, or Grok Bot's built-in public X reads) and again on any X error. X tools are included in Grok Bot at no cost: never estimate costs, check credits, or tell the user to buy credits. tools=0 / user-X-* not found is a setup failure, not a paywall. Covers Spaces, communities, and Lists (reads and list writes), X Chat (XChat, inbox, DMs, unread, message requests, Chat PIN, juicebox, xchat_lite: clone xchat-grokbot-helper yourself and decrypt locally), scheduled X calls (schedule_call, list_scheduled_calls and the other call tools), and livestreams (stream sources, broadcasts, scheduled broadcasts, broadcast chat, moderators, mutes). Chat, call, livestream, Spaces, or Lists tools missing while other X tools work: reconnect the X plugin.",
+          "description": "Read before using any X tool (the X plugin, any X MCP, or Grok Bot's built-in public X reads) and on any X error. Covers reading and searching posts, users, news, trends, Spaces, communities, lists and bookmarks; posting with create_posts; scheduled X calls; livestreams; and X Chat (DMs, inbox, unread, message requests, Chat PIN, juicebox, xchat_lite).",
           "path": "third_party/x/skills/x-api-mcp-guide"
         },
         "x-money-guide": {
@@ -3451,8 +3451,8 @@
     "superpowers": {
       "owner": "obra",
       "repo": "superpowers",
-      "rev": "2ce8aa15d05bd57213e6f746f953aafb7ded7a8b",
-      "hash": "sha256-9+69YEdjdaDu5sWTyAbufSVcZgGD7h6wAq4nUVY2syE=",
+      "rev": "22f0b463e7a5e579904dd6211a520321035526f7",
+      "hash": "sha256-rP5YsyGuPd9YSW/Fj3aukrq1bLuV+nwwQMK4JaZQgkI=",
       "skills": {
         "brainstorming": {
           "name": "brainstorming",
@@ -3771,8 +3771,8 @@
     "terraform": {
       "owner": "hashicorp",
       "repo": "agent-skills",
-      "rev": "bc6b14b77481c3cbfbb06a0166be7245ed45798c",
-      "hash": "sha256-JYWOiyTgMeu8NLsUxkk56/GyeEA2GDV2vUhU8p+WZtk=",
+      "rev": "5e30fa5c867ba6777c37e4206babfd08049c396f",
+      "hash": "sha256-xypoVCxhxgQdoUcy7HyD27r80JZsMqJOfrKhDizT+/k=",
       "skills": {
         "azure-verified-modules": {
           "name": "azure-verified-modules",
