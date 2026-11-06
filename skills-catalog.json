@@ -2327,8 +2327,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "7882018f33773950265a9613d12e963853cfb526",
-      "hash": "sha256-fDxkjyczhvhhCbgLMetW+I4TJqTWXd3MUZsnWE/PQR8=",
+      "rev": "4f1d09406ff6aeab4aa390869580fd5dae461bea",
+      "hash": "sha256-SSifuzG2u/7wm+ltvBk7DlR3RScI10DIQ8B8PIRXdTI=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2583,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "bb68f2365eceafa0cb2d253112f675acf5f144cc",
-      "hash": "sha256-4dgaC7yhlVnM7B3s4gg5iqxnqm6TsKwhLbGC/ukhwew=",
+      "rev": "2776ddd2355d6d6c8747d3964600f28daf62f049",
+      "hash": "sha256-YHNkwLBTrn9fquHMi4gsPLuzoqkFz0dDOvCxYRBvPFI=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
