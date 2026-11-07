@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "ca45fc496a3436251f191354091d557da31c15b5",
-      "hash": "sha256-MkCOANBAqCc1WmNf7S8PsyAphGJAIzEXGyCm8RrCR9M=",
+      "rev": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
+      "hash": "sha256-dRCZrNarCCJFuvATgfW6qmwwVS5HGFXNVGOhbVZd7LA=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "1f2cd0a19588e2c6197c91dd7c71729df1fb6156",
-      "hash": "sha256-U+CATnXtDti9aFxGWRmO3cfle3jVfRuyiVe70rauxm8=",
+      "rev": "6eb6c781aa9b6438e0c7307bd102788a75fe1a6d",
+      "hash": "sha256-7Ve/k9sXKzeWDleR73+JWxjKti8vOMYNB3kwJRDh7go=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2244,8 +2244,13 @@
         },
         "cloudflare": {
           "name": "cloudflare",
-          "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation.",
+          "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a Cloudflare product; then find the relevant skill or documentation. Also use when a Cloudflare-proxied site shows a Cloudflare error page, a `52x` status, a 1xxx error code, or a Cloudflare `403`, to decide whether to fix Cloudflare configuration or the origin.",
           "path": "skills/cloudflare"
+        },
+        "cloudflare-app-bootstrap": {
+          "name": "cloudflare-app-bootstrap",
+          "description": "Get a Cloudflare Workers app to a working local request by connecting its bindings, secrets, and initial data, then verifying real application behavior. Use for app setup or onboarding after the project exists; use frameworks-on-cloudflare or cf-cli to create or configure the project, and wrangler or cf-cli for isolated commands.",
+          "path": "skills/cloudflare-app-bootstrap"
         },
         "cloudflare-email-service": {
           "name": "cloudflare-email-service",
@@ -2254,7 +2259,7 @@
         },
         "cloudflare-one": {
           "name": "cloudflare-one",
-          "description": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors.",
+          "description": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors. Also use when an agent, script, crawler, or other non-browser client needs to reach a webpage or API protected by Cloudflare Access.",
           "path": "skills/cloudflare-one"
         },
         "cloudflare-one-migrations": {
@@ -2266,6 +2271,11 @@
           "name": "durable-objects",
           "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
           "path": "skills/durable-objects"
+        },
+        "frameworks-on-cloudflare": {
+          "name": "frameworks-on-cloudflare",
+          "description": "Build, migrate, and deploy web-framework applications on Cloudflare Workers. Use when a framework project such as Astro, SvelteKit, React Router, TanStack Start, Nuxt, Hono, or a React or Vue SPA targets Cloudflare, or when a framework repository contains Workers deployment configuration.",
+          "path": "skills/frameworks-on-cloudflare"
         },
         "gateway-workers": {
           "name": "gateway-workers",
@@ -2312,6 +2322,11 @@
           "description": "Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.",
           "path": "skills/workers-best-practices"
         },
+        "workers-development": {
+          "name": "workers-development",
+          "description": "Run, inspect, and debug Cloudflare Workers during local development with cf dev, wrangler dev, or the Cloudflare Vite plugin, using Local Explorer to read and seed binding data and query local traces and logs. Also routes production debugging to Workers observability. Use for debugging requests whether or not the project uses Wrangler.",
+          "path": "skills/workers-development"
+        },
         "workers-profiling": {
           "name": "workers-profiling",
           "description": "Profile or debug CPU usage and memory allocation in deployed Cloudflare Workers and Durable Objects. Then use this information to optimize your code.",
@@ -2327,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "4f1d09406ff6aeab4aa390869580fd5dae461bea",
-      "hash": "sha256-SSifuzG2u/7wm+ltvBk7DlR3RScI10DIQ8B8PIRXdTI=",
+      "rev": "38fa04542e4d8f41e5ee4349a141ac308a0c26d1",
+      "hash": "sha256-iYDjpeXy/Ju8S4ITGtbpGdXt52pa/U8YshjUJJoiglo=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2583,8 +2598,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "2776ddd2355d6d6c8747d3964600f28daf62f049",
-      "hash": "sha256-YHNkwLBTrn9fquHMi4gsPLuzoqkFz0dDOvCxYRBvPFI=",
+      "rev": "6b0300214a09fd6029cfb7077043125758cd1fd2",
+      "hash": "sha256-TDuZ1v+taPdqyvvCs1VHUjtpSy8zHxhQKJv/kIPTpK8=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
