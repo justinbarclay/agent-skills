@@ -2342,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "6b8065ed604e24092247ac690500613a9cef48bf",
-      "hash": "sha256-DAZ7j6MRq9P0/6aH39OZpCguBRNm6A2JpideY1KDPFk=",
+      "rev": "d8e14797c726086c4376f576f6fb7cbb908e5f15",
+      "hash": "sha256-oTbe+Z1ZPk15zNYdsP0hITpJAJ2yzg/o1GyHEJg6BSM=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2598,8 +2598,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "6b0300214a09fd6029cfb7077043125758cd1fd2",
-      "hash": "sha256-TDuZ1v+taPdqyvvCs1VHUjtpSy8zHxhQKJv/kIPTpK8=",
+      "rev": "de8ee15dd1194627d21eb5fcd41cb1873208dabb",
+      "hash": "sha256-DoRP9+wI2pjlU3BmNPC90ei7v6qBP9vbpmCq5pHCrCk=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3670,8 +3670,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "e7874e5dae75c4674ce2915ea1ba573e2d49f797",
-      "hash": "sha256-E6y+yJLVNFEMmDaNEXZX1pAYTlOvkpMYPCgZhNfXKq8=",
+      "rev": "982f6edf106f3797e595f9e32b4e1416ce4a938e",
+      "hash": "sha256-utAeEKmnZaUrvxIcL0/PhOVevz2c1WVMhQoJpncQos8=",
       "skills": {
         "readme": {
           "name": "readme",
@@ -3682,6 +3682,11 @@
           "name": "state-management",
           "description": "Model, review, and refactor application state so source state stays minimal, derived state is computed instead of synchronized, impossible states are not representable, and each piece of state lives in the right place. Use this whenever the user mentions state management, reducers, stores, Redux, Zustand, React state, Vue state, Pinia, selectors, derived state, duplicated state, boolean flags, invalid states, async status, useEffect soup, forms, wizards, filters, URL state, server state, or confusing UI logic, even if they do not explicitly ask for a \"state model.\"",
           "path": "skills/state-management"
+        },
+        "stately": {
+          "name": "stately",
+          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled TLA+ checker, and find implicit state machines in application code. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, app behavior documentation, and visual behavior proposals in any framework.",
+          "path": "skills/stately"
         },
         "xstate-v5": {
           "name": "xstate-v5",
