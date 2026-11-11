@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "6eb6c781aa9b6438e0c7307bd102788a75fe1a6d",
-      "hash": "sha256-7Ve/k9sXKzeWDleR73+JWxjKti8vOMYNB3kwJRDh7go=",
+      "rev": "cbf893b954222276bf1af57e5f23379231e0efb9",
+      "hash": "sha256-m/2XzXQ6/gGzeWrdFsnUy7OjHAvKb+a0Q4NjZ868Bdc=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2342,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "d8e14797c726086c4376f576f6fb7cbb908e5f15",
-      "hash": "sha256-oTbe+Z1ZPk15zNYdsP0hITpJAJ2yzg/o1GyHEJg6BSM=",
+      "rev": "8570d472fbc4ff2c84329af1d15030ecfdea3570",
+      "hash": "sha256-QWHi1ZaLdJP8uLBTDSbaZ+7+nVVzw/JKTDuAc5B2C+8=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2598,8 +2598,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "de8ee15dd1194627d21eb5fcd41cb1873208dabb",
-      "hash": "sha256-DoRP9+wI2pjlU3BmNPC90ei7v6qBP9vbpmCq5pHCrCk=",
+      "rev": "5866df557357d005b3c0c9d3da0d9e739b4bdde3",
+      "hash": "sha256-mmxJFRHgDc0zpfyrzUZCoA+PPQV9lNlkuJ0xsnkaXLQ=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3670,8 +3670,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "982f6edf106f3797e595f9e32b4e1416ce4a938e",
-      "hash": "sha256-utAeEKmnZaUrvxIcL0/PhOVevz2c1WVMhQoJpncQos8=",
+      "rev": "a74134a0a1187bb881aa66bc3928124387a995d9",
+      "hash": "sha256-q2PGZMKvv3LEo+oLxYYIV2xTvmfX3K0yw8Qj/BOFkas=",
       "skills": {
         "readme": {
           "name": "readme",
@@ -3685,7 +3685,7 @@
         },
         "stately": {
           "name": "stately",
-          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled TLA+ checker, and find implicit state machines in application code. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, app behavior documentation, and visual behavior proposals in any framework.",
+          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), and find implicit state machines in application code. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, app behavior documentation, and visual behavior proposals in any framework.",
           "path": "skills/stately"
         },
         "xstate-v5": {
