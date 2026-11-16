@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "2c5958ecac7cee2b583967a2c4981d0f4a75c579",
-      "hash": "sha256-dRCZrNarCCJFuvATgfW6qmwwVS5HGFXNVGOhbVZd7LA=",
+      "rev": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
+      "hash": "sha256-pEKTL8YlOAem5QfNzLkjJaEDTp7PhtG/uyzjPzOL7Jo=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2342,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "74f7f39b1d7f3b56e49218a43b0dc87a268c03c7",
-      "hash": "sha256-1cdnHGRCLS5q97XCsJCteAL5QH+2eNHF2R5EBTy7vK4=",
+      "rev": "9d6c33b367f2c823cb3c88d991cafdd3402ceeb0",
+      "hash": "sha256-jUUNCl3r4qFB6Ey7BRGEYjTepxMHcGtPKdRTaDYYTgs=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2379,6 +2379,11 @@
           "name": "stripe-docs",
           "description": "Use when the user or agent needs to read, search, or look up Stripe documentation or API reference. Prefer this over curl or WebFetch for any docs.stripe.com content. Use to fetch gated documentation.",
           "path": "skills/stripe-docs"
+        },
+        "stripe-implementation-planner": {
+          "name": "stripe-implementation-planner",
+          "description": "Plans Stripe product selection and integration architecture for an initial Stripe setup or a material expansion of an existing setup. Use when the user needs personalized recommendations based on their business model, payment models, sales channels, geography, or platform requirements, including requests to plan and build an integration. Don't use for API-version upgrades, product-availability questions, existing-integration debugging, webhook troubleshooting, narrow code changes, product explanations, PR review alone, unrelated implementation planning, or when the user explicitly asks to skip planning.",
+          "path": "skills/stripe-implementation-planner"
         },
         "stripe-pay": {
           "name": "stripe-pay",
@@ -2598,8 +2603,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "3dbd22ff12742fb28c9700b9760baa29ed41dc13",
-      "hash": "sha256-w7Ia9fuCQg8txWPc2Ebg1Zif608Zuj/87QMp+WH1Qr8=",
+      "rev": "bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7",
+      "hash": "sha256-fXXJRZnQZlTfOemfJgC0zSMxsfcvxRhGo21T09/6xic=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3308,7 +3313,7 @@
         },
         "pstack-why": {
           "name": "pstack-why",
-          "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+          "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
           "path": "pstack/skills/why"
         },
         "ralph-loop": {
@@ -3443,7 +3448,7 @@
         },
         "why": {
           "name": "why",
-          "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Discovers available MCPs and queries each evidence category (source control, issue tracker, long-form docs, real-time chat, infrastructure observability, error tracking, product analytics warehouse) in parallel, then returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
+          "description": "Use for 'why does X work this way', 'why we picked Y', design rationale, regressions, postmortems, or data-backed thresholds. Returns a cited read on decisions and tradeoffs. Use how for runtime behavior.",
           "path": "harness/pstack/claude-code/skills/why"
         },
         "workflow-from-chats": {
@@ -3670,8 +3675,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "e83214e458667b302dca5b4091a038f8bb89ee0d",
-      "hash": "sha256-8PpTHTOODqJEZoJoEC/EbTcBRBmRpqh78bALPVrVAJ4=",
+      "rev": "21e4194322ff214ba3cc09a7e50b75c113429098",
+      "hash": "sha256-6Ojh4iBcfRiOEn1KVgXX6l++JpKs+XbUgBten3DKSw0=",
       "skills": {
         "readme": {
           "name": "readme",
