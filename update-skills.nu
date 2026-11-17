@@ -55,6 +55,7 @@ def main [
     { key: "statelyai", owner: "statelyai", repo: "skills", skills_path: "skills" },
     { key: "pulumi", owner: "pulumi", repo: "agent-skills", skills_path: "" },
     { key: "terraform", owner: "hashicorp", repo: "agent-skills", skills_path: "plugins/terraform" }
+    { key: "cloudflare-security", owner: "cloudflare", repo: "security-audit-skill", skills_path: "" }
   ]
 
   let all_repo_keys = ($repo_configs | get key)
@@ -141,9 +142,19 @@ def main [
 
   let resolved_skills = ($grouped_skills | transpose name list | sort-by name | each { |group|
     if ($group.list | length) > 1 {
-      # Collision! Prefix with repo key
-      $group.list | sort-by repo_key | each { |item|
-        $item | upsert resolved_name $"($item.repo_key)-($item.orig_name)"
+      # Collision! The repo listed first in repo_configs keeps the name;
+      # later repos are prefixed with their repo key.
+      $group.list
+      | each { |item| $item | upsert order ($all_repo_keys | enumerate | where item == $item.repo_key | get 0.index) }
+      | sort-by order
+      | enumerate
+      | each { |e|
+        let item = ($e.item | reject order)
+        if $e.index == 0 {
+          $item | upsert resolved_name $item.orig_name
+        } else {
+          $item | upsert resolved_name $"($item.repo_key)-($item.orig_name)"
+        }
       }
     } else {
       $group.list | each { |item|

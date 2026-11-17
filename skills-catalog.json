@@ -3,8 +3,8 @@
     "anthropics": {
       "owner": "anthropics",
       "repo": "skills",
-      "rev": "1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064",
-      "hash": "sha256-pEKTL8YlOAem5QfNzLkjJaEDTp7PhtG/uyzjPzOL7Jo=",
+      "rev": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "hash": "sha256-Gr9LatjawHHK9uKpoclWoiDHZ0NTpP3/4Pmeatl8p/Q=",
       "skills": {
         "academy-guide": {
           "name": "academy-guide",
@@ -2342,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "9d6c33b367f2c823cb3c88d991cafdd3402ceeb0",
-      "hash": "sha256-jUUNCl3r4qFB6Ey7BRGEYjTepxMHcGtPKdRTaDYYTgs=",
+      "rev": "2f0d00c931e70c145f1033113aefde677ab15f87",
+      "hash": "sha256-GrVkquyqSNHOmAQGlzd80N9XEsqkEnkiqDG67ZEPCWY=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2603,8 +2603,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "bf0c7cd80abdbf7fe47b634978a7d1b4071f71a7",
-      "hash": "sha256-fXXJRZnQZlTfOemfJgC0zSMxsfcvxRhGo21T09/6xic=",
+      "rev": "e1cc03121a0e71129a4fb730d7c5528a0a3e43c8",
+      "hash": "sha256-VFEMIRgUEY3/HRlKIqkJdidxoXzgHX7jIL/dhYRr0sU=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3258,7 +3258,7 @@
         },
         "pstack-reflect": {
           "name": "pstack-reflect",
-          "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+          "description": "Mine the active transcript for durable learnings and route each to a concrete edit on an existing skill. Use when the user says reflect.",
           "path": "pstack/skills/reflect"
         },
         "pstack-setup-pstack": {
@@ -3333,7 +3333,7 @@
         },
         "reflect": {
           "name": "reflect",
-          "description": "Spawn three parallel review subagents over the active transcript, surface learnings, and route each to a concrete edit on an existing skill. Use when the user says reflect.",
+          "description": "Mine the active transcript for durable learnings and route each to a concrete edit on an existing skill. Use when the user says reflect.",
           "path": "harness/pstack/claude-code/skills/reflect"
         },
         "reproduce-and-fix-issues": {
@@ -3660,8 +3660,8 @@
           "description": "Identifies and fixes Rails performance issues including N+1 queries, slow queries, and memory problems. Use when optimizing queries, fixing N+1 issues, improving response times, or when user mentions performance, slow, optimization, or Bullet gem. WHEN NOT: Caching-specific patterns (use caching-strategies), adding new features, or general code quality improvements unrelated to speed.",
           "path": ".agents/skills/performance-optimization"
         },
-        "security-audit": {
-          "name": "security-audit",
+        "rails_ai_agents-security-audit": {
+          "name": "rails_ai_agents-security-audit",
           "description": "Audits Rails application security against OWASP Top 10, detects vulnerabilities with Brakeman, and verifies Pundit authorization policies. Use when the user wants a security audit, vulnerability scan, or when user mentions security, OWASP, Brakeman, XSS, SQL injection, or authorization. WHEN NOT: Implementing security fixes (use specialist agents), setting up authentication (use authentication-flow), or writing Pundit policies (use policy-agent).",
           "path": ".agents/skills/security-audit"
         },
@@ -3675,8 +3675,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "21e4194322ff214ba3cc09a7e50b75c113429098",
-      "hash": "sha256-6Ojh4iBcfRiOEn1KVgXX6l++JpKs+XbUgBten3DKSw0=",
+      "rev": "65fdc8de025529f29c3c4b8697226031d1807d74",
+      "hash": "sha256-QMIzGYdM40MfKNfdKOjzUdFkAOCICjJAowigMJPeLW0=",
       "skills": {
         "readme": {
           "name": "readme",
@@ -3690,7 +3690,7 @@
         },
         "stately": {
           "name": "stately",
-          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), and find implicit state machines in application code. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, app behavior documentation, and visual behavior proposals in any framework.",
+          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), find implicit state machines in application code, and review a diff or pull request for state bugs. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, state-bug review of a change, app behavior documentation, and visual behavior proposals in any framework.",
           "path": "skills/stately"
         },
         "xstate-v5": {
@@ -3878,6 +3878,19 @@
           "name": "terraform-test",
           "description": "Comprehensive guide for writing and running Terraform tests. Use when creating test files (.tftest.hcl), writing test scenarios with run blocks, validating infrastructure behavior with assertions, mocking providers and data sources, testing module outputs and resource configurations, or troubleshooting Terraform test syntax and execution.",
           "path": "plugins/terraform/skills/terraform-test"
+        }
+      }
+    },
+    "cloudflare-security": {
+      "owner": "cloudflare",
+      "repo": "security-audit-skill",
+      "rev": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+      "hash": "sha256-oVVACjotkHvllQGxEP8yWaEt4c3GxT0d909TUM5P3NM=",
+      "skills": {
+        "cloudflare-security-security-audit": {
+          "name": "cloudflare-security-security-audit",
+          "description": "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons. Use for security questions, focused reviews, vulnerability research, security audits, or pen tests. Run the complete workflow only for explicit codebase audit or pen-test requests, full/comprehensive/end-to-end reviews, or requested report artifacts.",
+          "path": "skills/security-audit"
         }
       }
     }
