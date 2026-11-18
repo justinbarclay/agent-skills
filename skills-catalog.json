@@ -16,16 +16,6 @@
           "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
           "path": "skills/algorithmic-art"
         },
-        "anthropics-pdf": {
-          "name": "anthropics-pdf",
-          "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
-          "path": "skills/pdf"
-        },
-        "anthropics-skill-creator": {
-          "name": "anthropics-skill-creator",
-          "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
-          "path": "skills/skill-creator"
-        },
         "brand-guidelines": {
           "name": "brand-guidelines",
           "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
@@ -71,10 +61,20 @@
           "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
           "path": "skills/mcp-builder"
         },
+        "pdf": {
+          "name": "pdf",
+          "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+          "path": "skills/pdf"
+        },
         "pptx": {
           "name": "pptx",
           "description": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
           "path": "skills/pptx"
+        },
+        "skill-creator": {
+          "name": "skill-creator",
+          "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+          "path": "skills/skill-creator"
         },
         "slack-gif-creator": {
           "name": "slack-gif-creator",
@@ -360,6 +360,11 @@
       "rev": "49f948faa9258a0c61caceaf225e179651397431",
       "hash": "sha256-t4oGnFg0YpxJaQiFpgTiwYhaFoZK6wPDiqvHoG0bXiU=",
       "skills": {
+        "aspnet-core": {
+          "name": "aspnet-core",
+          "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
+          "path": "skills/.curated/aspnet-core"
+        },
         "chatgpt-apps": {
           "name": "chatgpt-apps",
           "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
@@ -480,11 +485,6 @@
           "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
           "path": "skills/.curated/notion-spec-to-implementation"
         },
-        "openai-aspnet-core": {
-          "name": "openai-aspnet-core",
-          "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
-          "path": "skills/.curated/aspnet-core"
-        },
         "openai-docs": {
           "name": "openai-docs",
           "description": "Use when the user asks how to build with OpenAI products or APIs, asks about Codex itself or choosing Codex surfaces, needs up-to-date official documentation with citations, help choosing the latest model for a use case, or model upgrade and prompt-upgrade guidance; use OpenAI docs MCP tools for non-Codex docs questions, use the Codex manual helper first for broad Codex self-knowledge, and restrict fallback browsing to official OpenAI domains.",
@@ -495,20 +495,15 @@
           "description": "Use when tasks involve reading, creating, or reviewing PDF files where rendering and layout matter; prefer visual checks by rendering pages (Poppler) and use Python tools such as `reportlab`, `pdfplumber`, and `pypdf` for generation and extraction.",
           "path": "skills/.curated/pdf"
         },
-        "openai-playwright": {
-          "name": "openai-playwright",
-          "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
-          "path": "skills/.curated/playwright"
-        },
-        "openai-security-best-practices": {
-          "name": "openai-security-best-practices",
-          "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
-          "path": "skills/.curated/security-best-practices"
-        },
         "openai-skill-creator": {
           "name": "openai-skill-creator",
           "description": "Guide for creating effective skills. This skill should be used when users want to create a new skill (or update an existing skill) that extends Codex's capabilities with specialized knowledge, workflows, or tool integrations.",
           "path": "skills/.system/skill-creator"
+        },
+        "playwright": {
+          "name": "playwright",
+          "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+          "path": "skills/.curated/playwright"
         },
         "playwright-interactive": {
           "name": "playwright-interactive",
@@ -529,6 +524,11 @@
           "name": "screenshot",
           "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
           "path": "skills/.curated/screenshot"
+        },
+        "security-best-practices": {
+          "name": "security-best-practices",
+          "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+          "path": "skills/.curated/security-best-practices"
         },
         "security-ownership-map": {
           "name": "security-ownership-map",
@@ -588,16 +588,6 @@
       "rev": "39b723ceebf81474d0557c1fecd01eddab585563",
       "hash": "sha256-SZchINcyIB46aT5JYLAv2fW2DoChCHQsckq51kUNoEw=",
       "skills": {
-        "addyosmani-performance-optimization": {
-          "name": "addyosmani-performance-optimization",
-          "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
-          "path": "skills/performance-optimization"
-        },
-        "addyosmani-test-driven-development": {
-          "name": "addyosmani-test-driven-development",
-          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline, the request does not mention tests and the answer looks obvious from reading it. The skill writes the failing test first and changes the function second, never the change alone.",
-          "path": "skills/test-driven-development"
-        },
         "api-and-interface-design": {
           "name": "api-and-interface-design",
           "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
@@ -683,6 +673,11 @@
           "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
           "path": "skills/observability-and-instrumentation"
         },
+        "performance-optimization": {
+          "name": "performance-optimization",
+          "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
+          "path": "skills/performance-optimization"
+        },
         "planning-and-task-breakdown": {
           "name": "planning-and-task-breakdown",
           "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
@@ -707,6 +702,11 @@
           "name": "spec-driven-development",
           "description": "Creates specs before coding. Use when starting a new project, feature, or significant change and no specification exists yet. Use when drafting a PRD or requirements document with objectives and scope, or when requirements are unclear, ambiguous, or only exist as a vague idea. Use when a single requirement spans several independently testable capabilities and needs decomposing into a capability map of modules before specifying. Use when evolving a shipped spec — scoping a V1, deferring ideas to a V2 backlog, or writing a follow-up spec for a change to an existing feature.",
           "path": "skills/spec-driven-development"
+        },
+        "test-driven-development": {
+          "name": "test-driven-development",
+          "description": "Drives development with tests using the red-green-refactor loop. Use when implementing any logic, fixing any bug, or changing any behavior. Use when you need to prove that code works, when a bug report arrives, or when you're about to modify existing functionality. Use when asked to add tests to a function, fix a bug in it or change its behavior, even when the code is pasted inline, the request does not mention tests and the answer looks obvious from reading it. The skill writes the failing test first and changes the function second, never the change alone.",
+          "path": "skills/test-driven-development"
         },
         "using-agent-skills": {
           "name": "using-agent-skills",
@@ -1371,11 +1371,6 @@
           "description": "Security best practices for backend development, microservices, and secure coding patterns with emphasis on input validation and authentication",
           "path": "security-best-practices"
         },
-        "mindrally-technical-writing": {
-          "name": "mindrally-technical-writing",
-          "description": "Expert technical writing guidelines for creating clear, in-depth developer tutorials and documentation with practical, implementable knowledge",
-          "path": "technical-writing"
-        },
         "modern-web-development": {
           "name": "modern-web-development",
           "description": "Modern web development best practices for TypeScript, Next.js 14, React Server Components, Supabase, GraphQL, and Tailwind CSS.",
@@ -1911,6 +1906,11 @@
           "description": "Tauri development guidelines for building cross-platform desktop applications with TypeScript, Rust, and modern web technologies",
           "path": "tauri-development"
         },
+        "technical-writing": {
+          "name": "technical-writing",
+          "description": "Expert technical writing guidelines for creating clear, in-depth developer tutorials and documentation with practical, implementable knowledge",
+          "path": "technical-writing"
+        },
         "tensorflow-deep-learning": {
           "name": "tensorflow-deep-learning",
           "description": "Best practices for building, training, evaluating, and deploying neural networks with TensorFlow and Keras. Use when writing tf.data input pipelines, defining or training a Keras model, configuring callbacks for checkpointing and early stopping, evaluating a trained model, or exporting a model for serving.",
@@ -2224,8 +2224,8 @@
     "cloudflare": {
       "owner": "cloudflare",
       "repo": "skills",
-      "rev": "cbf893b954222276bf1af57e5f23379231e0efb9",
-      "hash": "sha256-m/2XzXQ6/gGzeWrdFsnUy7OjHAvKb+a0Q4NjZ868Bdc=",
+      "rev": "5108325ecceabc899c761e07aa617b09c02445ee",
+      "hash": "sha256-A3tzJg4lXaQz4RN0d+N/nKwNm4DqUzG1S0w5l6FKWCg=",
       "skills": {
         "agents-sdk": {
           "name": "agents-sdk",
@@ -2342,8 +2342,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "2f0d00c931e70c145f1033113aefde677ab15f87",
-      "hash": "sha256-GrVkquyqSNHOmAQGlzd80N9XEsqkEnkiqDG67ZEPCWY=",
+      "rev": "72e7e79e08e245063e87d61f60340e55e54c68f4",
+      "hash": "sha256-ivL29cibMLhUa48KQc8/d9b3hX1kBxSyG1GqyKIBeuE=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2369,6 +2369,11 @@
           "name": "stripe-best-practices",
           "description": "Guides Stripe integration decisions across development and test environment planning (separate sandboxes vs the shared test mode sandbox), API selection (Checkout Sessions vs PaymentIntents), Connect platform setup (Accounts v2, controller properties), billing/subscriptions, tax and registrations (Stripe Tax, automatic_tax, product tax codes), Treasury financial accounts, integration options (Checkout, Payment Element), migrating from deprecated Stripe APIs, and security best practices (API key management, API key permissions, webhooks, OAuth). Use when planning, building, modifying, testing, or reviewing any Stripe integration, including choosing a development environment, accepting payments, building marketplaces, integrating Stripe, processing payments, setting up subscriptions, collecting sales tax, VAT, or GST, creating connected accounts, or implementing secure key handling.",
           "path": "skills/stripe-best-practices"
+        },
+        "stripe-bfcm-dashboard": {
+          "name": "stripe-bfcm-dashboard",
+          "description": "Builds a Black Friday and Cyber Monday (BFCM) season dashboard of payments, customers, and recurring revenue from the connected Stripe MCP account, as a hosted page in Claude on the web or desktop or a local page in coding agents. For the 2026 BFCM season only. Use when a merchant asks for a BFCM, Black Friday, Cyber Monday, holiday, holiday sales, or peak-season dashboard, such as \"build me a holiday dashboard\" or \"build me a Cyber Monday dashboard,\" even without the word BFCM.",
+          "path": "skills/stripe-bfcm-dashboard"
         },
         "stripe-directory": {
           "name": "stripe-directory",
@@ -2422,6 +2427,11 @@
           "name": "claude-handoff",
           "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
           "path": "skills/in-progress/claude-handoff"
+        },
+        "code-review": {
+          "name": "code-review",
+          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+          "path": "skills/engineering/code-review"
         },
         "codebase-design": {
           "name": "codebase-design",
@@ -2488,21 +2498,6 @@
           "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
           "path": "skills/misc/migrate-to-shoehorn"
         },
-        "pocock-code-review": {
-          "name": "pocock-code-review",
-          "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes: Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/spec asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
-          "path": "skills/engineering/code-review"
-        },
-        "pocock-tdd": {
-          "name": "pocock-tdd",
-          "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
-          "path": "skills/engineering/tdd"
-        },
-        "pocock-teach": {
-          "name": "pocock-teach",
-          "description": "Teach the user a new skill or concept, within this workspace.",
-          "path": "skills/productivity/teach"
-        },
         "pr": {
           "name": "pr",
           "description": "Use when writing a PR body.",
@@ -2542,6 +2537,16 @@
           "name": "setup-ts-deep-modules",
           "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module, with implementation hidden in subfolders and reachable only through its entry-point files. User-invoked.",
           "path": "skills/in-progress/setup-ts-deep-modules"
+        },
+        "tdd": {
+          "name": "tdd",
+          "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+          "path": "skills/engineering/tdd"
+        },
+        "teach": {
+          "name": "teach",
+          "description": "Teach the user a new skill or concept, within this workspace.",
+          "path": "skills/productivity/teach"
         },
         "to-questionnaire": {
           "name": "to-questionnaire",
@@ -2603,8 +2608,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "e1cc03121a0e71129a4fb730d7c5528a0a3e43c8",
-      "hash": "sha256-VFEMIRgUEY3/HRlKIqkJdidxoXzgHX7jIL/dhYRr0sU=",
+      "rev": "93b916d4a1e806507e22f4716b352fa91f2b227e",
+      "hash": "sha256-oRE9Gex04mi1ekiCBw9c6hwRrCWe++JRYWuSkGaIi1c=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3660,8 +3665,8 @@
           "description": "Identifies and fixes Rails performance issues including N+1 queries, slow queries, and memory problems. Use when optimizing queries, fixing N+1 issues, improving response times, or when user mentions performance, slow, optimization, or Bullet gem. WHEN NOT: Caching-specific patterns (use caching-strategies), adding new features, or general code quality improvements unrelated to speed.",
           "path": ".agents/skills/performance-optimization"
         },
-        "rails_ai_agents-security-audit": {
-          "name": "rails_ai_agents-security-audit",
+        "security-audit": {
+          "name": "security-audit",
           "description": "Audits Rails application security against OWASP Top 10, detects vulnerabilities with Brakeman, and verifies Pundit authorization policies. Use when the user wants a security audit, vulnerability scan, or when user mentions security, OWASP, Brakeman, XSS, SQL injection, or authorization. WHEN NOT: Implementing security fixes (use specialist agents), setting up authentication (use authentication-flow), or writing Pundit policies (use policy-agent).",
           "path": ".agents/skills/security-audit"
         },
@@ -3675,8 +3680,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "65fdc8de025529f29c3c4b8697226031d1807d74",
-      "hash": "sha256-QMIzGYdM40MfKNfdKOjzUdFkAOCICjJAowigMJPeLW0=",
+      "rev": "27be26469c6b50af0c06786bd535b34658f31caf",
+      "hash": "sha256-WVeymIckqfDsw7mzxhAmCvJlQzQXYgXtBCKkMvYyYlc=",
       "skills": {
         "readme": {
           "name": "readme",
@@ -3690,21 +3695,26 @@
         },
         "stately": {
           "name": "stately",
-          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), find implicit state machines in application code, and review a diff or pull request for state bugs. Use for /stately, statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, state-bug review of a change, app behavior documentation, and visual behavior proposals in any framework.",
+          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), find implicit state machines in application code, make them explicit as checked XState machines, check a fix, and review a diff or pull request for state bugs. Use for /stately, \"find all of the implicit state machines in my app\", \"make these flags explicit\", \"check my fix\", statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, state-bug review of a change, app behavior documentation, and visual behavior proposals in any framework.",
           "path": "skills/stately"
         },
         "xstate-v5": {
           "name": "xstate-v5",
           "description": "Design, implement, review, and migrate XState v5 state machines and statecharts in TypeScript using modern v5 patterns. Use this whenever the user mentions XState, actors, state machines, statecharts, guards, transitions, workflows, or Stately, or is modeling non-trivial UI/app/process logic in a codebase that uses XState. Prefer a short machine sketch before code when requirements are fuzzy. If the problem is too simple for a state machine, say so and recommend @xstate/store instead.",
           "path": "skills/xstate-v5"
+        },
+        "xstate-v6": {
+          "name": "xstate-v6",
+          "description": "Write, review, test, and migrate XState v6 machines and actors by reading the documentation that ships inside the installed xstate package. Use when a project depends on xstate 6 (including betas), when the user asks for XState v6, or when migrating XState v5 code to v6. For a project on xstate 5, use the xstate-v5 skill instead.",
+          "path": "skills/xstate-v6"
         }
       }
     },
     "pulumi": {
       "owner": "pulumi",
       "repo": "agent-skills",
-      "rev": "82f222a529a499e8005a820000148cc5e28c934c",
-      "hash": "sha256-OrDnSRKU21Y3+Lr/rBH03EN5sGovKInB8Z8sZNcNB08=",
+      "rev": "cd1011fcefe65a980b09a4810bf8506df436d572",
+      "hash": "sha256-Mm/ESQ/Y2hKlR+kisd5FRRe4LTBC1Q2NgQ9TRXYozbg=",
       "skills": {
         "cloudformation-to-pulumi": {
           "name": "cloudformation-to-pulumi",
@@ -3751,6 +3761,11 @@
           "description": "Query the Pulumi Context API, a graph query interface over an\norganization's infrastructure in Pulumi Cloud. Use when a question is\nabout relationships or reachability across resources and stacks: the\nimpact of a change (\"what breaks if I change this?\", blast radius), what\ndepends on a resource or a stack's outputs, which provider instances\nmanage which resources and at what versions, orphaned or unreferenced\nresources, or references that cross stacks and cloud accounts, including\nresources Pulumi doesn't manage. Don't load it for finding a single\nresource by name, type, or property (Resource Search covers that), or for\nupdate history and failure debugging (use skill\n`pulumi-debug-failed-operation`).",
           "path": "pulumi/skills/pulumi-context-api"
         },
+        "pulumi-create-agent": {
+          "name": "pulumi-create-agent",
+          "description": "Create a reusable Pulumi Agent with saved instructions, a role, and selected integrations. Use when the user asks to create, define, or set up a new Pulumi Agent.",
+          "path": "pulumi/skills/pulumi-create-agent"
+        },
         "pulumi-debug-failed-operation": {
           "name": "pulumi-debug-failed-operation",
           "description": "Debug a Pulumi update or preview that failed: read the failure Pulumi already\nrecorded, find what caused it, and fix it. Load this skill when the user asks\nto debug, diagnose, or fix a failed update or preview, or points at a failing\n`pulumi up` or `pulumi preview`. Don't load it for authoring new\ninfrastructure, migrations, or provider upgrades; those have their own skills.",
@@ -3775,6 +3790,11 @@
           "name": "pulumi-overview",
           "description": "Use this skill for any task that creates, modifies, inspects, or destroys cloud infrastructure or SaaS configuration, from one-off CLI operations to full multi-resource projects, across providers in the Pulumi ecosystem. A typical project spans many providers (AWS or Azure or GCP, Kubernetes, Cloudflare, Auth0, Datadog, Vercel, and others), and Pulumi drives them through one CLI, one state model, and one credential layer. Trigger even when the user does not name Pulumi; phrasings like \"deploy this app,\" \"provision a database,\" \"stand up a VPC,\" \"configure Auth0,\" \"set up Datadog monitoring,\" or \"tear down staging\" qualify. Also trigger for tasks that migrate, port, or convert existing infrastructure code (Terraform, CloudFormation, CDK, Bicep, ARM) to Pulumi. Do not trigger for application runtime code that reads or writes data via cloud SDKs; that is application code, not infrastructure.",
           "path": "pulumi/skills/pulumi-overview"
+        },
+        "pulumi-setup-agent-automation": {
+          "name": "pulumi-setup-agent-automation",
+          "description": "Create a schedule or event trigger for an existing Pulumi Agent, or pause or resume an automation. Use when the user requests recurring or event-driven agent work, says yes to a proposed schedule or trigger, or asks to pause or resume an automation.",
+          "path": "pulumi/skills/pulumi-setup-agent-automation"
         },
         "pulumi-terraform-to-pulumi": {
           "name": "pulumi-terraform-to-pulumi",
