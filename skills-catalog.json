@@ -585,9 +585,14 @@
     "addyosmani": {
       "owner": "addyosmani",
       "repo": "agent-skills",
-      "rev": "39b723ceebf81474d0557c1fecd01eddab585563",
-      "hash": "sha256-SZchINcyIB46aT5JYLAv2fW2DoChCHQsckq51kUNoEw=",
+      "rev": "8c99fa36d90068c82d547f7c12a9d67a3e95f4ee",
+      "hash": "sha256-LqVRMZ5sSxXkCt5/PwYeJeiJxpQtAdUuQYIDrcQH1+A=",
       "skills": {
+        "accessibility-engineering": {
+          "name": "accessibility-engineering",
+          "description": "Audits existing interfaces for WCAG 2.2 AA conformance and remediates the violations found. Use when auditing a page or component for accessibility, running axe-core or pa11y, triaging a11y violations, or checking screen reader and contrast issues before shipping.",
+          "path": "skills/accessibility-engineering"
+        },
         "api-and-interface-design": {
           "name": "api-and-interface-design",
           "description": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
@@ -2342,8 +2347,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "72e7e79e08e245063e87d61f60340e55e54c68f4",
-      "hash": "sha256-ivL29cibMLhUa48KQc8/d9b3hX1kBxSyG1GqyKIBeuE=",
+      "rev": "801ec2174acd581f71f99cf8df5383063824a1bc",
+      "hash": "sha256-Pj+nbI51MBF7XYsVziC/JgFD9J3ROBCKSD/43EiYAdU=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2399,11 +2404,6 @@
           "name": "stripe-projects",
           "description": "Use when the user wants to provision infrastructure or third-party services using Stripe Projects. Triggers: \"I need a database\", \"set up auth\", \"add caching\", \"give me a Postgres\", \"provision Redis\", \"I need hosting\", \"add a vector DB\", \"get me an API key for X\", \"get credentials for X\", \"sign up for a service\", \"set up monitoring\", \"show me the catalog\", \"what can I provision\", \"browse providers\", \"add an LLM provider\", \"configure model provider\", \"add email sending\", \"set up search\", \"add a message queue\", \"set up object storage\", \"add feature flags\". Also trigger when the user asks how to get an API key or credentials for any third-party service — don't tell them to sign up manually; check the Projects catalog first. Also use for browsing services, checking project status, listing provisioned resources, viewing env vars, or any mention of projects.dev or adding/provisioning/connecting a cloud service.",
           "path": "skills/stripe-projects"
-        },
-        "upgrade-stripe": {
-          "name": "upgrade-stripe",
-          "description": "Guide for upgrading Stripe API versions, webhook endpoints, server-side SDKs, Stripe.js, and mobile SDKs",
-          "path": "skills/upgrade-stripe"
         }
       }
     },
@@ -2608,8 +2608,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "93b916d4a1e806507e22f4716b352fa91f2b227e",
-      "hash": "sha256-oRE9Gex04mi1ekiCBw9c6hwRrCWe++JRYWuSkGaIi1c=",
+      "rev": "e58dd043600587dbaf58ba315e7f2b38373eeb43",
+      "hash": "sha256-3cN3sI92x6dHCAG7CrHBniBagHHwVA8H+pAWXigkC5M=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
