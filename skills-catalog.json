@@ -304,8 +304,8 @@
     "vercel": {
       "owner": "vercel-labs",
       "repo": "agent-skills",
-      "rev": "1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
-      "hash": "sha256-uujS8sGulF6STR4adqYCHBxPY9pHddXfFfX6UqAG24c=",
+      "rev": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "hash": "sha256-gGacyJJnu1wf2y1CKGVjIyVbTOBnkly2ouYQSbgPb0E=",
       "skills": {
         "composition-patterns": {
           "name": "composition-patterns",
@@ -2347,8 +2347,8 @@
     "stripe": {
       "owner": "stripe",
       "repo": "ai",
-      "rev": "119bc4a8de4eb4370db1f5838275bc9e7a0d8e4a",
-      "hash": "sha256-qsxqHdsNcNSfK9BCTsymhxsxEfRcjn531a2asVZe8T0=",
+      "rev": "1bb486909cc36ce608181c2af62c4716ba9cd7c7",
+      "hash": "sha256-AiGaMvFjgF95/FtOZPpPRyJtJrV3nZfKRg3wn9rmI3Q=",
       "skills": {
         "connect-recommend": {
           "name": "connect-recommend",
@@ -2613,8 +2613,8 @@
     "cursor": {
       "owner": "cursor",
       "repo": "plugins",
-      "rev": "aaeb0ea3a0584995aa8f55ce44c6c5259414b896",
-      "hash": "sha256-yq3fOgiF8GDkjae1tcmtcFWIKGrY5H69tNbOM4kQD/M=",
+      "rev": "792440e8a560a4a3f63748cdee70491ecd412982",
+      "hash": "sha256-Vc1sLJs2MLDlOJ5jVsVXfakHp8+VX0o74aXOrUH4aZ8=",
       "skills": {
         "add-dictation": {
           "name": "add-dictation",
@@ -3685,8 +3685,8 @@
     "statelyai": {
       "owner": "statelyai",
       "repo": "skills",
-      "rev": "db6b56f68ad89ecad64c9c40911a22b99d185fca",
-      "hash": "sha256-d58MXdOsPzwNOs7LyUh0mdznovN3aZozWZmcIhAsdeA=",
+      "rev": "630ca58a7343620c5d5d22b9398c295612fe14db",
+      "hash": "sha256-n9f1qIbxIBuZVzQOVRDo5weTvjNpnqZf8VZqwC+49/U=",
       "skills": {
         "readme": {
           "name": "readme",
@@ -3700,7 +3700,7 @@
         },
         "stately": {
           "name": "stately",
-          "description": "Model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), find implicit state machines in application code, make them explicit as checked XState machines, check a fix, and review a diff or pull request for state bugs. Use for /stately, \"find all of the implicit state machines in my app\", \"make these flags explicit\", \"check my fix\", statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, state-bug review of a change, app behavior documentation, and visual behavior proposals in any framework.",
+          "description": "Generate a diagram of a process or flow in Stately, model a flow as an interactive Stately statechart, check a protocol or flow against invariants with a bundled native statechart checker (TLA+ optional), find implicit state machines in application code, make them explicit as checked XState machines, check a fix, and review a diff or pull request for state bugs. Use for /stately, \"find all of the implicit state machines in my app\", \"make these flags explicit\", \"check my fix\", statechart or protocol analysis, safety/liveness/deadlock checks, counterexample replay, hidden-state discovery, state-bug review of a change, app behavior documentation, and visual behavior proposals in any framework.",
           "path": "skills/stately"
         },
         "xstate-v5": {
